@@ -1,0 +1,61 @@
+Provider=sqloledb.1;Data Source=113.193.191.187\SQLEXPRESS,1433;Initial Catalog=viswaSiOne;User ID=sa;Password=vpack@123456;
+
+
+Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=paytime;Data Source=DESKTOP-5B2UQT9\SQLEXPRESS
+
+
+Provider=sqloledb.1;Data Source=116.206.104.20;Network Library=DBMSSOCN;Initial Catalog=laksazko_laksana_SRK;User ID=laksana_SRK;Password=laksana_SRK@910*;
+
+
+
+Provider=sqloledb.1;Data Source=182.50.133.110;Network Library=DBMSSOCN;Initial Catalog=Laksana_SRK;User ID=Laksana_SRK;Password=Laksana_SRK@910*;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Provider=sqloledb.1;Data Source=184.168.194.62;Network Library=DBMSSOCN;Initial Catalog=sujanaIndSys;User ID=sujana;Password=Ashkeert@1972;
+
+
+
+
+sql2005.shared-servers.com,1089
+Provider=sqloledb.1;Data Source=VISWANATHK-PC\SQLEXPRESS;Initial Catalog=sujana001;User ID=sa;Password=123456;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
