@@ -449,98 +449,52 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
                 var currentCellValue = sfDataGrid1.CurrentCell.CellRenderer.GetControlValue();
                 var rowData = sfDataGrid1.GetRecordAtRowIndex(i);
                 var mappingName = sfDataGrid1.Columns[1].MappingName;
+                var mappingName1= sfDataGrid1.Columns[7].MappingName;
                 var cellVaue = (rowData.GetType().GetProperty(mappingName).GetValue(rowData, null).ToString());
+                var cellVaue1 = (rowData.GetType().GetProperty(mappingName1).GetValue(rowData, null).ToString());
                 SO_No = cellVaue.ToString();
-                cmd1.CommandText = "UPDATE temp_Inv_Copy SET Inv_No = @InvNo where Company_ID = @compID";
-                cmd1.Parameters.AddWithValue("@InvNo", SO_No);
-                cmd1.Parameters.AddWithValue("@compID", logIn.company);
-                cmd1.ExecuteNonQuery();
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "DeliverChallan.pdf");
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "PackingList.pdf");
                 //string path = @"D:\Invoice.pdf";
                 FileInfo fi1 = new FileInfo(path);
-
 
                 if (fi1.Exists)
                 {
                     fi1.Delete();
-                }
-                SqlCommand cmd = new SqlCommand("sp_Rpt_InvoiceReport", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Invoice_No", SO_No);
-                cmd.Parameters.AddWithValue("@Creation_Company", logIn.company);
-                cmd.Parameters.AddWithValue("@buid", logIn.BU_ID);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                }               
 
-                DataTable Dt = new DataTable();
 
-                da.SelectCommand = cmd;
-                da.Fill(Dt);
-                if (Dt.Rows.Count > 0)
+                CrystalDecisions.CrystalReports.Engine.ReportDocument rep = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+
+                rep = new OrderManagement.Transactions.DeliveryChallan();
+
+                crConnectionInfo.ServerName = frmMain.ServerIP;
+                crConnectionInfo.DatabaseName = frmMain.Database;
+                crConnectionInfo.UserID = frmMain.DBUserID;
+                crConnectionInfo.Password = frmMain.Password;
+                crDatabase = rep.Database;
+                crTables = crDatabase.Tables;
+                //Loop through all tables in the report and apply the connection information for each table.
+                for (int j = 0; j < crTables.Count; j++)
                 {
-                    CrystalDecisions.CrystalReports.Engine.ReportDocument rep = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+                    //  crTable = crTables[i];
+                    crTableLogOnInfo = crTables[j].LogOnInfo;
+                    crTableLogOnInfo.ConnectionInfo = crConnectionInfo;
+                    crTables[j].ApplyLogOnInfo(crTableLogOnInfo);
+                    //If your DatabaseName is changing at runtime, specify the table location. For example, when you are reporting off of a Northwind database on SQL server you should have the following line of code:
 
-                    rep = new OrderManagement.Transactions.DeliveryChallan();
-
-                    rep.SetDataSource(Dt);
-                    string CAddr = "";
-                    string CCity = "";
-                    string cState = "";
-                    String cGSTIN = "";
-                    var da1 = (from so in db.Invoice_Masters
-
-                               join c in db.Supplier_informations on so.ConsigneeName equals c.ID
-                               where so.Inv_No == SO_No && so.BU_ID == logIn.BU_ID && so.Status != 24
-                               select new
-                               {
-                                   so.ConsigneeAddress,
-                                   so.Con_GST_No,
-                                   c.City
-                               }).ToList();
-
-
-                    if (da1.Count > 0)
-                    {
-                        //                ValidateJSON(ca[0].ConsigneeAddress);
-                        if (Mid(da1[0].ConsigneeAddress, 3, 4) == "Addr")
-                        {
-                            JObject jsoncancel = JObject.Parse(da1[0].ConsigneeAddress);
-
-                            CAddr = (string)jsoncancel.SelectToken("Address1") + "," + (string)jsoncancel.SelectToken("Address2");
-                            CCity = (string)jsoncancel.SelectToken("City") + "," + (string)jsoncancel.SelectToken("PinCode");
-                            cState = (string)jsoncancel.SelectToken("State") + ", State Code : " + (string)jsoncancel.SelectToken("StateCode");
-                            cGSTIN = "GSTIN : " + (string)jsoncancel.SelectToken("GSTIN");
-
-                        }
-                        else
-                        {
-                            CAddr = da1[0].ConsigneeAddress;
-                            cGSTIN = "GSTIN : " + da1[0].Con_GST_No;
-                            CCity = da1[0].City;
-                        }
-                        //JToken.Parse(ca[0].ConsigneeAddress);
-
-                    }
-
-
-                    //rep.SetParameterValue("Creation_Company", logIn.company);
-                    ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
-                    // cmd1.Parameters.AddWithValue("@Con_Address1", "Door No");
-
-                    rep.SetParameterValue("Con_Address1", CAddr);
-                    rep.SetParameterValue("Con_City", CCity);
-                    rep.SetParameterValue("Con_State", cState);
-                    rep.SetParameterValue("Con_GSTIN", cGSTIN);
-
-
-
-                   
-                    // rep.SetParameterValue("CopyName", "Original for Buyer/Duplicate for Transporter/Triplicate for Assessee/CTD Copy");
-                    viewer.crystalReportViewer1.ReportSource = rep;
-                    viewer.crystalReportViewer1.Refresh();
-                    rep.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, path);
-                    Process.Start(path);
-                    cmd.Parameters.Clear();
                 }
+
+                //rep.SetParameterValue("Creation_Company", logIn.company);
+                ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
+                // cmd1.Parameters.AddWithValue("@Con_Address1", "Door No");
+
+                rep.SetParameterValue("INVNO", SO_No);
+                rep.SetParameterValue("Slip_No", cellVaue1);
+                viewer.crystalReportViewer1.ReportSource = rep;
+                viewer.crystalReportViewer1.Refresh();
+                rep.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, path);
+                Process.Start(path);
+                
                 con.Close();
             }
             catch (Exception ex)

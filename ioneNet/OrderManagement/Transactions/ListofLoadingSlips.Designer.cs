@@ -35,6 +35,7 @@
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printSlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printGatepassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
@@ -43,7 +44,7 @@
             this.btnImport = new Syncfusion.WinForms.Controls.SfButton();
             this.btnReset = new Syncfusion.WinForms.Controls.SfButton();
             this.btnClose = new Syncfusion.WinForms.Controls.SfButton();
-            this.printGatepassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPackingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,44 +60,52 @@
             this.cancelToolStripMenuItem,
             this.deleteToolStripMenuItem,
             this.printSlipToolStripMenuItem,
-            this.printGatepassToolStripMenuItem});
+            this.printGatepassToolStripMenuItem,
+            this.printPackingListToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(197, 158);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(236, 200);
             // 
             // modifyToolStripMenuItem
             // 
             this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
             this.modifyToolStripMenuItem.Text = "Modify";
             this.modifyToolStripMenuItem.Click += new System.EventHandler(this.modifyToolStripMenuItem_Click);
             // 
             // updateLoadingDetailsToolStripMenuItem
             // 
             this.updateLoadingDetailsToolStripMenuItem.Name = "updateLoadingDetailsToolStripMenuItem";
-            this.updateLoadingDetailsToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.updateLoadingDetailsToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
             this.updateLoadingDetailsToolStripMenuItem.Text = "Update Loading Details";
             this.updateLoadingDetailsToolStripMenuItem.Click += new System.EventHandler(this.updateLoadingDetailsToolStripMenuItem_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
             this.cancelToolStripMenuItem.Text = "Cancel";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // printSlipToolStripMenuItem
             // 
             this.printSlipToolStripMenuItem.Name = "printSlipToolStripMenuItem";
-            this.printSlipToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.printSlipToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
             this.printSlipToolStripMenuItem.Text = "Print Slip";
             this.printSlipToolStripMenuItem.Click += new System.EventHandler(this.printSlipToolStripMenuItem_Click);
+            // 
+            // printGatepassToolStripMenuItem
+            // 
+            this.printGatepassToolStripMenuItem.Name = "printGatepassToolStripMenuItem";
+            this.printGatepassToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.printGatepassToolStripMenuItem.Text = "Print Gatepass";
+            this.printGatepassToolStripMenuItem.Click += new System.EventHandler(this.printGatepassToolStripMenuItem_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -119,7 +128,8 @@
             this.tableLayoutPanel2.Controls.Add(this.btnImport, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnReset, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnClose, 7, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 15);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.061749F));
@@ -130,15 +140,16 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.74497F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.24161F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.36913F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(743, 480);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(991, 591);
             this.tableLayoutPanel2.TabIndex = 198;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ioneNet.Properties.Resources.logoface_Ione;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 191;
             this.pictureBox2.TabStop = false;
@@ -151,11 +162,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.SetColumnSpan(this.sfDataGrid1, 8);
             this.sfDataGrid1.ContextMenuStrip = this.contextMenuStrip1;
-            this.sfDataGrid1.Location = new System.Drawing.Point(3, 58);
+            this.sfDataGrid1.Location = new System.Drawing.Point(4, 73);
+            this.sfDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sfDataGrid1.Name = "sfDataGrid1";
             this.sfDataGrid1.PreviewRowHeight = 35;
             this.tableLayoutPanel2.SetRowSpan(this.sfDataGrid1, 6);
-            this.sfDataGrid1.Size = new System.Drawing.Size(737, 419);
+            this.sfDataGrid1.Size = new System.Drawing.Size(983, 514);
             this.sfDataGrid1.Style.CellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.sfDataGrid1.Style.CellStyle.Font.Facename = "Segoe UI";
             this.sfDataGrid1.Style.CellStyle.Font.Size = 10F;
@@ -175,9 +187,10 @@
             this.tableLayoutPanel2.SetColumnSpan(this.label12, 3);
             this.label12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label12.Location = new System.Drawing.Point(50, 0);
+            this.label12.Location = new System.Drawing.Point(67, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(303, 38);
+            this.label12.Size = new System.Drawing.Size(405, 47);
             this.label12.TabIndex = 190;
             this.label12.Text = "MANAGE LOADING SLIPS";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,9 +203,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddNew.BackColor = System.Drawing.Color.White;
             this.btnAddNew.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNew.Location = new System.Drawing.Point(359, 3);
+            this.btnAddNew.Location = new System.Drawing.Point(480, 4);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(83, 32);
+            this.btnAddNew.Size = new System.Drawing.Size(111, 39);
             this.btnAddNew.Style.BackColor = System.Drawing.Color.White;
             this.btnAddNew.Style.Image = global::ioneNet.Properties.Resources.Add;
             this.btnAddNew.TabIndex = 0;
@@ -208,9 +222,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnImport.BackColor = System.Drawing.Color.White;
             this.btnImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.Location = new System.Drawing.Point(448, 3);
+            this.btnImport.Location = new System.Drawing.Point(599, 4);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(83, 32);
+            this.btnImport.Size = new System.Drawing.Size(111, 39);
             this.btnImport.Style.BackColor = System.Drawing.Color.White;
             this.btnImport.Style.Image = global::ioneNet.Properties.Resources.Import_Picture_Document_icon;
             this.btnImport.TabIndex = 193;
@@ -226,9 +241,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReset.BackColor = System.Drawing.Color.White;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(537, 3);
+            this.btnReset.Location = new System.Drawing.Point(718, 4);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(83, 32);
+            this.btnReset.Size = new System.Drawing.Size(111, 39);
             this.btnReset.Style.BackColor = System.Drawing.Color.White;
             this.btnReset.Style.Image = global::ioneNet.Properties.Resources.Refresh;
             this.btnReset.TabIndex = 1;
@@ -244,9 +260,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(626, 3);
+            this.btnClose.Location = new System.Drawing.Point(837, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(114, 32);
+            this.btnClose.Size = new System.Drawing.Size(150, 39);
             this.btnClose.Style.BackColor = System.Drawing.Color.White;
             this.btnClose.Style.Image = global::ioneNet.Properties.Resources.Exit;
             this.btnClose.TabIndex = 2;
@@ -254,21 +271,21 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // printGatepassToolStripMenuItem
+            // printPackingListToolStripMenuItem
             // 
-            this.printGatepassToolStripMenuItem.Name = "printGatepassToolStripMenuItem";
-            this.printGatepassToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.printGatepassToolStripMenuItem.Text = "Print Gatepass";
-            this.printGatepassToolStripMenuItem.Click += new System.EventHandler(this.printGatepassToolStripMenuItem_Click);
+            this.printPackingListToolStripMenuItem.Name = "printPackingListToolStripMenuItem";
+            this.printPackingListToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.printPackingListToolStripMenuItem.Text = "Print Packing List";
+            this.printPackingListToolStripMenuItem.Click += new System.EventHandler(this.printPackingListToolStripMenuItem_Click);
             // 
             // ListofLoadingSlips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(767, 504);
+            this.ClientSize = new System.Drawing.Size(1023, 620);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListofLoadingSlips";
             this.Text = "ListofLoadingSlips";
             this.Load += new System.EventHandler(this.ListofLoadingSlips_Load);
@@ -297,5 +314,6 @@
         private Syncfusion.WinForms.Controls.SfButton btnReset;
         private Syncfusion.WinForms.Controls.SfButton btnClose;
         private System.Windows.Forms.ToolStripMenuItem printGatepassToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printPackingListToolStripMenuItem;
     }
 }

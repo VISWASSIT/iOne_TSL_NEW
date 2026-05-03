@@ -62,10 +62,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>90AEBED5ADDFB65B697346BDC05531C48C13A63B</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>74925A6CA35ECC96F95908A9C712732BC7B91CC3</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ioneNet_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>

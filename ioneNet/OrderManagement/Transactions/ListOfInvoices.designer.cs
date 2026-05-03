@@ -126,7 +126,7 @@
             // 
             this.printChallanToolStripMenuItem.Name = "printChallanToolStripMenuItem";
             this.printChallanToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
-            this.printChallanToolStripMenuItem.Text = "Print Challan";
+            this.printChallanToolStripMenuItem.Text = "Print Packing List";
             this.printChallanToolStripMenuItem.Click += new System.EventHandler(this.printChallanToolStripMenuItem_Click);
             // 
             // printLabelsToolStripMenuItem

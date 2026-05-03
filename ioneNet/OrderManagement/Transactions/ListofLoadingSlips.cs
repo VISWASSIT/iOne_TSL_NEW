@@ -401,6 +401,72 @@ namespace ioneNet.OrderManagement.Transactions
             }
         }
 
+        private void printPackingListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // string path1 = Path.Combine(Directory.GetCurrentDirectory(), "Invoice.pdf");
+                SqlCommand cmd1 = con.CreateCommand();
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                int i = sfDataGrid1.CurrentCell.RowIndex;
+                var currentCellValue = sfDataGrid1.CurrentCell.CellRenderer.GetControlValue();
+                var rowData = sfDataGrid1.GetRecordAtRowIndex(i);
+                var mappingName = sfDataGrid1.Columns[0].MappingName;
+                var mappingName1 = sfDataGrid1.Columns[7].MappingName;
+                var cellVaue = (rowData.GetType().GetProperty(mappingName).GetValue(rowData, null).ToString());
+                var cellVaue1 = (rowData.GetType().GetProperty(mappingName1).GetValue(rowData, null).ToString());
+                SO_No = cellVaue.ToString();
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "PackingList.pdf");
+                //string path = @"D:\Invoice.pdf";
+                FileInfo fi1 = new FileInfo(path);
+
+                if (fi1.Exists)
+                {
+                    fi1.Delete();
+                }
+
+
+                CrystalDecisions.CrystalReports.Engine.ReportDocument rep = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+
+                rep = new OrderManagement.Transactions.DeliveryChallan();
+
+                crConnectionInfo.ServerName = frmMain.ServerIP;
+                crConnectionInfo.DatabaseName = frmMain.Database;
+                crConnectionInfo.UserID = frmMain.DBUserID;
+                crConnectionInfo.Password = frmMain.Password;
+                crDatabase = rep.Database;
+                crTables = crDatabase.Tables;
+                //Loop through all tables in the report and apply the connection information for each table.
+                for (int j = 0; j < crTables.Count; j++)
+                {
+                    //  crTable = crTables[i];
+                    crTableLogOnInfo = crTables[j].LogOnInfo;
+                    crTableLogOnInfo.ConnectionInfo = crConnectionInfo;
+                    crTables[j].ApplyLogOnInfo(crTableLogOnInfo);
+                    //If your DatabaseName is changing at runtime, specify the table location. For example, when you are reporting off of a Northwind database on SQL server you should have the following line of code:
+
+                }
+
+                //rep.SetParameterValue("Creation_Company", logIn.company);
+                ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
+                // cmd1.Parameters.AddWithValue("@Con_Address1", "Door No");
+
+                rep.SetParameterValue("INVNO", "");
+                rep.SetParameterValue("Slip_No", SO_No);
+                viewer.crystalReportViewer1.ReportSource = rep;
+                viewer.crystalReportViewer1.Refresh();
+                rep.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, path);
+                Process.Start(path);
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private Tables crTables;
         private Table crTable;
         private TableLogOnInfo crTableLogOnInfo;

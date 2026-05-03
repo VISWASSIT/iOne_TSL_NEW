@@ -14,14 +14,14 @@
     <framework targetVersion="4.6" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ioneNet.exe.manifest" size="49307">
+    <dependentAssembly dependencyType="install" codebase="ioneNet.exe.manifest" size="52205">
       <assemblyIdentity name="ioneNet.exe" version="1.0.0.1271" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fpaxOC8G7Lm9uA2xOMveUtqv4qHCdpbvwRV9sGTlbwU=</dsig:DigestValue>
+        <dsig:DigestValue>QZQIrbmdeez3RoMeQrhp6K+bVOk0H1TnNb0nsx7X+oo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

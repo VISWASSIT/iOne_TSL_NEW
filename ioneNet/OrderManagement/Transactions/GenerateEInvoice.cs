@@ -211,12 +211,12 @@ namespace ioneNet.OrderManagement.Transactions
         {
             string key = "xxx";
             string secKey = "yyy";
-            
 
-            
+
+
 
             //DateTime.UtcNow nonse = DateTime(1970,1,1,0,0,0).to
-            string url11 = "https://api.mastergst.com/einvoice/authenticate?email=ssits.hyd%40gmail.com";
+            string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com";
             string sign = "0";
             //Uri ourURL = Uri(url11);
             WebRequest request = WebRequest.Create(url11);
@@ -227,8 +227,8 @@ namespace ioneNet.OrderManagement.Transactions
             request.Headers.Add("username", UserName);
             request.Headers.Add("password", PW);
             request.Headers.Add("ip_address", ipAddr);
-            request.Headers.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-            request.Headers.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+            request.Headers.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+            request.Headers.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
             request.Headers.Add("gstin", GSTIN);
 
 
@@ -292,8 +292,8 @@ namespace ioneNet.OrderManagement.Transactions
 
                 httpClient.DefaultRequestHeaders.Add("email", "ssits.hyd@gmail.com");
                 httpClient.DefaultRequestHeaders.Add("ip_address", ipAddr);
-                httpClient.DefaultRequestHeaders.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-                httpClient.DefaultRequestHeaders.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+                httpClient.DefaultRequestHeaders.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+                httpClient.DefaultRequestHeaders.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
                 httpClient.DefaultRequestHeaders.Add("username", UserName);
                 //  request.Headers.Add("password", "Malli#123");
                 httpClient.DefaultRequestHeaders.Add("auth-token", txtAuthKey.Text);
@@ -308,8 +308,7 @@ namespace ioneNet.OrderManagement.Transactions
                 var data = new StringContent(json, Encoding.UTF8, "application/json");
                 //  request.Content = data;// ("{ \"SellerDtls\": {\"Gstin\": \"27AADCG4992P1ZT\"} }");
                 // request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                string url11 = "https://api.mastergst.com/einvoice/type/GENERATE/version/V1_03?email=ssits.hyd%40gmail.com";
-                var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com"; var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync(url11, httpContent);
 
                 if (response.IsSuccessStatusCode)
@@ -373,8 +372,8 @@ namespace ioneNet.OrderManagement.Transactions
 
                 httpClient.DefaultRequestHeaders.Add("email", "ssits.hyd@gmail.com");
                 httpClient.DefaultRequestHeaders.Add("ip_address", ipAddr);
-                httpClient.DefaultRequestHeaders.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-                httpClient.DefaultRequestHeaders.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+                httpClient.DefaultRequestHeaders.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+                httpClient.DefaultRequestHeaders.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
                 httpClient.DefaultRequestHeaders.Add("username", UserName);
                 //  request.Headers.Add("password", "Malli#123");
                 httpClient.DefaultRequestHeaders.Add("auth-token", txtAuthKey.Text);
@@ -389,7 +388,8 @@ namespace ioneNet.OrderManagement.Transactions
                 var data = new StringContent(json, Encoding.UTF8, "application/json");
                 //  request.Content = data;// ("{ \"SellerDtls\": {\"Gstin\": \"27AADCG4992P1ZT\"} }");
                 // request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                string url11 = "https://api.mastergst.com/einvoice/type/GENERATE/version/V1_03?email=ssits.hyd%40gmail.com";
+                string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com"; 
+                
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync(url11, httpContent);
 
@@ -456,8 +456,8 @@ namespace ioneNet.OrderManagement.Transactions
 
                 httpClient.DefaultRequestHeaders.Add("email", "ssits.hyd@gmail.com");
                 httpClient.DefaultRequestHeaders.Add("ip_address", ipAddr);
-                httpClient.DefaultRequestHeaders.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-                httpClient.DefaultRequestHeaders.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+                httpClient.DefaultRequestHeaders.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+                httpClient.DefaultRequestHeaders.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
                 httpClient.DefaultRequestHeaders.Add("username", UserName);
                 //  request.Headers.Add("password", "Malli#123");
                 httpClient.DefaultRequestHeaders.Add("auth-token", txtAuthKey.Text);
@@ -472,7 +472,8 @@ namespace ioneNet.OrderManagement.Transactions
                 var data = new StringContent(json, Encoding.UTF8, "application/json");
                 //  request.Content = data;// ("{ \"SellerDtls\": {\"Gstin\": \"27AADCG4992P1ZT\"} }");
                 // request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                string url11 = "https://api.mastergst.com/einvoice/type/CANCEL/version/V1_03?email=ssits.hyd%40gmail.com"; //for cancellation
+                string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com";
+
 
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync(url11, httpContent);
@@ -507,7 +508,8 @@ namespace ioneNet.OrderManagement.Transactions
 
 
             //DateTime.UtcNow nonse = DateTime(1970,1,1,0,0,0).to
-            string url11 = "https://api.mastergst.com/einvoice/type/GETIRNBYDOCDETAILS/version/V1_03?param1=INV&email=ssits.hyd%40gmail.com";
+            string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com";
+
             string sign = "0";
             //Uri ourURL = Uri(url11);
             WebRequest request = WebRequest.Create(url11);
@@ -519,8 +521,8 @@ namespace ioneNet.OrderManagement.Transactions
             request.Headers.Add("docdate", textBox3.Text);            
             request.Headers.Add("ip_address", ipAddr);
             request.Headers.Add("ip_address", ipAddr);
-            request.Headers.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-            request.Headers.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+            request.Headers.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+            request.Headers.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
             request.Headers.Add("username", UserName);
             request.Headers.Add("auth-token", txtAuthKey.Text);
            
@@ -608,8 +610,8 @@ namespace ioneNet.OrderManagement.Transactions
 
                 httpClient.DefaultRequestHeaders.Add("email", "ssits.hyd@gmail.com");
                 httpClient.DefaultRequestHeaders.Add("ip_address", ipAddr);
-                httpClient.DefaultRequestHeaders.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-                httpClient.DefaultRequestHeaders.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+                httpClient.DefaultRequestHeaders.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+                httpClient.DefaultRequestHeaders.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
                 httpClient.DefaultRequestHeaders.Add("username", UserName);
                 //  request.Headers.Add("password", "Malli#123");
                 httpClient.DefaultRequestHeaders.Add("auth-token", txtAuthKey.Text);
@@ -624,7 +626,8 @@ namespace ioneNet.OrderManagement.Transactions
                 var data = new StringContent(json, Encoding.UTF8, "application/json");
                 //  request.Content = data;// ("{ \"SellerDtls\": {\"Gstin\": \"27AADCG4992P1ZT\"} }");
                 // request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                string url11 = "https://api.mastergst.com/einvoice/type/GENERATE_EWAYBILL/version/V1_03?email=ssits.hyd%40gmail.com"; //for cancellation
+                string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com";
+
 
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync(url11, httpContent);

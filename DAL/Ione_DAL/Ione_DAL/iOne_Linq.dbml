@@ -7589,24 +7589,6 @@
       <Column Name="Forging_Report_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.ShowInvList" Method="ShowInvList">
-    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
-    <Parameter Name="fY_SDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="fY_EDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="strT" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ShowInvListResult">
-      <Column Name="Inv_Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Inv_No" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="InvDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="CustomerPONo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="PODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Tot_Inv_Value" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Voucher_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Einv_ACK_No" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.ShowProductsList_Vasista" Method="ShowProductsList_Vasista">
     <Parameter Name="compname" Type="System.Int32" DbType="Int" />
     <Parameter Name="param" Type="System.Int32" DbType="Int" />
@@ -8588,29 +8570,6 @@
       <Column Name="Buiness_Lost_Reason" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.ShowLoadingSlips" Method="ShowLoadingSlips">
-    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
-    <Parameter Name="fY_SDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="fY_EDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ShowLoadingSlipsResult">
-      <Column Name="Loading_Slip_No" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Slip_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="CustomerPONo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="SO_Ref_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="TotalQty" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Transporter_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="VehicleNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Destination" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Assigned_To" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Issue_Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="Qty_To_Load" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
-      <Column Name="Qty_Loaded" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
-      <Column Name="Loading_Completion_Time" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="Status" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.LoadingSlip_Report" Method="LoadingSlip_Report">
     <Parameter Name="compname" Type="System.Int32" DbType="Int" />
     <Parameter Name="frmDate" Type="System.DateTime" DbType="DateTime" />
@@ -9444,6 +9403,48 @@
       <Column Name="Price_Desc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
       <Column Name="Packing_Desc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
       <Column Name="Cutting_Desc" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowInvList" Method="ShowInvList">
+    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fY_SDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fY_EDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="strT" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowInvListResult">
+      <Column Name="Inv_Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Inv_No" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="InvDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CustomerPONo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Tot_Inv_Value" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Loading_Slip_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Einv_ACK_No" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowLoadingSlips" Method="ShowLoadingSlips">
+    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fY_SDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fY_EDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowLoadingSlipsResult">
+      <Column Name="Loading_Slip_No" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Slip_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CustomerPONo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SO_Ref_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Transporter_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VehicleNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Destination" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Assigned_To" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Issue_Time" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Qty_To_Load" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="Qty_Loaded" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="Loading_Completion_Time" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Atual_Loading_Hrs" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

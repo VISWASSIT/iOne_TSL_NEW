@@ -4304,13 +4304,6 @@ namespace Ione_DAL
 			return ((ISingleResult<Get_ForgingData_For_InspectionResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowInvList")]
-		public ISingleResult<ShowInvListResult> ShowInvList([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_SDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_EDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string strT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, fY_SDate, fY_EDate, strT, buid);
-			return ((ISingleResult<ShowInvListResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowProductsList_Vasista")]
 		public ISingleResult<ShowProductsList_VasistaResult> ShowProductsList_Vasista([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> param, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SearchBy", DbType="VarChar(50)")] string searchBy, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
 		{
@@ -4738,13 +4731,6 @@ namespace Ione_DAL
 			return ((ISingleResult<Quote_Status_ReportResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowLoadingSlips")]
-		public ISingleResult<ShowLoadingSlipsResult> ShowLoadingSlips([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_SDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_EDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, fY_SDate, fY_EDate, buid);
-			return ((ISingleResult<ShowLoadingSlipsResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.LoadingSlip_Report")]
 		public ISingleResult<LoadingSlip_ReportResult> LoadingSlip_Report([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> frmDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> toDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
 		{
@@ -5121,6 +5107,20 @@ namespace Ione_DAL
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, buid, quotno);
 			return ((ISingleResult<getQuote_Master_dataResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowInvList")]
+		public ISingleResult<ShowInvListResult> ShowInvList([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_SDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_EDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string strT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, fY_SDate, fY_EDate, strT, buid);
+			return ((ISingleResult<ShowInvListResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowLoadingSlips")]
+		public ISingleResult<ShowLoadingSlipsResult> ShowLoadingSlips([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_SDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_EDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, fY_SDate, fY_EDate, buid);
+			return ((ISingleResult<ShowLoadingSlipsResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -121602,176 +121602,6 @@ namespace Ione_DAL
 		}
 	}
 	
-	public partial class ShowInvListResult
-	{
-		
-		private string _Inv_Type;
-		
-		private string _Inv_No;
-		
-		private System.Nullable<System.DateTime> _InvDate;
-		
-		private string _Customer_Name;
-		
-		private string _CustomerPONo;
-		
-		private System.Nullable<System.DateTime> _PODate;
-		
-		private System.Nullable<decimal> _Tot_Inv_Value;
-		
-		private string _Voucher_no;
-		
-		private string _Einv_ACK_No;
-		
-		public ShowInvListResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Inv_Type", DbType="VarChar(50)")]
-		public string Inv_Type
-		{
-			get
-			{
-				return this._Inv_Type;
-			}
-			set
-			{
-				if ((this._Inv_Type != value))
-				{
-					this._Inv_Type = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Inv_No", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string Inv_No
-		{
-			get
-			{
-				return this._Inv_No;
-			}
-			set
-			{
-				if ((this._Inv_No != value))
-				{
-					this._Inv_No = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InvDate", DbType="Date")]
-		public System.Nullable<System.DateTime> InvDate
-		{
-			get
-			{
-				return this._InvDate;
-			}
-			set
-			{
-				if ((this._InvDate != value))
-				{
-					this._InvDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
-		public string Customer_Name
-		{
-			get
-			{
-				return this._Customer_Name;
-			}
-			set
-			{
-				if ((this._Customer_Name != value))
-				{
-					this._Customer_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPONo", DbType="VarChar(50)")]
-		public string CustomerPONo
-		{
-			get
-			{
-				return this._CustomerPONo;
-			}
-			set
-			{
-				if ((this._CustomerPONo != value))
-				{
-					this._CustomerPONo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PODate", DbType="Date")]
-		public System.Nullable<System.DateTime> PODate
-		{
-			get
-			{
-				return this._PODate;
-			}
-			set
-			{
-				if ((this._PODate != value))
-				{
-					this._PODate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tot_Inv_Value", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Tot_Inv_Value
-		{
-			get
-			{
-				return this._Tot_Inv_Value;
-			}
-			set
-			{
-				if ((this._Tot_Inv_Value != value))
-				{
-					this._Tot_Inv_Value = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Voucher_no", DbType="VarChar(50)")]
-		public string Voucher_no
-		{
-			get
-			{
-				return this._Voucher_no;
-			}
-			set
-			{
-				if ((this._Voucher_no != value))
-				{
-					this._Voucher_no = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Einv_ACK_No", DbType="VarChar(150)")]
-		public string Einv_ACK_No
-		{
-			get
-			{
-				return this._Einv_ACK_No;
-			}
-			set
-			{
-				if ((this._Einv_ACK_No != value))
-				{
-					this._Einv_ACK_No = value;
-				}
-			}
-		}
-	}
-	
 	public partial class ShowProductsList_VasistaResult
 	{
 		
@@ -131472,284 +131302,6 @@ namespace Ione_DAL
 		}
 	}
 	
-	public partial class ShowLoadingSlipsResult
-	{
-		
-		private string _Loading_Slip_No;
-		
-		private System.Nullable<System.DateTime> _Slip_Date;
-		
-		private string _Customer_Name;
-		
-		private string _CustomerPONo;
-		
-		private string _SO_Ref_No;
-		
-		private System.Nullable<double> _TotalQty;
-		
-		private string _Transporter_Name;
-		
-		private string _VehicleNo;
-		
-		private string _Destination;
-		
-		private string _Assigned_To;
-		
-		private System.Nullable<System.DateTime> _Issue_Time;
-		
-		private System.Nullable<decimal> _Qty_To_Load;
-		
-		private System.Nullable<decimal> _Qty_Loaded;
-		
-		private string _Loading_Completion_Time;
-		
-		private string _Status;
-		
-		public ShowLoadingSlipsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loading_Slip_No", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string Loading_Slip_No
-		{
-			get
-			{
-				return this._Loading_Slip_No;
-			}
-			set
-			{
-				if ((this._Loading_Slip_No != value))
-				{
-					this._Loading_Slip_No = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Slip_Date", DbType="Date")]
-		public System.Nullable<System.DateTime> Slip_Date
-		{
-			get
-			{
-				return this._Slip_Date;
-			}
-			set
-			{
-				if ((this._Slip_Date != value))
-				{
-					this._Slip_Date = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
-		public string Customer_Name
-		{
-			get
-			{
-				return this._Customer_Name;
-			}
-			set
-			{
-				if ((this._Customer_Name != value))
-				{
-					this._Customer_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPONo", DbType="VarChar(50)")]
-		public string CustomerPONo
-		{
-			get
-			{
-				return this._CustomerPONo;
-			}
-			set
-			{
-				if ((this._CustomerPONo != value))
-				{
-					this._CustomerPONo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_Ref_No", DbType="VarChar(50)")]
-		public string SO_Ref_No
-		{
-			get
-			{
-				return this._SO_Ref_No;
-			}
-			set
-			{
-				if ((this._SO_Ref_No != value))
-				{
-					this._SO_Ref_No = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TotalQty", DbType="Float")]
-		public System.Nullable<double> TotalQty
-		{
-			get
-			{
-				return this._TotalQty;
-			}
-			set
-			{
-				if ((this._TotalQty != value))
-				{
-					this._TotalQty = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Transporter_Name", DbType="VarChar(50)")]
-		public string Transporter_Name
-		{
-			get
-			{
-				return this._Transporter_Name;
-			}
-			set
-			{
-				if ((this._Transporter_Name != value))
-				{
-					this._Transporter_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VehicleNo", DbType="VarChar(50)")]
-		public string VehicleNo
-		{
-			get
-			{
-				return this._VehicleNo;
-			}
-			set
-			{
-				if ((this._VehicleNo != value))
-				{
-					this._VehicleNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Destination", DbType="VarChar(50)")]
-		public string Destination
-		{
-			get
-			{
-				return this._Destination;
-			}
-			set
-			{
-				if ((this._Destination != value))
-				{
-					this._Destination = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Assigned_To", DbType="VarChar(50)")]
-		public string Assigned_To
-		{
-			get
-			{
-				return this._Assigned_To;
-			}
-			set
-			{
-				if ((this._Assigned_To != value))
-				{
-					this._Assigned_To = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Issue_Time", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Issue_Time
-		{
-			get
-			{
-				return this._Issue_Time;
-			}
-			set
-			{
-				if ((this._Issue_Time != value))
-				{
-					this._Issue_Time = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty_To_Load", DbType="Decimal(38,2)")]
-		public System.Nullable<decimal> Qty_To_Load
-		{
-			get
-			{
-				return this._Qty_To_Load;
-			}
-			set
-			{
-				if ((this._Qty_To_Load != value))
-				{
-					this._Qty_To_Load = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty_Loaded", DbType="Decimal(38,2)")]
-		public System.Nullable<decimal> Qty_Loaded
-		{
-			get
-			{
-				return this._Qty_Loaded;
-			}
-			set
-			{
-				if ((this._Qty_Loaded != value))
-				{
-					this._Qty_Loaded = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loading_Completion_Time", DbType="VarChar(30)")]
-		public string Loading_Completion_Time
-		{
-			get
-			{
-				return this._Loading_Completion_Time;
-			}
-			set
-			{
-				if ((this._Loading_Completion_Time != value))
-				{
-					this._Loading_Completion_Time = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(200)")]
-		public string Status
-		{
-			get
-			{
-				return this._Status;
-			}
-			set
-			{
-				if ((this._Status != value))
-				{
-					this._Status = value;
-				}
-			}
-		}
-	}
-	
 	public partial class LoadingSlip_ReportResult
 	{
 		
@@ -140495,6 +140047,472 @@ namespace Ione_DAL
 				if ((this._Cutting_Desc != value))
 				{
 					this._Cutting_Desc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ShowInvListResult
+	{
+		
+		private string _Inv_Type;
+		
+		private string _Inv_No;
+		
+		private System.Nullable<System.DateTime> _InvDate;
+		
+		private string _Customer_Name;
+		
+		private string _CustomerPONo;
+		
+		private System.Nullable<System.DateTime> _PODate;
+		
+		private System.Nullable<decimal> _Tot_Inv_Value;
+		
+		private string _Loading_Slip_No;
+		
+		private string _Einv_ACK_No;
+		
+		public ShowInvListResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Inv_Type", DbType="VarChar(50)")]
+		public string Inv_Type
+		{
+			get
+			{
+				return this._Inv_Type;
+			}
+			set
+			{
+				if ((this._Inv_Type != value))
+				{
+					this._Inv_Type = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Inv_No", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Inv_No
+		{
+			get
+			{
+				return this._Inv_No;
+			}
+			set
+			{
+				if ((this._Inv_No != value))
+				{
+					this._Inv_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InvDate", DbType="Date")]
+		public System.Nullable<System.DateTime> InvDate
+		{
+			get
+			{
+				return this._InvDate;
+			}
+			set
+			{
+				if ((this._InvDate != value))
+				{
+					this._InvDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
+		public string Customer_Name
+		{
+			get
+			{
+				return this._Customer_Name;
+			}
+			set
+			{
+				if ((this._Customer_Name != value))
+				{
+					this._Customer_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPONo", DbType="VarChar(50)")]
+		public string CustomerPONo
+		{
+			get
+			{
+				return this._CustomerPONo;
+			}
+			set
+			{
+				if ((this._CustomerPONo != value))
+				{
+					this._CustomerPONo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PODate", DbType="Date")]
+		public System.Nullable<System.DateTime> PODate
+		{
+			get
+			{
+				return this._PODate;
+			}
+			set
+			{
+				if ((this._PODate != value))
+				{
+					this._PODate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tot_Inv_Value", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Tot_Inv_Value
+		{
+			get
+			{
+				return this._Tot_Inv_Value;
+			}
+			set
+			{
+				if ((this._Tot_Inv_Value != value))
+				{
+					this._Tot_Inv_Value = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loading_Slip_No", DbType="VarChar(50)")]
+		public string Loading_Slip_No
+		{
+			get
+			{
+				return this._Loading_Slip_No;
+			}
+			set
+			{
+				if ((this._Loading_Slip_No != value))
+				{
+					this._Loading_Slip_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Einv_ACK_No", DbType="VarChar(150)")]
+		public string Einv_ACK_No
+		{
+			get
+			{
+				return this._Einv_ACK_No;
+			}
+			set
+			{
+				if ((this._Einv_ACK_No != value))
+				{
+					this._Einv_ACK_No = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ShowLoadingSlipsResult
+	{
+		
+		private string _Loading_Slip_No;
+		
+		private System.Nullable<System.DateTime> _Slip_Date;
+		
+		private string _Customer_Name;
+		
+		private string _CustomerPONo;
+		
+		private string _SO_Ref_No;
+		
+		private System.Nullable<double> _TotalQty;
+		
+		private string _Transporter_Name;
+		
+		private string _VehicleNo;
+		
+		private string _Destination;
+		
+		private string _Assigned_To;
+		
+		private string _Issue_Time;
+		
+		private System.Nullable<decimal> _Qty_To_Load;
+		
+		private System.Nullable<decimal> _Qty_Loaded;
+		
+		private string _Loading_Completion_Time;
+		
+		private string _Status;
+		
+		private System.Nullable<int> _Atual_Loading_Hrs;
+		
+		public ShowLoadingSlipsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loading_Slip_No", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Loading_Slip_No
+		{
+			get
+			{
+				return this._Loading_Slip_No;
+			}
+			set
+			{
+				if ((this._Loading_Slip_No != value))
+				{
+					this._Loading_Slip_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Slip_Date", DbType="Date")]
+		public System.Nullable<System.DateTime> Slip_Date
+		{
+			get
+			{
+				return this._Slip_Date;
+			}
+			set
+			{
+				if ((this._Slip_Date != value))
+				{
+					this._Slip_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
+		public string Customer_Name
+		{
+			get
+			{
+				return this._Customer_Name;
+			}
+			set
+			{
+				if ((this._Customer_Name != value))
+				{
+					this._Customer_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPONo", DbType="VarChar(50)")]
+		public string CustomerPONo
+		{
+			get
+			{
+				return this._CustomerPONo;
+			}
+			set
+			{
+				if ((this._CustomerPONo != value))
+				{
+					this._CustomerPONo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_Ref_No", DbType="VarChar(50)")]
+		public string SO_Ref_No
+		{
+			get
+			{
+				return this._SO_Ref_No;
+			}
+			set
+			{
+				if ((this._SO_Ref_No != value))
+				{
+					this._SO_Ref_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TotalQty", DbType="Float")]
+		public System.Nullable<double> TotalQty
+		{
+			get
+			{
+				return this._TotalQty;
+			}
+			set
+			{
+				if ((this._TotalQty != value))
+				{
+					this._TotalQty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Transporter_Name", DbType="VarChar(50)")]
+		public string Transporter_Name
+		{
+			get
+			{
+				return this._Transporter_Name;
+			}
+			set
+			{
+				if ((this._Transporter_Name != value))
+				{
+					this._Transporter_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VehicleNo", DbType="VarChar(50)")]
+		public string VehicleNo
+		{
+			get
+			{
+				return this._VehicleNo;
+			}
+			set
+			{
+				if ((this._VehicleNo != value))
+				{
+					this._VehicleNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Destination", DbType="VarChar(50)")]
+		public string Destination
+		{
+			get
+			{
+				return this._Destination;
+			}
+			set
+			{
+				if ((this._Destination != value))
+				{
+					this._Destination = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Assigned_To", DbType="VarChar(50)")]
+		public string Assigned_To
+		{
+			get
+			{
+				return this._Assigned_To;
+			}
+			set
+			{
+				if ((this._Assigned_To != value))
+				{
+					this._Assigned_To = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Issue_Time", DbType="VarChar(30)")]
+		public string Issue_Time
+		{
+			get
+			{
+				return this._Issue_Time;
+			}
+			set
+			{
+				if ((this._Issue_Time != value))
+				{
+					this._Issue_Time = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty_To_Load", DbType="Decimal(38,2)")]
+		public System.Nullable<decimal> Qty_To_Load
+		{
+			get
+			{
+				return this._Qty_To_Load;
+			}
+			set
+			{
+				if ((this._Qty_To_Load != value))
+				{
+					this._Qty_To_Load = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty_Loaded", DbType="Decimal(38,2)")]
+		public System.Nullable<decimal> Qty_Loaded
+		{
+			get
+			{
+				return this._Qty_Loaded;
+			}
+			set
+			{
+				if ((this._Qty_Loaded != value))
+				{
+					this._Qty_Loaded = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loading_Completion_Time", DbType="VarChar(30)")]
+		public string Loading_Completion_Time
+		{
+			get
+			{
+				return this._Loading_Completion_Time;
+			}
+			set
+			{
+				if ((this._Loading_Completion_Time != value))
+				{
+					this._Loading_Completion_Time = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(200)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Atual_Loading_Hrs", DbType="Int")]
+		public System.Nullable<int> Atual_Loading_Hrs
+		{
+			get
+			{
+				return this._Atual_Loading_Hrs;
+			}
+			set
+			{
+				if ((this._Atual_Loading_Hrs != value))
+				{
+					this._Atual_Loading_Hrs = value;
 				}
 			}
 		}

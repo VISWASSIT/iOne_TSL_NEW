@@ -12,3 +12,10 @@ C:\ERP\Github\IoneERP_TSL\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.csproj.Assemb
 C:\ERP\Github\IoneERP_TSL\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.csproj.CoreCompileInputs.cache
 C:\ERP\Github\IoneERP_TSL\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.dll
 C:\ERP\Github\IoneERP_TSL\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.pdb
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\bin\Debug\Ione_DAL.dll.config
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\bin\Debug\Ione_DAL.dll
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\bin\Debug\Ione_DAL.pdb
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.csproj.AssemblyReference.cache
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.csproj.CoreCompileInputs.cache
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.dll
+D:\My Projects\GitHub\iOne_TSL_NEW\DAL\Ione_DAL\Ione_DAL\obj\Debug\Ione_DAL.pdb
