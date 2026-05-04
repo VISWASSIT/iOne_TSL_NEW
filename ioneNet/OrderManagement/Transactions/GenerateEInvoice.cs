@@ -53,7 +53,7 @@ namespace ioneNet.OrderManagement.Transactions
         public string TransportNBame,VechNo;
         public string InvDate;
         public string SellerPinCode, BuyerPinCode;
-
+        public string WayBillData;
 
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["iOneConnection"].ConnectionString);
         public GenerateEInvoice()
@@ -308,7 +308,9 @@ namespace ioneNet.OrderManagement.Transactions
                 var data = new StringContent(json, Encoding.UTF8, "application/json");
                 //  request.Content = data;// ("{ \"SellerDtls\": {\"Gstin\": \"27AADCG4992P1ZT\"} }");
                 // request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com"; var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                //string url11 = "https://api.whitebooks.in/einvoice/authenticate?email=ssits.hyd%40gmail.com";
+                string url11 = "https://api.whitebooks.in/einvoice/type/GENERATE/version/V1_03?email=ssits.hyd%40gmail.com";
+                var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync(url11, httpContent);
 
                 if (response.IsSuccessStatusCode)
@@ -1649,24 +1651,199 @@ namespace ioneNet.OrderManagement.Transactions
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            //var url = string.Format("http://chart.apis.google.com/chart?cht=qr&chs={1}x{2}&chl={0}", txtQRCode.Text, 2000, 2000);
-            //WebResponse response = default(WebResponse);
-            //Stream remoteStream = default(Stream);
-            //StreamReader readStream = default(StreamReader);
-            //WebRequest request = WebRequest.Create(url);
-            //response = request.GetResponse();
-            //remoteStream = response.GetResponseStream();
-            //readStream = new StreamReader(remoteStream);
-            //System.Drawing.Image img = System.Drawing.Image.FromStream(remoteStream);
-            //img.Save("C:Pitures/qrcode/" + txtQRCode.Text + ".png");
-            //response.Close();
-            //remoteStream.Close();
-            //readStream.Close();
+            try
+            {
+                GetEWBByIRNNo();
+                JObject json = JObject.Parse(WayBillData);
+                var EwbNo = (string)json.SelectToken("data.EwbNo");
+                var GenGstin = (string)json.SelectToken("data.GenGstin");
+                var EwbValidTill = (string)json.SelectToken("data.EwbValidTill");
+                var EwbDt = (string)json.SelectToken("data.EwbDt");
+                var Status = (string)json.SelectToken("data.Status");
+                DateTime wbdate = Convert.ToDateTime(EwbDt);
+                DateTime wbvaliddate = Convert.ToDateTime(EwbValidTill);
+                IBarcodeWriter writer = new BarcodeWriter { Format = BarcodeFormat.QR_CODE };
 
-            //txtCode.Text = string.Empty;
-            //txtWidth.Text = string.Empty;
-            //txtHeight.Text = string.Empty;
-            //lblMsg.Text = "The QR Code generated successfully";
+                string QrCode = "";
+
+                QrCode = "EWB No.:" + EwbNo + "/ GSTIN:" + GenGstin + " / Date : " + wbdate;
+
+                var result = writer.Write(QrCode);
+                var barcodeBitmap = new Bitmap(result);
+                pictureBox1.Image = barcodeBitmap;
+                Image img = pictureBox1.Image;
+                MemoryStream ms = new MemoryStream();
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] bytes = ms.ToArray();
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                String SO_No = txtInvoiceNo.Text;
+                SqlCommand cmd5 = new SqlCommand("delete  from [temp_inv_QRCOde] where Company_ID =@comp", con);
+                cmd5.Parameters.AddWithValue("@comp", logIn.company);
+                cmd5.ExecuteNonQuery();
+                SqlCommand cmd1 = con.CreateCommand();
+
+                cmd1.CommandText = "INSERT INTO temp_inv_QRCOde  (Inv_No,Company_ID,QR_COde) VALUES  (@invNo1," + logIn.company + ",@Qrcode)";
+                //cmd1.CommandText =  "INSERT INTO dbo.temp_Inv_Copy ([Inv_No],[Copy_Name],[Copy_No],[Company_ID]) VALUES (@invNo,@Copy_Name,@Copy_No, @comp)";
+
+                //// SqlCommand command = new SqlCommand(query, db.Connection);
+                cmd1.Parameters.AddWithValue("@invNo1", SO_No);
+                cmd1.Parameters.AddWithValue("@Qrcode", bytes);
+                cmd1.ExecuteNonQuery();
+
+                SqlCommand cmd4 = new SqlCommand("delete  from [temp_Inv_Copy] where Company_ID =@comp", con);
+                cmd4.Parameters.AddWithValue("@comp", logIn.company);
+                cmd4.ExecuteNonQuery();
+
+
+
+                CrystalDecisions.CrystalReports.Engine.ReportDocument rep = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+
+
+                rep = new OrderManagement.Transactions.rptEWaybill();
+                cmd1.CommandText = "INSERT INTO temp_Inv_Copy  (Inv_No, Copy_Name, Copy_No,Company_ID) VALUES  (@invNo, 'Original for Receipent', '1'," + logIn.company + ")";
+                //cmd1.CommandText =  "INSERT INTO dbo.temp_Inv_Copy ([Inv_No],[Copy_Name],[Copy_No],[Company_ID]) VALUES (@invNo,@Copy_Name,@Copy_No, @comp)";
+
+                //// SqlCommand command = new SqlCommand(query, db.Connection);
+                cmd1.Parameters.AddWithValue("@invNo", SO_No);
+
+                cmd1.ExecuteNonQuery();
+
+
+
+                path = Path.Combine(Directory.GetCurrentDirectory(), "WayBill.pdf");
+                //string path = @"D:\Invoice.pdf";
+                FileInfo fi1 = new FileInfo(path);
+
+
+
+                SqlCommand cmd = new SqlCommand("sp_Rpt_InvoiceReport", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Invoice_No", SO_No);
+                cmd.Parameters.AddWithValue("@Creation_Company", logIn.company);
+                cmd.Parameters.AddWithValue("@buid", logIn.BU_ID);
+
+
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable Dt = new DataTable();
+
+                da.SelectCommand = cmd;
+                da.Fill(Dt);
+                if (Dt.Rows.Count > 0)
+                {
+
+
+                    crConnectionInfo.ServerName = frmMain.ServerIP;
+                    crConnectionInfo.DatabaseName = frmMain.Database;
+                    crConnectionInfo.UserID = frmMain.DBUserID;
+                    crConnectionInfo.Password = frmMain.Password;
+
+
+                    crDatabase = rep.Database;
+                    crTables = crDatabase.Tables;
+                    //Loop through all tables in the report and apply the connection information for each table.
+                    for (int k = 0; k < crTables.Count; k++)
+                    {
+                        //  crTable = crTables[i];
+                        crTableLogOnInfo = crTables[k].LogOnInfo;
+                        crTableLogOnInfo.ConnectionInfo = crConnectionInfo;
+                        crTables[k].ApplyLogOnInfo(crTableLogOnInfo);
+
+                    }
+                    rep.SetDataSource(Dt);
+
+                    string CAddr = "";
+                    string CCity = "";
+                    string cState = "";
+                    String cGSTIN = "";
+
+                    var da1 = (from inv in db.Invoice_Childs
+                               join so in db.Sale_Order_Masters
+
+                               on new { A = inv.SO_Ref_No.Trim(), B = inv.Company_ID } equals new { A = so.SO_NO, B = so.Company_ID }
+                               join c in db.Supplier_informations on so.ConsigneeName equals c.ID
+                               where inv.Inv_No == SO_No && inv.Company_ID == logIn.company && so.Status != 24
+                               select new
+                               {
+                                   so.Delivery_Address,
+                                   so.Delivery_GSTIN,
+                                   c.City
+                               }).ToList();
+
+
+                    if (da1.Count > 0)
+                    {
+                        //                ValidateJSON(ca[0].ConsigneeAddress);
+                        if (Mid(da1[0].Delivery_Address, 3, 4) == "Addr")
+                        {
+                            JObject jsoncancel = JObject.Parse(da1[0].Delivery_Address);
+
+                            CAddr = (string)jsoncancel.SelectToken("Address1") + "," + (string)jsoncancel.SelectToken("Address2");
+                            CCity = (string)jsoncancel.SelectToken("City") + "," + (string)jsoncancel.SelectToken("PinCode");
+                            cState = (string)jsoncancel.SelectToken("State") + ", State Code : " + (string)jsoncancel.SelectToken("StateCode");
+                            cGSTIN = "GSTIN : " + (string)jsoncancel.SelectToken("GSTIN");
+
+                        }
+                        else
+                        {
+                            CAddr = da1[0].Delivery_Address;
+                            cGSTIN = "GSTIN : " + da1[0].Delivery_GSTIN;
+                            CCity = da1[0].City;
+                        }
+                        //JToken.Parse(ca[0].ConsigneeAddress);
+
+                    }
+                    rep.SetParameterValue("Con_Address1", CAddr);
+                    rep.SetParameterValue("Con_City", CCity);
+                    rep.SetParameterValue("Con_State", cState);
+                    rep.SetParameterValue("ewbGenDate", wbdate.ToString());
+                    rep.SetParameterValue("ewbValidTill", wbvaliddate.ToString());
+                    rep.SetParameterValue("ApproxDistance", "");
+                    string SuppType;
+                    var da2 = (from inv in db.Invoice_Masters
+                               where inv.Inv_No == txtInvoiceNo.Text && inv.Company_ID == logIn.company
+                               select inv).ToList();
+                    if (da2[0].InvType == "SEZ Invoice")
+                    {
+                        SuppType = "SEZWOP";
+                    }
+                    else
+                    if (da2[0].InvType == "SEZ Service Invoice")
+                    {
+                        SuppType = "SEZWOP";
+                    }
+                    else
+                    if (da2[0].InvType == "Export Invoice")
+                    {
+                        SuppType = "EXPWOP";
+                    }
+                    else
+                    {
+                        SuppType = "B2B";
+                    }
+                    rep.SetParameterValue("SuppType", "Outward-Supply");
+                    ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
+                    // rep.SetParameterValue("CopyName", "Original for Buyer/Duplicate for Transporter/Triplicate for Assessee/CTD Copy");
+                    viewer.crystalReportViewer1.ReportSource = rep;
+                    viewer.crystalReportViewer1.Refresh();
+                    rep.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, path);
+
+                    cmd.Parameters.Clear();
+                    Process.Start(path);
+                }
+                con.Close();
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnGenerateIRN_CR_Click(object sender, EventArgs e)
@@ -1703,6 +1880,56 @@ namespace ioneNet.OrderManagement.Transactions
         private void button2_Click_1(object sender, EventArgs e)
         {
             GenerateEWB(txtIRNNo.Text);
+        }
+        private async void GetEWBByIRNNo()
+        {
+
+            var comp = (from c1 in db.Costing_Units where c1.id == logIn.BU_ID select c1).ToList();
+            string GSTIN = comp[0].GST_No;
+            //DateTime.UtcNow nonse = DateTime(1970,1,1,0,0,0).to
+            string url11 = "https://api.mastergst.com/einvoice/type/GETEWAYBILLIRN/version/V1_03?param1=" + txtIRNNo.Text + "&supplier_gstn=" + GSTIN + "&email=ssits.hyd%40gmail.com";
+
+            //string url11 = "https://api.mastergst.com/einvoice/type/GETIRNBYDOCDETAILS/version/V1_03?param1=INV&email=ssits.hyd%40gmail.com";
+            string sign = "0";
+            //Uri ourURL = Uri(url11);
+            WebRequest request = WebRequest.Create(url11);
+
+
+            WebResponse myResponse;
+            request.Method = "GET";
+
+            request.Headers.Add("email", "ssits.hyd@gmail.com");
+            request.Headers.Add("ip_address", ipAddr);
+            request.Headers.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
+            request.Headers.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+            request.Headers.Add("username", UserName);
+            request.Headers.Add("auth-token", txtAuthKey.Text);
+
+            request.Headers.Add("gstin", GSTIN);
+
+
+
+            // request.Headers.Add("Content-Type", "application/json; charset=utf-8");
+            //request. = DataFormat.Json;
+
+
+            myResponse = request.GetResponse();
+
+            System.IO.StreamReader myreader = new System.IO.StreamReader(myResponse.GetResponseStream());
+            WayBillData = myreader.ReadToEnd();
+            //MessageBox.Show(streamtext);
+            //JObject json = JObject.Parse(streamtext);
+            //var EwbNo = (string)json.SelectToken("data.EwbNo");
+            //var GenGstin = (string)json.SelectToken("data.GenGstin");
+            //var EwbValidTill = (string)json.SelectToken("data.EwbValidTill");
+            //var EwbDt = (string)json.SelectToken("data.EwbDt");
+            //var Status = (string)json.SelectToken("data.Status");
+            //txtAuthKey.Text = authToken;
+            //txtAuthKeyValid.Text = authTokenValid;
+
+
+
+            //return authToken;
         }
 
         private void button6_Click(object sender, EventArgs e)

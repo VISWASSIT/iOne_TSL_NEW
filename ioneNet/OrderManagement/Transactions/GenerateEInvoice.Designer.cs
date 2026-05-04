@@ -71,7 +71,7 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(43, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 21);
+            this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Auth Key";
             // 
@@ -81,7 +81,7 @@
             this.txtAuthKey.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAuthKey.Location = new System.Drawing.Point(179, 86);
             this.txtAuthKey.Name = "txtAuthKey";
-            this.txtAuthKey.Size = new System.Drawing.Size(507, 28);
+            this.txtAuthKey.Size = new System.Drawing.Size(507, 24);
             this.txtAuthKey.TabIndex = 1;
             // 
             // txtAuthKeyValid
@@ -90,7 +90,7 @@
             this.txtAuthKeyValid.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAuthKeyValid.Location = new System.Drawing.Point(179, 114);
             this.txtAuthKeyValid.Name = "txtAuthKeyValid";
-            this.txtAuthKeyValid.Size = new System.Drawing.Size(507, 28);
+            this.txtAuthKeyValid.Size = new System.Drawing.Size(507, 24);
             this.txtAuthKeyValid.TabIndex = 3;
             // 
             // label2
@@ -99,7 +99,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(43, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 21);
+            this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Auth Key Valid Till";
             // 
@@ -121,7 +121,7 @@
             this.txtIRNNo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIRNNo.Location = new System.Drawing.Point(179, 234);
             this.txtIRNNo.Name = "txtIRNNo";
-            this.txtIRNNo.Size = new System.Drawing.Size(507, 28);
+            this.txtIRNNo.Size = new System.Drawing.Size(507, 24);
             this.txtIRNNo.TabIndex = 8;
             // 
             // label3
@@ -130,7 +130,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 234);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 21);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "IRN No";
             // 
@@ -140,7 +140,7 @@
             this.txtAckNo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAckNo.Location = new System.Drawing.Point(179, 198);
             this.txtAckNo.Name = "txtAckNo";
-            this.txtAckNo.Size = new System.Drawing.Size(397, 28);
+            this.txtAckNo.Size = new System.Drawing.Size(397, 24);
             this.txtAckNo.TabIndex = 6;
             // 
             // label4
@@ -149,7 +149,7 @@
             this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 198);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 21);
+            this.label4.Size = new System.Drawing.Size(47, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Ack No";
             // 
@@ -159,7 +159,7 @@
             this.txtQRCode.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQRCode.Location = new System.Drawing.Point(179, 270);
             this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.Size = new System.Drawing.Size(765, 28);
+            this.txtQRCode.Size = new System.Drawing.Size(765, 24);
             this.txtQRCode.TabIndex = 10;
             // 
             // label5
@@ -168,7 +168,7 @@
             this.label5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(43, 270);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 21);
+            this.label5.Size = new System.Drawing.Size(56, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "QR Code";
             // 
@@ -178,7 +178,7 @@
             this.txtEWBNo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEWBNo.Location = new System.Drawing.Point(179, 306);
             this.txtEWBNo.Name = "txtEWBNo";
-            this.txtEWBNo.Size = new System.Drawing.Size(507, 28);
+            this.txtEWBNo.Size = new System.Drawing.Size(507, 24);
             this.txtEWBNo.TabIndex = 12;
             // 
             // label6
@@ -187,7 +187,7 @@
             this.label6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(43, 306);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 21);
+            this.label6.Size = new System.Drawing.Size(54, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "EWB No";
             // 
@@ -208,7 +208,7 @@
             this.txtInvoiceNo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInvoiceNo.Location = new System.Drawing.Point(179, 58);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
-            this.txtInvoiceNo.Size = new System.Drawing.Size(310, 28);
+            this.txtInvoiceNo.Size = new System.Drawing.Size(310, 24);
             this.txtInvoiceNo.TabIndex = 15;
             // 
             // label7
@@ -217,14 +217,14 @@
             this.label7.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(43, 58);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 21);
+            this.label7.Size = new System.Drawing.Size(67, 17);
             this.label7.TabIndex = 14;
             this.label7.Text = "Invoice No";
             // 
             // btnPrintInvoice
             // 
             this.btnPrintInvoice.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrintInvoice.Location = new System.Drawing.Point(551, 374);
+            this.btnPrintInvoice.Location = new System.Drawing.Point(466, 374);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(145, 39);
             this.btnPrintInvoice.TabIndex = 17;
@@ -248,7 +248,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(705, 374);
+            this.btnClose.Location = new System.Drawing.Point(774, 374);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(145, 39);
             this.btnClose.TabIndex = 22;
@@ -275,7 +275,7 @@
             this.label33.ForeColor = System.Drawing.Color.DarkBlue;
             this.label33.Location = new System.Drawing.Point(63, 21);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(232, 24);
+            this.label33.Size = new System.Drawing.Size(185, 18);
             this.label33.TabIndex = 24;
             this.label33.Text = "GENERATE E INVOICE";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +286,7 @@
             this.txtAckDate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAckDate.Location = new System.Drawing.Point(663, 198);
             this.txtAckDate.Name = "txtAckDate";
-            this.txtAckDate.Size = new System.Drawing.Size(151, 28);
+            this.txtAckDate.Size = new System.Drawing.Size(151, 24);
             this.txtAckDate.TabIndex = 27;
             // 
             // label8
@@ -295,7 +295,7 @@
             this.label8.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(586, 198);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 21);
+            this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 26;
             this.label8.Text = "Ack Date";
             // 
@@ -305,7 +305,7 @@
             this.textBox1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(179, 340);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 28);
+            this.textBox1.Size = new System.Drawing.Size(218, 24);
             this.textBox1.TabIndex = 29;
             // 
             // label9
@@ -314,7 +314,7 @@
             this.label9.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(43, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 21);
+            this.label9.Size = new System.Drawing.Size(63, 17);
             this.label9.TabIndex = 28;
             this.label9.Text = "Inv Status";
             // 
@@ -323,7 +323,7 @@
             this.textBox2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(495, 337);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(449, 28);
+            this.textBox2.Size = new System.Drawing.Size(449, 24);
             this.textBox2.TabIndex = 30;
             // 
             // label10
@@ -332,7 +332,7 @@
             this.label10.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(419, 340);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 21);
+            this.label10.Size = new System.Drawing.Size(57, 17);
             this.label10.TabIndex = 31;
             this.label10.Text = "Remarks";
             // 
@@ -350,7 +350,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(398, 394);
+            this.button3.Location = new System.Drawing.Point(626, 382);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 34;
@@ -388,7 +388,7 @@
             this.textBox3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(495, 58);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 28);
+            this.textBox3.Size = new System.Drawing.Size(191, 24);
             this.textBox3.TabIndex = 37;
             // 
             // pictureBox1

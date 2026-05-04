@@ -32,7 +32,7 @@
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1271</ApplicationRevision>
+    <ApplicationRevision>1273</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -62,7 +62,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>74925A6CA35ECC96F95908A9C712732BC7B91CC3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>90AEBED5ADDFB65B697346BDC05531C48C13A63B</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -1838,6 +1838,11 @@
       <DependentUpon>Quotation_STIPL.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="OrderManagement\Transactions\rptEWaybill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEWaybill.rpt</DependentUpon>
+    </Compile>
     <Compile Include="OrderManagement\Transactions\SaleInvoice_GST_Oth.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -3106,6 +3111,10 @@
     <EmbeddedResource Include="OrderManagement\Transactions\Quotation_STIPL.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Quotation_STIPL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderManagement\Transactions\rptEWaybill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEWaybill.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderManagement\Transactions\SaleInvoice_GST_Oth.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
