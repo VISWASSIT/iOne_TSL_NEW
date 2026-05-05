@@ -2749,12 +2749,12 @@ namespace ioneNet.OrderManagement.Transactions
                           join c in db.Supplier_informations on s.BuyerName equals c.ID
                           join L in db.Loading_Masters on obj.Loading_Master_ID equals L.Id
                           where obj.Loading_Slip_No == txtDCNo.Text && obj.Company_ID == logIn.company && L.BU_ID == logIn.BU_ID
-                          select new {s.SO_NO,s.CustomerPONo,s.Tax_Class,s.Delivery_Address,s.BuyerName,s.ConsigneeName,c.GSTIN_NO,
-                              s.PODate,s.Transporter_Name, c.StateCode}).ToList();
+                          select new {L.SO_Ref_No,s.CustomerPONo,s.Tax_Class,s.Delivery_Address,s.BuyerName,s.ConsigneeName,c.GSTIN_NO,
+                              s.PODate,L.Transporter_Name, c.StateCode,L.VehicleNo,}).ToList();
 
                 if (da.Count > 0)
                 {
-                    SONo = da[0].SO_NO.ToString();
+                    SONo = da[0].SO_Ref_No.ToString();
                     txtSoNo.Text = da[0].CustomerPONo;
                     //cmbTaxClass.SelectedValue = da[0].Tax_Class;
                     txtConAddress.Text = da[0].Delivery_Address;                 
@@ -2765,7 +2765,8 @@ namespace ioneNet.OrderManagement.Transactions
                     txtCustStateCode.Text = da[0].StateCode;
                     dpPODate.Text = da[0].PODate.ToString();
                     cmbTransporter.Text = da[0].Transporter_Name;
-
+                    txtVehicleNo.Text = da[0].VehicleNo;
+                    txtCustPoNo.Text = da[0].SO_Ref_No;
                 }
                 else
                 {

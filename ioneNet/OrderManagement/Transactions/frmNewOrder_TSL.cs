@@ -1986,10 +1986,18 @@ namespace ioneNet.OrderManagement.Transactions
                     else
                     {
                         var d2 = (from a in db.Sale_Quotation_Masters where a.Quot_NO == cmbQuotNo.Text && a.Company_ID == logIn.company && a.bu_id == logIn.BU_ID select new { a.Id }).ToList();
-                        SC.Quot_Master_ID = d2[0].Id;
-                        SC.enq_Master_ID = Convert.ToInt32(dgProducts.Rows[i].Cells["Quote_Item_No"].Value);
-                        //SC.enq_Master_ID = 0;
-                        //SC.enq_item_no = 0;
+                        if (d2.Count > 0)
+                        {
+                            SC.Quot_Master_ID = d2[0].Id;
+                            SC.enq_Master_ID = (dgProducts.Rows[i].Cells["Quote_Item_No"].Value == DBNull.Value) ? Convert.ToInt32("00") : Convert.ToInt32(dgProducts.Rows[i].Cells["Quote_Item_No"].Value);
+
+                            //SC.enq_Master_ID = Convert.ToInt32(dgProducts.Rows[i].Cells["Quote_Item_No"].Value);
+                        }
+                        else
+                        {
+                            SC.Quot_Master_ID = 0;
+                            SC.enq_Master_ID = 0;
+                        }
                     }
 
                     SC.Company_ID = logIn.company;

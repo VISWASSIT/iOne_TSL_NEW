@@ -1842,6 +1842,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptEWaybill.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="OrderManagement\Transactions\SaleInvoice_GST_Oth.cs">
       <AutoGen>True</AutoGen>

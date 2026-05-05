@@ -854,8 +854,8 @@ namespace ioneNet.OrderManagement.Transactions
                     cmd.Parameters.AddWithValue("@Loading_Slip_No", myString);
                     cmd.Parameters.AddWithValue("@Slip_Date", dpInvDate.Value);
                     cmd.Parameters.AddWithValue("@BuyerName", Convert.ToInt32(CmbBuyerName.SelectedValue.ToString()));
-                    cmd.Parameters.AddWithValue("@CustomerPONo", (txtCustPoNo.Text == "") ? "" : txtCustPoNo.Text);
-                    cmd.Parameters.AddWithValue("@SO_Ref_No", txtSoNo.Text);
+                    cmd.Parameters.AddWithValue("@CustomerPONo", (txtSoNo.Text == "") ? "" : txtSoNo.Text);
+                    cmd.Parameters.AddWithValue("@SO_Ref_No", txtCustPoNo.Text);
                     cmd.Parameters.AddWithValue("@TotalQty", (txtTotalQty.Text == "") ? Convert.ToDecimal("0") : Convert.ToDecimal(txtTotalQty.Text));
                     cmd.Parameters.AddWithValue("@Transporter_Name", (cmbTransporter.Text == "") ? "" : cmbTransporter.Text);
                     cmd.Parameters.AddWithValue("@VehicleNo", (txtVehicleNo.Text == "") ? "" : txtVehicleNo.Text);
@@ -1107,6 +1107,8 @@ namespace ioneNet.OrderManagement.Transactions
         {
             try
             {
+                string so_Nos = "";
+                
                 DataTable dtgetSelectedprducts = new DataTable();
                 //Check Whether Exisitng Products Already Selected in Main Grid
                 if (dgProducts.Rows.Count > 1)
@@ -1278,6 +1280,14 @@ namespace ioneNet.OrderManagement.Transactions
 
                             //drgetproducts["SO_Item_No"] = "";
                             drgetproducts["SO_Ref_No"] = SO_Ref_No.ToString();
+                            if (so_Nos != "")
+                            {
+                                so_Nos = so_Nos + "," + SO_Ref_No;
+                            }
+                            else
+                            {
+                                so_Nos = SO_Ref_No;
+                            }
                             drgetproducts["Item_No"] = "";
                             drgetproducts["Remarks"] = "";
 
@@ -1295,9 +1305,10 @@ namespace ioneNet.OrderManagement.Transactions
 
                 dgProducts.DataSource = dtgetSelectedprducts;
 
-                txtCustPoNo.Text = "Multi";
+                //txtCustPoNo.Text = "Multi";
                 txtSoNo.Text = "Multi";
-                
+
+                txtCustPoNo.Text = string.Join(",", so_Nos.Split(',').Distinct());
                 //dgProducts.DataSource = dtexisting;
                 //CmbConsigneeName.Text = CmbBuyerName.Text;
                 //CmbConsigneeName.Focus();

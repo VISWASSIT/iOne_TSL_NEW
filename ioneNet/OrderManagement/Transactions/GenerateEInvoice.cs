@@ -1887,9 +1887,9 @@ namespace ioneNet.OrderManagement.Transactions
             var comp = (from c1 in db.Costing_Units where c1.id == logIn.BU_ID select c1).ToList();
             string GSTIN = comp[0].GST_No;
             //DateTime.UtcNow nonse = DateTime(1970,1,1,0,0,0).to
-            string url11 = "https://api.mastergst.com/einvoice/type/GETEWAYBILLIRN/version/V1_03?param1=" + txtIRNNo.Text + "&supplier_gstn=" + GSTIN + "&email=ssits.hyd%40gmail.com";
+            string url11 = "https://api.whitebooks.in/einvoice/type/GETEWAYBILLIRN/version/V1_03?param1=" + txtIRNNo.Text + "&supplier_gstn=" + GSTIN + "&email=ssits.hyd%40gmail.com";
 
-            //string url11 = "https://api.mastergst.com/einvoice/type/GETIRNBYDOCDETAILS/version/V1_03?param1=INV&email=ssits.hyd%40gmail.com";
+            //string url11 = "https://api.whitebooks.in/einvoice/type/GETIRNBYDOCDETAILS/version/V1_03?param1=INV&email=ssits.hyd%40gmail.com";
             string sign = "0";
             //Uri ourURL = Uri(url11);
             WebRequest request = WebRequest.Create(url11);
@@ -1900,8 +1900,8 @@ namespace ioneNet.OrderManagement.Transactions
 
             request.Headers.Add("email", "ssits.hyd@gmail.com");
             request.Headers.Add("ip_address", ipAddr);
-            request.Headers.Add("client_id", "f4a225ea-bf52-4d4d-a9d6-48e1e453b0d5");
-            request.Headers.Add("client_secret", "425fceba-6a5b-4dc7-a83f-76d08b0ce72d");
+            request.Headers.Add("client_id", "EINP6e5b709e-51a7-45b6-8b70-299a8a4dc84a");
+            request.Headers.Add("client_secret", "EINPbba84c61-0c43-4def-af90-f64ea5185ea3");
             request.Headers.Add("username", UserName);
             request.Headers.Add("auth-token", txtAuthKey.Text);
 
@@ -1917,15 +1917,6 @@ namespace ioneNet.OrderManagement.Transactions
 
             System.IO.StreamReader myreader = new System.IO.StreamReader(myResponse.GetResponseStream());
             WayBillData = myreader.ReadToEnd();
-            //MessageBox.Show(streamtext);
-            //JObject json = JObject.Parse(streamtext);
-            //var EwbNo = (string)json.SelectToken("data.EwbNo");
-            //var GenGstin = (string)json.SelectToken("data.GenGstin");
-            //var EwbValidTill = (string)json.SelectToken("data.EwbValidTill");
-            //var EwbDt = (string)json.SelectToken("data.EwbDt");
-            //var Status = (string)json.SelectToken("data.Status");
-            //txtAuthKey.Text = authToken;
-            //txtAuthKeyValid.Text = authTokenValid;
 
 
 
