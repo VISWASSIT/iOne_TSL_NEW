@@ -8299,24 +8299,6 @@
       <Column Name="Quot_no" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.ShowCustomers_TSL" Method="ShowCustomers_TSL">
-    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
-    <Parameter Name="userid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ShowCustomers_TSLResult">
-      <Column Name="Customer_ID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Sales_Exe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Region" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Segemnt" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Contact_Person" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Contact_Mobile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GSTIN_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Acc_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.ShowEnqList" Method="ShowEnqList">
     <Parameter Name="compname" Type="System.Int32" DbType="Int" />
     <Parameter Name="fY_SDate" Type="System.DateTime" DbType="DateTime" />
@@ -9445,6 +9427,37 @@
       <Column Name="Loading_Completion_Time" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="Status" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
       <Column Name="Atual_Loading_Hrs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowCustomers_TSL" Method="ShowCustomers_TSL">
+    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
+    <Parameter Name="userid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowCustomers_TSLResult">
+      <Column Name="Customer_ID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Sales_Exe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Segemnt" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Person" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Mobile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GSTIN_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="E_Mail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Production_MRP" Method="Production_MRP">
+    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
+    <Parameter Name="frmDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="toDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Production_MRPResult">
+      <Column Name="Section_Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Item_Grade" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="No_Of_Pieces" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+      <Column Name="Required_QTY" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

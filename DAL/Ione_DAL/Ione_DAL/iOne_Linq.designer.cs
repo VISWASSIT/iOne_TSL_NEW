@@ -4640,13 +4640,6 @@ namespace Ione_DAL
 			return ((ISingleResult<Sp_autoincrement_SaleQuotation_TSLResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowCustomers_TSL")]
-		public ISingleResult<ShowCustomers_TSLResult> ShowCustomers_TSL([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, userid);
-			return ((ISingleResult<ShowCustomers_TSLResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowEnqList")]
 		public ISingleResult<ShowEnqListResult> ShowEnqList([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_SDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fY_EDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string strT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userid)
 		{
@@ -5121,6 +5114,20 @@ namespace Ione_DAL
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, fY_SDate, fY_EDate, buid);
 			return ((ISingleResult<ShowLoadingSlipsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ShowCustomers_TSL")]
+		public ISingleResult<ShowCustomers_TSLResult> ShowCustomers_TSL([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, userid);
+			return ((ISingleResult<ShowCustomers_TSLResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Production_MRP")]
+		public ISingleResult<Production_MRPResult> Production_MRP([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> frmDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> toDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, frmDate, toDate, buid);
+			return ((ISingleResult<Production_MRPResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -127992,230 +127999,6 @@ namespace Ione_DAL
 		}
 	}
 	
-	public partial class ShowCustomers_TSLResult
-	{
-		
-		private string _Customer_ID;
-		
-		private string _Sales_Exe;
-		
-		private string _Region;
-		
-		private string _Segemnt;
-		
-		private string _Customer_Name;
-		
-		private string _Category;
-		
-		private string _city;
-		
-		private string _Contact_Person;
-		
-		private string _Contact_Mobile;
-		
-		private string _GSTIN_NO;
-		
-		private int _ID;
-		
-		private System.Nullable<int> _Acc_ID;
-		
-		public ShowCustomers_TSLResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_ID", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string Customer_ID
-		{
-			get
-			{
-				return this._Customer_ID;
-			}
-			set
-			{
-				if ((this._Customer_ID != value))
-				{
-					this._Customer_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sales_Exe", DbType="VarChar(50)")]
-		public string Sales_Exe
-		{
-			get
-			{
-				return this._Sales_Exe;
-			}
-			set
-			{
-				if ((this._Sales_Exe != value))
-				{
-					this._Sales_Exe = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Region", DbType="VarChar(200)")]
-		public string Region
-		{
-			get
-			{
-				return this._Region;
-			}
-			set
-			{
-				if ((this._Region != value))
-				{
-					this._Region = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Segemnt", DbType="VarChar(200)")]
-		public string Segemnt
-		{
-			get
-			{
-				return this._Segemnt;
-			}
-			set
-			{
-				if ((this._Segemnt != value))
-				{
-					this._Segemnt = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
-		public string Customer_Name
-		{
-			get
-			{
-				return this._Customer_Name;
-			}
-			set
-			{
-				if ((this._Customer_Name != value))
-				{
-					this._Customer_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(200)")]
-		public string Category
-		{
-			get
-			{
-				return this._Category;
-			}
-			set
-			{
-				if ((this._Category != value))
-				{
-					this._Category = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_city", DbType="VarChar(50)")]
-		public string city
-		{
-			get
-			{
-				return this._city;
-			}
-			set
-			{
-				if ((this._city != value))
-				{
-					this._city = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contact_Person", DbType="VarChar(50)")]
-		public string Contact_Person
-		{
-			get
-			{
-				return this._Contact_Person;
-			}
-			set
-			{
-				if ((this._Contact_Person != value))
-				{
-					this._Contact_Person = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contact_Mobile", DbType="VarChar(100)")]
-		public string Contact_Mobile
-		{
-			get
-			{
-				return this._Contact_Mobile;
-			}
-			set
-			{
-				if ((this._Contact_Mobile != value))
-				{
-					this._Contact_Mobile = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GSTIN_NO", DbType="VarChar(20)")]
-		public string GSTIN_NO
-		{
-			get
-			{
-				return this._GSTIN_NO;
-			}
-			set
-			{
-				if ((this._GSTIN_NO != value))
-				{
-					this._GSTIN_NO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
-		public int ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Acc_ID", DbType="Int")]
-		public System.Nullable<int> Acc_ID
-		{
-			get
-			{
-				return this._Acc_ID;
-			}
-			set
-			{
-				if ((this._Acc_ID != value))
-				{
-					this._Acc_ID = value;
-				}
-			}
-		}
-	}
-	
 	public partial class ShowEnqListResult
 	{
 		
@@ -140513,6 +140296,328 @@ namespace Ione_DAL
 				if ((this._Atual_Loading_Hrs != value))
 				{
 					this._Atual_Loading_Hrs = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ShowCustomers_TSLResult
+	{
+		
+		private string _Customer_ID;
+		
+		private string _Sales_Exe;
+		
+		private string _Region;
+		
+		private string _Segemnt;
+		
+		private string _Customer_Name;
+		
+		private string _Category;
+		
+		private string _city;
+		
+		private string _Contact_Person;
+		
+		private string _Contact_Mobile;
+		
+		private string _GSTIN_NO;
+		
+		private int _ID;
+		
+		private string _E_Mail;
+		
+		public ShowCustomers_TSLResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_ID", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Customer_ID
+		{
+			get
+			{
+				return this._Customer_ID;
+			}
+			set
+			{
+				if ((this._Customer_ID != value))
+				{
+					this._Customer_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sales_Exe", DbType="VarChar(50)")]
+		public string Sales_Exe
+		{
+			get
+			{
+				return this._Sales_Exe;
+			}
+			set
+			{
+				if ((this._Sales_Exe != value))
+				{
+					this._Sales_Exe = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Region", DbType="VarChar(200)")]
+		public string Region
+		{
+			get
+			{
+				return this._Region;
+			}
+			set
+			{
+				if ((this._Region != value))
+				{
+					this._Region = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Segemnt", DbType="VarChar(200)")]
+		public string Segemnt
+		{
+			get
+			{
+				return this._Segemnt;
+			}
+			set
+			{
+				if ((this._Segemnt != value))
+				{
+					this._Segemnt = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
+		public string Customer_Name
+		{
+			get
+			{
+				return this._Customer_Name;
+			}
+			set
+			{
+				if ((this._Customer_Name != value))
+				{
+					this._Customer_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(200)")]
+		public string Category
+		{
+			get
+			{
+				return this._Category;
+			}
+			set
+			{
+				if ((this._Category != value))
+				{
+					this._Category = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_city", DbType="VarChar(50)")]
+		public string city
+		{
+			get
+			{
+				return this._city;
+			}
+			set
+			{
+				if ((this._city != value))
+				{
+					this._city = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contact_Person", DbType="VarChar(50)")]
+		public string Contact_Person
+		{
+			get
+			{
+				return this._Contact_Person;
+			}
+			set
+			{
+				if ((this._Contact_Person != value))
+				{
+					this._Contact_Person = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contact_Mobile", DbType="VarChar(100)")]
+		public string Contact_Mobile
+		{
+			get
+			{
+				return this._Contact_Mobile;
+			}
+			set
+			{
+				if ((this._Contact_Mobile != value))
+				{
+					this._Contact_Mobile = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GSTIN_NO", DbType="VarChar(20)")]
+		public string GSTIN_NO
+		{
+			get
+			{
+				return this._GSTIN_NO;
+			}
+			set
+			{
+				if ((this._GSTIN_NO != value))
+				{
+					this._GSTIN_NO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_E_Mail", DbType="VarChar(100)")]
+		public string E_Mail
+		{
+			get
+			{
+				return this._E_Mail;
+			}
+			set
+			{
+				if ((this._E_Mail != value))
+				{
+					this._E_Mail = value;
+				}
+			}
+		}
+	}
+	
+	public partial class Production_MRPResult
+	{
+		
+		private string _Section_Name;
+		
+		private string _Item_Grade;
+		
+		private string _Prod_Length;
+		
+		private System.Nullable<decimal> _No_Of_Pieces;
+		
+		private System.Nullable<decimal> _Required_QTY;
+		
+		public Production_MRPResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section_Name", DbType="VarChar(100)")]
+		public string Section_Name
+		{
+			get
+			{
+				return this._Section_Name;
+			}
+			set
+			{
+				if ((this._Section_Name != value))
+				{
+					this._Section_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Grade", DbType="VarChar(50)")]
+		public string Item_Grade
+		{
+			get
+			{
+				return this._Item_Grade;
+			}
+			set
+			{
+				if ((this._Item_Grade != value))
+				{
+					this._Item_Grade = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Length", DbType="VarChar(50)")]
+		public string Prod_Length
+		{
+			get
+			{
+				return this._Prod_Length;
+			}
+			set
+			{
+				if ((this._Prod_Length != value))
+				{
+					this._Prod_Length = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_Of_Pieces", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> No_Of_Pieces
+		{
+			get
+			{
+				return this._No_Of_Pieces;
+			}
+			set
+			{
+				if ((this._No_Of_Pieces != value))
+				{
+					this._No_Of_Pieces = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Required_QTY", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> Required_QTY
+		{
+			get
+			{
+				return this._Required_QTY;
+			}
+			set
+			{
+				if ((this._Required_QTY != value))
+				{
+					this._Required_QTY = value;
 				}
 			}
 		}

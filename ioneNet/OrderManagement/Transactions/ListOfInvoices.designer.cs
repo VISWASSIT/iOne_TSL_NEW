@@ -89,13 +89,13 @@
             this.toolStripMenuItem1,
             this.viewSuppliesMadeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(305, 340);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(240, 340);
             // 
             // modifyToolStripMenuItem
             // 
             this.modifyToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Edit_16x16;
             this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.modifyToolStripMenuItem.Text = "Modify";
             this.modifyToolStripMenuItem.Click += new System.EventHandler(this.modifyToolStripMenuItem_Click);
             // 
@@ -103,7 +103,7 @@
             // 
             this.printToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Print;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.printToolStripMenuItem.Text = "Print Invoice";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
@@ -111,35 +111,35 @@
             // 
             this.printInvoiceWithDigitalSignToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Print_preview;
             this.printInvoiceWithDigitalSignToolStripMenuItem.Name = "printInvoiceWithDigitalSignToolStripMenuItem";
-            this.printInvoiceWithDigitalSignToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.printInvoiceWithDigitalSignToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.printInvoiceWithDigitalSignToolStripMenuItem.Text = "Print Invoice With Digital Sign";
             this.printInvoiceWithDigitalSignToolStripMenuItem.Click += new System.EventHandler(this.printInvoiceWithDigitalSignToolStripMenuItem_Click);
             // 
             // printInvoiceOnPrePrintedFormToolStripMenuItem
             // 
             this.printInvoiceOnPrePrintedFormToolStripMenuItem.Name = "printInvoiceOnPrePrintedFormToolStripMenuItem";
-            this.printInvoiceOnPrePrintedFormToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
-            this.printInvoiceOnPrePrintedFormToolStripMenuItem.Text = "Print Invoice on Pre-Printed Form";
+            this.printInvoiceOnPrePrintedFormToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
+            this.printInvoiceOnPrePrintedFormToolStripMenuItem.Text = "Print E Waybill";
             this.printInvoiceOnPrePrintedFormToolStripMenuItem.Click += new System.EventHandler(this.printInvoiceOnPrePrintedFormToolStripMenuItem_Click);
             // 
             // printChallanToolStripMenuItem
             // 
             this.printChallanToolStripMenuItem.Name = "printChallanToolStripMenuItem";
-            this.printChallanToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.printChallanToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.printChallanToolStripMenuItem.Text = "Print Packing List";
             this.printChallanToolStripMenuItem.Click += new System.EventHandler(this.printChallanToolStripMenuItem_Click);
             // 
             // printLabelsToolStripMenuItem
             // 
             this.printLabelsToolStripMenuItem.Name = "printLabelsToolStripMenuItem";
-            this.printLabelsToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.printLabelsToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.printLabelsToolStripMenuItem.Text = "Print Labels";
             this.printLabelsToolStripMenuItem.Click += new System.EventHandler(this.printLabelsToolStripMenuItem_Click);
             // 
             // generateEInvoiceJSONToolStripMenuItem
             // 
             this.generateEInvoiceJSONToolStripMenuItem.Name = "generateEInvoiceJSONToolStripMenuItem";
-            this.generateEInvoiceJSONToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.generateEInvoiceJSONToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.generateEInvoiceJSONToolStripMenuItem.Text = "Generate E Invoice";
             this.generateEInvoiceJSONToolStripMenuItem.Click += new System.EventHandler(this.generateEInvoiceJSONToolStripMenuItem_Click);
             // 
@@ -147,7 +147,7 @@
             // 
             this.eMailToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Mail;
             this.eMailToolStripMenuItem.Name = "eMailToolStripMenuItem";
-            this.eMailToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.eMailToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.eMailToolStripMenuItem.Text = "E Mail";
             this.eMailToolStripMenuItem.Click += new System.EventHandler(this.eMailToolStripMenuItem_Click);
             // 
@@ -155,7 +155,7 @@
             // 
             this.deleteToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Erase;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -163,19 +163,19 @@
             // 
             this.accountPostingToolStripMenuItem.Image = global::ioneNet.Properties.Resources.Undo;
             this.accountPostingToolStripMenuItem.Name = "accountPostingToolStripMenuItem";
-            this.accountPostingToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.accountPostingToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.accountPostingToolStripMenuItem.Text = "Cancel";
             this.accountPostingToolStripMenuItem.Click += new System.EventHandler(this.accountPostingToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(301, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(236, 6);
             // 
             // viewSuppliesMadeToolStripMenuItem
             // 
             this.viewSuppliesMadeToolStripMenuItem.Name = "viewSuppliesMadeToolStripMenuItem";
-            this.viewSuppliesMadeToolStripMenuItem.Size = new System.Drawing.Size(304, 30);
+            this.viewSuppliesMadeToolStripMenuItem.Size = new System.Drawing.Size(239, 30);
             this.viewSuppliesMadeToolStripMenuItem.Text = "View Deailed Report";
             // 
             // showInvListBindingSource
@@ -214,7 +214,7 @@
             // 
             this.txtQRCode.Location = new System.Drawing.Point(77, 125);
             this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.Size = new System.Drawing.Size(100, 27);
+            this.txtQRCode.Size = new System.Drawing.Size(100, 23);
             this.txtQRCode.TabIndex = 40;
             this.txtQRCode.Visible = false;
             // 
@@ -258,7 +258,7 @@
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(87, 79);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 27);
+            this.textBox1.Size = new System.Drawing.Size(45, 23);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -267,7 +267,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(20, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Copy No";
             // 
@@ -280,7 +280,7 @@
             "Triplicate for Supplier"});
             this.comboBox1.Location = new System.Drawing.Point(87, 50);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 28);
+            this.comboBox1.Size = new System.Drawing.Size(197, 23);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Leave += new System.EventHandler(this.comboBox1_Leave);
@@ -290,7 +290,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Copy ";
             // 
@@ -453,7 +453,7 @@
             // 
             // ListOfInvoices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1023, 620);

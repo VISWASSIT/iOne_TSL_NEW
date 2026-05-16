@@ -133,8 +133,9 @@ namespace ioneNet.ProductionManagement.Reports
             try
             {
                 this.sfDataGrid1.TableSummaryRows.Clear();
+                var d = (from data in db.Production_MRP(logIn.company, dtpFrmDate.Value, dtpToDate.Value, logIn.BU_ID) select data).ToList();
 
-                var d = (from data in db.ProduictionRequirementReport(logIn.company) select data).ToList();
+                //var d = (from data in db.Production_MRP(logIn.company,) select data).ToList();
                 if (d.Count > 0)
                 {
                     //dgProductsList.DataSource = d;
@@ -148,10 +149,10 @@ namespace ioneNet.ProductionManagement.Reports
                 this.sfDataGrid1.Columns["Section_Name"].ImmediateUpdateColumnFilter = true;
                 this.sfDataGrid1.Columns["Section_Name"].FilterRowCondition = FilterRowCondition.Contains;
 
-                this.sfDataGrid1.Columns["Material_Grade"].FilterRowEditorType = "TextBox";
-                this.sfDataGrid1.Columns["Material_Grade"].ShowFilterRowOptions = false;
-                this.sfDataGrid1.Columns["Material_Grade"].ImmediateUpdateColumnFilter = true;
-                this.sfDataGrid1.Columns["Material_Grade"].FilterRowCondition = FilterRowCondition.Contains;
+                this.sfDataGrid1.Columns["Item_Grade"].FilterRowEditorType = "TextBox";
+                this.sfDataGrid1.Columns["Item_Grade"].ShowFilterRowOptions = false;
+                this.sfDataGrid1.Columns["Item_Grade"].ImmediateUpdateColumnFilter = true;
+                this.sfDataGrid1.Columns["Item_Grade"].FilterRowCondition = FilterRowCondition.Contains;
 
 
                 GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
@@ -160,28 +161,15 @@ namespace ioneNet.ProductionManagement.Reports
                 tableSummaryRow1.Position = VerticalPosition.Bottom;
 
                 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
-                summaryColumn1.Name = "Required_Qty_MT";
+                summaryColumn1.Name = "Required_QTY";
                 summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
                 summaryColumn1.Format = "Total : {Sum}";
-                summaryColumn1.MappingName = "Required_Qty_MT";
+                summaryColumn1.MappingName = "Required_QTY";
 
                 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
-                GridSummaryColumn summaryColumn2 = new GridSummaryColumn();
-                summaryColumn2.Name = "Planned_Qty ";
-                summaryColumn2.SummaryType = SummaryType.DoubleAggregate;
-                summaryColumn2.Format = "Total : {Sum}";
-                summaryColumn2.MappingName = "Planned_Qty";
-
-                tableSummaryRow1.SummaryColumns.Add(summaryColumn2);
-
-                GridSummaryColumn summaryColumn3 = new GridSummaryColumn();
-                summaryColumn3.Name = "Qty_Produced";
-                summaryColumn3.SummaryType = SummaryType.DoubleAggregate;
-                summaryColumn3.Format = "Total : {Sum}";
-                summaryColumn3.MappingName = "Qty_Produced";
-
-                tableSummaryRow1.SummaryColumns.Add(summaryColumn3);
+                
+              
                 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
 
 
@@ -192,31 +180,15 @@ namespace ioneNet.ProductionManagement.Reports
 
                 // Creates the GridSummaryColumn.
                 GridSummaryColumn GsummaryColumn1 = new GridSummaryColumn();
-                GsummaryColumn1.Name = "Required_Qty_MT";
+                GsummaryColumn1.Name = "Required_QTY";
                 GsummaryColumn1.SummaryType = SummaryType.DoubleAggregate;
                 GsummaryColumn1.Format = "Total Required Qty : {Sum:c}";
-                GsummaryColumn1.MappingName = "Required_Qty_MT";
+                GsummaryColumn1.MappingName = "Required_QTY";
 
                 // Adds the GridSummaryColumn in SummaryColumns collection.
                 groupSummaryRow1.SummaryColumns.Add(GsummaryColumn1);
 
-                GridSummaryColumn GsummaryColumn2 = new GridSummaryColumn();
-                GsummaryColumn2.Name = "Planned_Qty";
-                GsummaryColumn2.SummaryType = SummaryType.DoubleAggregate;
-                GsummaryColumn2.Format = "Total Planned Qty : {Sum:c}";
-                GsummaryColumn2.MappingName = "Planned_Qty";
-
-                // Adds the GridSummaryColumn in SummaryColumns collection.
-                groupSummaryRow1.SummaryColumns.Add(GsummaryColumn2);
-
-                GridSummaryColumn GsummaryColumn3 = new GridSummaryColumn();
-                GsummaryColumn3.Name = "Qty_Produced";
-                GsummaryColumn3.SummaryType = SummaryType.DoubleAggregate;
-                GsummaryColumn3.Format = "Total Produced Qty : {Sum:c}";
-                GsummaryColumn3.MappingName = "Qty_Produced";
-
-                // Adds the GridSummaryColumn in SummaryColumns collection.
-                groupSummaryRow1.SummaryColumns.Add(GsummaryColumn3);
+                
 
 
                 // Adds the summary row in the GroupSummaryRows collection.

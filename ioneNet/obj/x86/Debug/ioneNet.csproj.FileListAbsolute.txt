@@ -1692,3 +1692,32 @@ D:\My Projects\GitHub\iOne_TSL_NEW\ioneNet\obj\x86\Debug\ioneNet.application
 D:\My Projects\GitHub\iOne_TSL_NEW\ioneNet\obj\x86\Debug\ioneNet.csproj.Up2Date
 D:\My Projects\GitHub\iOne_TSL_NEW\ioneNet\obj\x86\Debug\ioneNet.exe
 D:\My Projects\GitHub\iOne_TSL_NEW\ioneNet\obj\x86\Debug\ioneNet.pdb
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SpellChecker.Base.dll
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Tools.Base.dll
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Chart.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Chart.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Compression.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Core.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Data.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.DataSource.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Edit.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grid.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grid.Grouping.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grid.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.GridCommon.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.GridConverter.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grouping.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Pdf.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SfDataGrid.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SfDataGridConverter.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SfInput.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SfListView.WinForms.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Shared.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Shared.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Spreadsheet.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Tools.Windows.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.XlsIO.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.SpellChecker.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Tools.Base.xml
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grid.Grouping.Windows.XmlSerializers.dll
+C:\ERP\Github\iOne_TSL_NEW\ioneNet\bin\x86\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll

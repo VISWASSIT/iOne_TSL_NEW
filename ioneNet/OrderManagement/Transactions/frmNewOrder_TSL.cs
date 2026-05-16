@@ -502,7 +502,7 @@ namespace ioneNet.OrderManagement.Transactions
                 
                     if (columnName == "Item Description")
                     {
-                        var Prodname = (from d in db.Products where d.Company_ID == logIn.company && d.Prod_Type_Id == 139 || d.Prod_Type_Id == 141 select new { d.Prod_Name }).ToList();
+                        var Prodname = (from d in db.Products where d.Company_ID == logIn.company && d.Prod_Type_Id == 139 || d.Prod_Type_Id == 141 || d.Prod_Type_Id == 157 select new { d.Prod_Name }).ToList();
                         DataTable dt = new DataTable();
                         dt.Columns.Add("Prod_Name");
                         foreach (var item in Prodname)
@@ -1729,6 +1729,11 @@ namespace ioneNet.OrderManagement.Transactions
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if(txtStateCode.Text == string.Empty)
+            {
+                MessageBox.Show("State / State Code Cannot Be Blank");
+                    return;
+            }
             genConsigneeAddress CAddr = new genConsigneeAddress();
             CAddr.Address1 = txtAddress1.Text;
 
@@ -1793,6 +1798,32 @@ namespace ioneNet.OrderManagement.Transactions
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void cmbCity_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                var State = (from c in db.City_Masters
+                             where c.City_Name == cmbCity.Text
+                             select new { c.State_Name, c.State_Code }).ToList();
+                if (State.Count > 0)
+                {
+                    txtstate.Text = State[0].State_Name;
+                    txtStateCode.Text = State[0].State_Code;
+                    txtPincode.Focus();
+                }
+               else
+                {
+                    MessageBox.Show("Invalid City Selected");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dgProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -1880,8 +1911,9 @@ namespace ioneNet.OrderManagement.Transactions
                     // S.Pre_Ship = (chkPreShipment.Checked == true) ? true : false;
                     S.Frieght_Unit = (txtFreight_Rate.Text == "") ? Convert.ToDecimal("0") : Convert.ToDecimal(txtFreight_Rate.Text);
                     S.RM_Basic_Price = (txtRMBasic.Text == "") ? Convert.ToDecimal("0") : Convert.ToDecimal(txtRMBasic.Text);
+                    S.Other_Charges = (textBox1.Text == "") ? Convert.ToDecimal("0") : Convert.ToDecimal(textBox1.Text);
 
-
+                   
                     S.Price_Basis = Convert.ToInt32(txtPriceBasis.Text);
                     S.PaymentTerms = Convert.ToInt32(cmbPaymentTerms.SelectedValue.ToString());
                     if (cmbPaymentTerms.Text == "Custom")
@@ -1948,7 +1980,7 @@ namespace ioneNet.OrderManagement.Transactions
                         SC.Prod_Grade_Id = 3034;
                     }
                         SC.Prod_Length = (dgProducts.Rows[i].Cells["Prod_Length"].Value == null) ? "" : (dgProducts.Rows[i].Cells["Prod_Length"].Value).ToString();
-                    //SC.Uom = (dgProducts.Rows[i].Cells["uom"].Value == DBNull.Value) ? "" : dgProducts.Rows[i].Cells["uom"].Value.ToString();
+                    SC.Uom = (dgProducts.Rows[i].Cells["uom"].Value == DBNull.Value) ? "" : dgProducts.Rows[i].Cells["uom"].Value.ToString();
 
                     double amt = Convert.ToDouble(dgProducts.Rows[i].Cells["Qty"].Value);
                     //decimal qty = decimal.Round(Convert.ToDecimal(amt),5);
@@ -2088,6 +2120,7 @@ namespace ioneNet.OrderManagement.Transactions
                               obj.Exchange_Rate,
                               obj.RM_Basic_Price,
                               obj.bu_id
+                             
                               
                           }).ToList();
                 if (da.Count > 0)

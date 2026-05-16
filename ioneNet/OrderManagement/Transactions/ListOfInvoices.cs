@@ -595,7 +595,7 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
                 
 
 
-                //SendEmail();
+                SendEmail();
                 //MessageBox.Show("Email Sent Successfully");
             }
             catch (Exception ex)
@@ -1571,9 +1571,74 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
                 //int i = sfDataGrid1.CurrentRow.Index;
                 SO_No = cellVaue.ToString();
 
+                var irnno = (from c1 in db.Invoice_Masters
+                             join s1 in db.Attributes_Datas on c1.Status equals s1.ID
+                             where c1.Company_ID == logIn.company && c1.Inv_No == SO_No && s1.Descr == "IRN Generated"
+                             select new
+                             {
+                                 c1.InvDate,
+                                 c1.Einv_ACK_No,
+                                 c1.Einv_ACK_Date,
+                                 c1.EInv_IRN_No,
+                                 c1.EInv_QR_Code,
+                                 c1.WayBillNo,
+                                 c1.Status,
+                                 c1.Transporter_Name,
+                                 c1.VehicleNo
+                             }).ToList();
+                if (irnno.Count > 0)
+                {
+
+                    txtQRCode.Text = irnno[0].EInv_QR_Code;
+
+                }
+
+                string QrCode = "";
+                IBarcodeWriter writer = new BarcodeWriter { Format = BarcodeFormat.QR_CODE };
+
+                if (txtQRCode.Text.Length > 955)
+                {
+                    QrCode = Mid(txtQRCode.Text, 1, 954);
+                }
+                else
+                {
+                    QrCode = txtQRCode.Text;
+                }
+                if (QrCode.Length > 0)
+                {
+                    var result = writer.Write(QrCode);
+
+
+                    var barcodeBitmap = new Bitmap(result);
+                    pictureBox1.Image = barcodeBitmap;
+                    Image img = pictureBox1.Image;
+                    MemoryStream ms = new MemoryStream();
+                    img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    byte[] bytes = ms.ToArray();
+
+                    SqlCommand cmd5 = new SqlCommand("delete  from [temp_inv_QRCOde] where Company_ID =@comp", con);
+                    cmd5.Parameters.AddWithValue("@comp", logIn.company);
+                    cmd5.ExecuteNonQuery();
+
+                    cmd1.CommandText = "INSERT INTO temp_inv_QRCOde  (Inv_No,Company_ID,QR_COde) VALUES  (@invNo1," + logIn.company + ",@Qrcode)";
+                    //cmd1.CommandText =  "INSERT INTO dbo.temp_Inv_Copy ([Inv_No],[Copy_Name],[Copy_No],[Company_ID]) VALUES (@invNo,@Copy_Name,@Copy_No, @comp)";
+
+                    //// SqlCommand command = new SqlCommand(query, db.Connection);
+                    cmd1.Parameters.AddWithValue("@invNo1", SO_No);
+                    cmd1.Parameters.AddWithValue("@Qrcode", bytes);
+                    cmd1.ExecuteNonQuery();
+
+
+                }
+
+
+
                 SqlCommand cmd4 = new SqlCommand("delete  from [temp_Inv_Copy] where Company_ID =@comp", con);
                 cmd4.Parameters.AddWithValue("@comp", logIn.company);
                 cmd4.ExecuteNonQuery();
+
+
+
                 CrystalDecisions.CrystalReports.Engine.ReportDocument rep = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
 
                 //Get Invoice Format Mapped to the Company
@@ -1594,25 +1659,34 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
 
                         cmd1.ExecuteNonQuery();
                     }
-                    
-                    
+
+
                     else
                     if (gstno[0].GSTInv_Format == "InvV3")
                     {
                         //Vikas Castings
                         rep = new OrderManagement.Transactions.SaleInvoice_GST_WithLogBig();
-                        cmd1.CommandText = "INSERT INTO temp_Inv_Copy  (Inv_No, Copy_Name, Copy_No,Company_ID) VALUES  (@invNo, 'Original for Receipent', '1'," + logIn.company + "),   (@invNo, 'Duplicate for Transporter / Supplier', '2'," + logIn.company + "),   (@invNo, 'Triplicate for Supplier', '3'," + logIn.company + ")";
+                        if (logIn.company == 1047 || logIn.company == 1046)
+                        {
+                            cmd1.CommandText = "INSERT INTO temp_Inv_Copy  (Inv_No, Copy_Name, Copy_No,Company_ID) VALUES  (@invNo, 'Original for Receipent', '1'," + logIn.company + "),   (@invNo, 'Duplicate for Transporter / Supplier', '2'," + logIn.company + ")";
+
+                        }
+                        else
+                        {
+                            cmd1.CommandText = "INSERT INTO temp_Inv_Copy  (Inv_No, Copy_Name, Copy_No,Company_ID) VALUES  (@invNo, 'Original for Receipent', '1'," + logIn.company + "),   (@invNo, 'Duplicate for Transporter / Supplier', '2'," + logIn.company + "),   (@invNo, 'Triplicate for Supplier', '3'," + logIn.company + ")";
+
+                        }
                         //cmd1.CommandText =  "INSERT INTO dbo.temp_Inv_Copy ([Inv_No],[Copy_Name],[Copy_No],[Company_ID]) VALUES (@invNo,@Copy_Name,@Copy_No, @comp)";
 
                         //// SqlCommand command = new SqlCommand(query, db.Connection);
                         cmd1.Parameters.AddWithValue("@invNo", SO_No);
 
+
                         cmd1.ExecuteNonQuery();
                     }
-                    
-                    
+
                     else
-                                       {
+                    {
                         rep = new OrderManagement.Transactions.SaleInvoice_GST_Oth();
                         cmd1.CommandText = "INSERT INTO temp_Inv_Copy  (Inv_No, Copy_Name, Copy_No,Company_ID) VALUES  (@invNo, 'Original for Receipent', '1'," + logIn.company + "),   (@invNo, 'Duplicate for Transporter / Supplier', '2'," + logIn.company + "),   (@invNo, 'Triplicate for Supplier', '3'," + logIn.company + ")";
                         //cmd1.CommandText =  "INSERT INTO dbo.temp_Inv_Copy ([Inv_No],[Copy_Name],[Copy_No],[Company_ID]) VALUES (@invNo,@Copy_Name,@Copy_No, @comp)";
@@ -1644,10 +1718,10 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
                 FileInfo fi1 = new FileInfo(path);
 
 
-                if (fi1.Exists)
-                {
-                    //fi1.Delete();
-                }
+                //if (fi1.Exists)
+                //{
+                //    fi1.Delete();
+                //}
                 SqlCommand cmd = new SqlCommand("sp_Rpt_InvoiceReport", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Invoice_No", SO_No);
@@ -1681,11 +1755,70 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
 
                     }
                     rep.SetDataSource(Dt);
+                    string CAddr = "";
+                    string CCity = "";
+                    string cState = "";
+                    String cGSTIN = "";
+
+                    var d = (from po in db.Invoice_Childs
+                             join im in db.Invoice_Masters on po.Inv_Master_ID equals im.Id
+                             where im.Inv_No == SO_No && im.BU_ID == logIn.BU_ID
+                             select po).FirstOrDefault();
+
+
+
+
+
+                    var da1 = (from so in db.Invoice_Masters
+
+                               join c in db.Supplier_informations on so.ConsigneeName equals c.ID
+                               where so.Inv_No == SO_No && so.BU_ID == logIn.BU_ID && so.Status != 24
+                               select new
+                               {
+                                   so.ConsigneeAddress,
+                                   so.Con_GST_No,
+                                   c.City
+                               }).ToList();
+
+
+                    if (da1.Count > 0)
+                    {
+
+                        //                ValidateJSON(ca[0].ConsigneeAddress);
+                        if (Mid(da1[0].ConsigneeAddress, 3, 4) == "Addr")
+                        {
+                            JObject jsoncancel = JObject.Parse(da1[0].ConsigneeAddress);
+
+                            CAddr = (string)jsoncancel.SelectToken("Address1") + "," + (string)jsoncancel.SelectToken("Address2");
+                            CCity = (string)jsoncancel.SelectToken("City") + "," + (string)jsoncancel.SelectToken("PinCode");
+                            cState = (string)jsoncancel.SelectToken("State") + ", State Code : " + (string)jsoncancel.SelectToken("StateCode");
+                            cGSTIN = "GSTIN : " + (string)jsoncancel.SelectToken("GSTIN");
+
+                        }
+                        else
+                        {
+                            CAddr = da1[0].ConsigneeAddress;
+                            cGSTIN = "GSTIN : " + da1[0].Con_GST_No;
+                            CCity = da1[0].City;
+                        }
+                        //JToken.Parse(ca[0].ConsigneeAddress);
+
+                    }
+
+
+                    //rep.SetParameterValue("Creation_Company", logIn.company);
+                    ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
+                    // cmd1.Parameters.AddWithValue("@Con_Address1", "Door No");
+
+                    rep.SetParameterValue("Con_Address1", CAddr);
+                    rep.SetParameterValue("Con_City", CCity);
+                    rep.SetParameterValue("Con_State", cState);
+                    rep.SetParameterValue("Con_GSTIN", cGSTIN);
 
 
                     //rep.SetParameterValue("Invoice_No", SO_No);
                     //rep.SetParameterValue("Creation_Company", logIn.company);
-                    ioneNet.Reports.RptViewer viewer = new ioneNet.Reports.RptViewer();
+                  
                     // rep.SetParameterValue("CopyName", "Original for Buyer/Duplicate for Transporter/Triplicate for Assessee/CTD Copy");
                     viewer.crystalReportViewer1.ReportSource = rep;
                     viewer.crystalReportViewer1.Refresh();
@@ -1705,7 +1838,8 @@ private void printChallanToolStripMenuItem_Click(object sender, EventArgs e)
                              join em in db.EMailServerSettings on c.Company_ID equals em.company_ID
                              where c.Company_ID == logIn.company && c.Inv_No == SO_No
                              select new { inv.Email_Id, em.SmtpServer, em.SmptPort, em.POMailID, em.POMailPW,em.Default_CC_Mail_id }).ToList();
-                string email = Email[0].Email_Id;
+                string email = "viswanathk@sujana.com"; // Email[0].Email_Id;
+                
                 if (email == "" || email == null)
                 {
                     MessageBox.Show("Customer Email Not Found In the Records");

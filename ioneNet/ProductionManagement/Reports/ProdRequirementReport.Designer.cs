@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnView = new Syncfusion.WinForms.Controls.SfButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExcell = new Syncfusion.WinForms.Controls.SfButton();
             this.dtpFrmDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
-            this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
-            this.btnView = new Syncfusion.WinForms.Controls.SfButton();
             this.btnClose = new Syncfusion.WinForms.Controls.SfButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
+            this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -73,6 +73,24 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.21809F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1018, 532);
             this.tableLayoutPanel2.TabIndex = 44;
+            // 
+            // btnView
+            // 
+            this.btnView.AccessibleName = "Button";
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Location = new System.Drawing.Point(637, 3);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(121, 30);
+            this.btnView.Style.BackColor = System.Drawing.Color.White;
+            this.btnView.Style.Image = global::ioneNet.Properties.Resources.Preview_24x24;
+            this.btnView.TabIndex = 44;
+            this.btnView.Text = "Generate";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // label1
             // 
@@ -132,6 +150,34 @@
             this.label3.Text = "PRODUCTION REQUIREMENT REPORT";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnClose
+            // 
+            this.btnClose.AccessibleName = "Button";
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(891, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(124, 30);
+            this.btnClose.Style.BackColor = System.Drawing.Color.White;
+            this.btnClose.Style.Image = global::ioneNet.Properties.Resources.Exit;
+            this.btnClose.TabIndex = 45;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ioneNet.Properties.Resources.logoface_Ione;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 40;
+            this.pictureBox2.TabStop = false;
+            // 
             // dtpToDate
             // 
             this.dtpToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -166,52 +212,6 @@
             this.sfDataGrid1.TabIndex = 24;
             this.sfDataGrid1.Text = "sfDataGrid1";
             // 
-            // btnView
-            // 
-            this.btnView.AccessibleName = "Button";
-            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnView.BackColor = System.Drawing.Color.White;
-            this.btnView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(637, 3);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(121, 30);
-            this.btnView.Style.BackColor = System.Drawing.Color.White;
-            this.btnView.Style.Image = global::ioneNet.Properties.Resources.Preview_24x24;
-            this.btnView.TabIndex = 44;
-            this.btnView.Text = "Generate";
-            this.btnView.UseVisualStyleBackColor = false;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.AccessibleName = "Button";
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(891, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(124, 30);
-            this.btnClose.Style.BackColor = System.Drawing.Color.White;
-            this.btnClose.Style.Image = global::ioneNet.Properties.Resources.Exit;
-            this.btnClose.TabIndex = 45;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ioneNet.Properties.Resources.logoface_Ione;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
-            // 
             // ProdRequirementReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,14 +219,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1042, 573);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProdRequirementReport";
             this.Text = "ProdRequirementReport";
             this.Load += new System.EventHandler(this.ProdRequirementReport_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }

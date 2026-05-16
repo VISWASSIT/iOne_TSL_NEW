@@ -1,28 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\",
+  "WorkspaceRootPath": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|c:\\erp\\github\\ioneerp_tsl\\dal\\ione_dal\\ione_dal\\ione_linq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|c:\\erp\\github\\ione_tsl_new\\dal\\ione_dal\\ione_dal\\ione_linq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|solutionrelative:ione_dal\\ione_linq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Ione_DAL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\ione_dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\ione_dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|solutionrelative:ione_dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\ione_dal\\ione_linq.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\ione_dal\\ione_linq.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|solutionrelative:ione_dal\\ione_linq.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\ione_dal\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\ione_dal\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|solutionrelative:ione_dal\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\ione_dal\\ione_linq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\ione_dal\\ione_linq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132BF7DB-095A-4CA5-A284-2D2EE8E186A8}|Ione_DAL\\Ione_DAL.csproj|solutionrelative:ione_dal\\ione_linq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -39,9 +39,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\App.config",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\App.config",
               "RelativeDocumentMoniker": "Ione_DAL\\App.config",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\App.config",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\App.config",
               "RelativeToolTip": "Ione_DAL\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "iOne_Linq.dbml",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.dbml",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.dbml",
               "RelativeDocumentMoniker": "Ione_DAL\\iOne_Linq.dbml",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.dbml",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.dbml",
               "RelativeToolTip": "Ione_DAL\\iOne_Linq.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
               "WhenOpened": "2025-03-23T16:11:13.642Z",
@@ -65,9 +65,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Ione_DAL",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\Ione_DAL.csproj",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\Ione_DAL.csproj",
               "RelativeDocumentMoniker": "Ione_DAL\\Ione_DAL.csproj",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\Ione_DAL.csproj",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\Ione_DAL.csproj",
               "RelativeToolTip": "Ione_DAL\\Ione_DAL.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-03-23T16:10:59.946Z"
@@ -76,34 +76,32 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "iOne_Linq.designer.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.designer.cs",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.designer.cs",
               "RelativeDocumentMoniker": "Ione_DAL\\iOne_Linq.designer.cs",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.designer.cs",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.designer.cs",
               "RelativeToolTip": "Ione_DAL\\iOne_Linq.designer.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwBMCAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:59:52.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T11:59:52.948Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "iOne_Linq.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.cs",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.cs",
               "RelativeDocumentMoniker": "Ione_DAL\\iOne_Linq.cs",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.cs",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\iOne_Linq.cs",
               "RelativeToolTip": "Ione_DAL\\iOne_Linq.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T04:38:00.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T04:38:00.485Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Ione_DAL\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\ERP\\Github\\IoneERP_TSL\\DAL\\Ione_DAL\\Ione_DAL\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\DAL\\Ione_DAL\\Ione_DAL\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Ione_DAL\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
