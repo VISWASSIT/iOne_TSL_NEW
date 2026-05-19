@@ -1,140 +1,140 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ERP\\Github\\iOne_TSL_NEW\\",
+  "WorkspaceRootPath": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ioneNet||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\sale_order.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\sale_order.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\sale_order.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmneworder_tsl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmnewinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\listoforders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\saleinvoice_gst_oth.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\saleinvoice_gst_oth.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\saleinvoice_gst_oth.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\quotation_stipl.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\quotation_stipl.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\quotation_stipl.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\proformainvoice.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\proformainvoice.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\proformainvoice.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\sale_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\sale_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\sale_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\generateeinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\masters\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\qulaitymanagement\\transactions\\testcertificate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\qulaitymanagement\\transactions\\testcertificate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\qulaitymanagement\\transactions\\testcertificate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\reports\\orderregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\reports\\orderregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\reports\\orderregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\productionmanagement\\reports\\prodrequirementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\productionmanagement\\transactions\\frmproductionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\rptpurchaseorder_others.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\rptpurchaseorder_others.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\transactions\\rptpurchaseorder_others.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\rptpurchaseorder_smpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\rptpurchaseorder_smpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\transactions\\rptpurchaseorder_smpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\materialmanagement\\transactions\\purchaseorderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\listofinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\frmloadingslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|C:\\ERP\\Github\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\rptewaybill.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ionenet\\ordermanagement\\transactions\\rptewaybill.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|solutionrelative:ionenet\\ordermanagement\\transactions\\rptewaybill.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|c:\\erp\\github\\ione_tsl_new\\ionenet\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
+      "AbsoluteMoniker": "D:0:0:{A6A9ABAA-F70C-4783-A5BA-5B3ECCE41C60}|ioneNet\\ioneNet.csproj|d:\\my projects\\github\\ione_tsl_new\\ionenet\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
   "DocumentGroupContainers": [
@@ -144,77 +144,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 30,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sale_Order.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-05-16T10:03:38.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ListOfOrders.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "ViewState": "AgIAALsBAAAAAAAAAAAowM8BAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T09:28:08.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ListOfOrders.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs [Design]",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T09:28:05.656Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProformaInvoice.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-05-16T08:23:45.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmQuotation.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
-              "ViewState": "AgIAAOEHAAAAAAAAAAA1wO4HAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:10:19.58Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "frmQuotation.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs [Design]",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs [Design]",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-15T12:10:14.204Z",
@@ -224,71 +166,160 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ProductList.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
               "RelativeToolTip": "ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAgwIEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T09:56:36.865Z",
+              "WhenOpened": "2026-05-15T09:56:36.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ioneNet",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ioneNet.csproj",
+              "RelativeDocumentMoniker": "ioneNet\\ioneNet.csproj",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ioneNet.csproj",
+              "RelativeToolTip": "ioneNet\\ioneNet.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-02T15:42:57.24Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmNewOrder_TSL.cs [Design]",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs [Design]",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T16:55:49.507Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmNewOrder_TSL.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
+              "ViewState": "AgIAACQJAAAAAAAAAAAAADsJAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T16:56:09.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmQuotation.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmQuotation.cs",
+              "ViewState": "AgIAAOEHAAAAAAAAAAA1wO4HAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:10:19.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProformaInvoice.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ProformaInvoice.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-05-16T08:23:45.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListOfOrders.cs [Design]",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T09:28:05.656Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "ProductList.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Masters\\ProductList.cs",
               "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Masters\\ProductList.cs [Design]",
-              "RelativeToolTip": "ioneNet\\MaterialManagement\\Masters\\ProductList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T09:56:35.543Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-15T09:56:35.543Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Sale_Order.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwBAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T11:35:08.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T11:35:08.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListOfOrders.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ListOfOrders.cs",
+              "ViewState": "AgIAALsBAAAAAAAAAAAowM8BAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T09:28:08.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sale_Order.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
+              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
+              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\Sale_Order.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-05-16T10:03:38.063Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "TestCertificate.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
               "RelativeDocumentMoniker": "ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
               "RelativeToolTip": "ioneNet\\QulaityManagement\\Transactions\\TestCertificate.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
               "WhenOpened": "2026-05-13T10:24:27.472Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "OrderRegister.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Reports\\OrderRegister.cs",
               "ViewState": "AgIAABIBAAAAAAAAAAAowCMBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T08:39:47.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-09T08:39:47.443Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "ProdRequirementReport.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
               "RelativeDocumentMoniker": "ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
               "RelativeToolTip": "ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
               "ViewState": "AgIAAKEAAAAAAAAAAAAAAK0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -298,10 +329,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "ProdRequirementReport.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
               "RelativeDocumentMoniker": "ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs",
               "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs [Design]",
-              "RelativeToolTip": "ioneNet\\ProductionManagement\\Reports\\ProdRequirementReport.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T05:34:03.986Z"
             },
@@ -309,9 +339,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "frmProductionRequirement.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
               "RelativeDocumentMoniker": "ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
               "RelativeToolTip": "ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
               "ViewState": "AgIAAPwAAAAAAAAAAAAkwAgBAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -321,10 +351,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "frmProductionRequirement.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
               "RelativeDocumentMoniker": "ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs",
               "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs [Design]",
-              "RelativeToolTip": "ioneNet\\ProductionManagement\\Transactions\\frmProductionRequirement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T05:32:33.266Z"
             },
@@ -332,45 +361,42 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "PurchaseOrdersList.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
               "RelativeToolTip": "ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
               "ViewState": "AgIAADwBAAAAAAAAAAAiwEUBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:29:50.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T10:29:50.666Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "PurchaseOrdersList.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs",
               "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs [Design]",
-              "RelativeToolTip": "ioneNet\\MaterialManagement\\Transactions\\PurchaseOrdersList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:29:45.876Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-08T10:29:45.876Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "rptPurchaseOrder_Others.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
               "RelativeToolTip": "ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_Others.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
               "WhenOpened": "2026-05-08T10:04:10.125Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "rptPurchaseOrder_SMPL.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
               "RelativeDocumentMoniker": "ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
               "RelativeToolTip": "ioneNet\\MaterialManagement\\Transactions\\rptPurchaseOrder_SMPL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -380,9 +406,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "frmNewInvoice.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
               "ViewState": "AgIAAHAJAAAAAAAAAAAQwIkJAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -393,9 +419,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "frmNewInvoice.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs [Design]",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs [Design]",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewInvoice.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T03:12:30.464Z",
@@ -405,69 +431,42 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Quotation_STIPL.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\Quotation_STIPL.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-05-15T11:49:08.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmNewOrder_TSL.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "ViewState": "AgIAADoHAAAAAAAAAAAswHAHAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T16:56:09.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmNewOrder_TSL.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs [Design]",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmNewOrder_TSL.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T16:55:49.507Z",
-              "EditorCaption": " [Design]"
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-05-15T11:49:08.529Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "SaleInvoice_GST_Oth.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\SaleInvoice_GST_Oth.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-05-04T16:28:09.569Z",
-              "EditorCaption": ""
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOsSURBVDhPrZPbS1xXFIe/vc85c9EzahyNlzSaGCNqjfahxtCkLT6UtBB6hZA\u002BlDw0aMhLodA\u002BFNLS5A9o6Y0g9CFQEnolNUgofYi0pSmkSY3RxkacUI0Tm8w4jnNm5szMmbP7MMbOjD52wYLN2vv3sdbmt\u002BD/Ctc9hFJKFNc\u002BHb3eL1xxsri2aQhx9cQLj50uqbluA7C3BPjZdxOHDI\u002B82NUaxKNLAIQoecJixCIcSdxGiRGP8I4ce7ErUXxfUBWFoWv07aqnd1c9PTvreHRHsCS31lTg9xodLY2Bd4ThvPTh95MNxfoNQAAhIJHKEomnN2QqkyNY5Wegq6lWk\u002BKsodyDn1yeMh9qNwWyNqqUG1MA96IWY1dCpLMOoD5gJTv8UFcK1ECKgkiKwlkKQVZk\u002BFFd4j5LbN8aYG9XI33t9Qx0NdFUa9ZW\u002BozApkB9DcRah5oUpKTFNJNctL7li8TnzGk3aQ6aNAdNttWZVPoNPLq\u002BzijtUNeQUgCFzmJujNn8LLfENFPJG3yzeo4Lya\u002BZyU2jaQJNE5SZANl69I6v\u002B8SU2TY0Vx2zZKVSElcpMqSZyFznp/Q4eS2HFy\u002BO6zCWuMCZ5Y9YcZZBKAofVATEkxpMZ\u002BWQ69onf5hQr90OK6KrDqPLl7iWvEY6Y7NwP4wVTeDEHHLRHL8t/MobN4\u002BTyK9s6FA/c7zZn8lka\u002BJJt2Fm0a6bupvh9FcRjC3txBpCxBp/h4BC5CX2HzaZcIb27bt58/Bb1HiqEWK5BCgPdOh/9bd5f\u002B55hMu9Lfp0/24/y4kcodla5m/sIRrqJKUlkY7ECTsMVOxjaM8wT9Ttx6f7ygYGaZrmn\u002B\u002B/\u002B\u002BX44lJ8tK1eXXm6y\u002BCZPj8\u002BQ5Bc6MS99Rzi7160tJfHt/Xz\u002BuAxjjz1KlIWHFG\u002BmlIIoUZGhnPPD3ZGFmP2UsxK8fI\u002Bk/3dfhq3GKilHdhjRwmm2njvlVMcPnCkYHIh1q2lr\u002B095bbxahoeQ6eywktHk4\u002BWeoMKn06Nt5a3207R7utGKbW\u002BNZom0DVBEW\u002BT1ROCvCuIWJDNS6oDOrWmjimrwJUopcoFyCJMCTCV1VhJCX6ZsZmPuui6RmudoKfZIbpiMf9Pgjv34oTC/2Um55SMXPKj58cXn1SIj\u002BO2pyVpq4CTzwu/losHvfG78dXESk1VhW2afsfjNdxinVD5888OtJ\u002BjHGhZVlMe7WDecYcSKbvHStrywbI1MTkTPjsXenDVyaQXcjvt1ZHh4Vyxrjj\u002BBTzQeWp0atADAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-05-04T16:28:09.569Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "rptEWaybill.rpt",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\rptEWaybill.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVDhPxZI9asNAEIU/h5QqVKRUYRWqdYHoDCagAzjkDLmHtg8ojbrcwKXiA6hRO426BFYQXBiCJ4V/0MjGdkiRDxZ23755zP5M2BIAd7v5Jb6BDoDNpp7sxDlQ5nlOEATGPaRtW5Ik\u002Bayq6gF4H\u002B7NARURPUdRFCoiCpT7wpthyjWU5aHWcOhAvNeP1UpVVafT7Vivv9R7Ue/lcgexczwvFkZr2zeci3EuNjqnAn7LnwPMM4oIYRiOLJa\u002B74nj\u002BBV45FRA0zS2YkSapiZgz1X/QFWPXuF2mALgnBtLhtlsZtbmCHVdE0WRMYzpuo4sy47u4B54stazLIGXsfg//ABAX6nUTmViqwAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJVSURBVDhPzZTPSxtBGIaf2cQx64/aLAlLhSCIlLaXEg8R46kUvCjRP6eXQqGn/h0FTz148dibokFpxIPFql1ITJu1NlCNyW7c3ekhhmazQSy99IH3sPPO9/J9w8wKOiSAB8DI7fd98YALwCEI8ij1TtwaWWDVNM2FfD5PIpFAiK4VpdFoUKvVgkwm06hWq\u002B93dnY2Ucrj5uZZ/HaPATw3TfPl0tISyWSSWCzWF/MH27YplUoqm806GxsbNeAbQhSBrW4gAKlUisXFRSYnJ\u002B8MtCwLz/PEzMyMDjwGHnU9Lby1gx8EBEqhgHYbzs87cl2FUgGaBrGYYG9vD9u2Q7WRQF8p7OtrfjabOJ7H7i4UCh1tb7u0WnXGxwXLyy8oFJaZmpoK1YdGBvjlOLzd3mbaMFh58gTXzdBt4uzsM7BOubyFlBPMzr4mHg9HRDp0fZ/NcplPtRoXzWbIa7Xq2PYBlvWRcnkTz3NDPoMC/5VIYEwI0rpOcngYqWkMDQWkUh3p\u002BhBSTjA6ajIykkaI6E2InKGRSPBhdRUZjzMqJeJhg7W1jjc29hRNe0Mu9wqlBJ4n\u002B8ujHQa\u002BT71SoXpywpfDQ46ODrDtjk5Pjzg\u002BPsOyLqhU6vh\u002B0F8eDdQ0DcMwSKfTd8owDDQtUh4NFEIgpbyXBr330BkqpWi1WhSLRVw3eiV6kVIyNzeHUiq0Hgpst9tcXl6Sy\u002BUGjtNLEARcXV3hOE5ovdvzLLBimubC/Pw8uq4PHKcXpRSO47C/v1\u002ByLGsd2KInMA1M9/41/oIfwFfge7/xf/IbkFfriVPFp4oAAAAASUVORK5CYII=",
               "WhenOpened": "2026-05-04T15:27:28.66Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "GenerateEInvoice.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
               "ViewState": "AgIAAJcCAAAAAAAAAAAQwJ4CAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -478,9 +477,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "GenerateEInvoice.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs [Design]",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs [Design]",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\GenerateEInvoice.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T12:04:10.599Z",
@@ -490,9 +489,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "frmLoadingSlip.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
               "ViewState": "AgIAAAkFAAAAAAAAAAAUwCIFAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -502,32 +501,19 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "frmLoadingSlip.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs",
               "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs [Design]",
-              "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\frmLoadingSlip.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T10:41:59.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ioneNet",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ioneNet.csproj",
-              "RelativeDocumentMoniker": "ioneNet\\ioneNet.csproj",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\ioneNet.csproj",
-              "RelativeToolTip": "ioneNet\\ioneNet.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-02T15:42:57.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 28,
               "Title": "ListOfInvoices.cs",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
               "ViewState": "AgIAADgHAAAAAAAAAAAkwEYHAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -538,9 +524,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "ListOfInvoices.cs [Design]",
-              "DocumentMoniker": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
+              "DocumentMoniker": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
               "RelativeDocumentMoniker": "ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs",
-              "ToolTip": "C:\\ERP\\Github\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs [Design]",
+              "ToolTip": "D:\\My Projects\\GitHub\\iOne_TSL_NEW\\ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs [Design]",
               "RelativeToolTip": "ioneNet\\OrderManagement\\Transactions\\ListOfInvoices.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T15:33:24.118Z",

@@ -1979,7 +1979,11 @@ namespace ioneNet.OrderManagement.Transactions
                     {
                         SC.Prod_Grade_Id = 3034;
                     }
-                        SC.Prod_Length = (dgProducts.Rows[i].Cells["Prod_Length"].Value == null) ? "" : (dgProducts.Rows[i].Cells["Prod_Length"].Value).ToString();
+                    SC.Prod_Length = (dgProducts.Rows[i].Cells["Prod_Length"].Value == null) ? "" : (dgProducts.Rows[i].Cells["Prod_Length"].Value).ToString();
+                    SC.ReqLengthMinMtr = (dgProducts.Rows[i].Cells["ReqLengthMinMtr"].Value == DBNull.Value) ? Convert.ToDecimal("00") : Convert.ToDecimal(dgProducts.Rows[i].Cells["ReqLengthMinMtr"].Value);
+                    SC.ReqLengthMaxMtr = (dgProducts.Rows[i].Cells["ReqLengthMaxMtr"].Value == DBNull.Value) ? Convert.ToDecimal("00") : Convert.ToDecimal(dgProducts.Rows[i].Cells["ReqLengthMaxMtr"].Value);
+                    SC.ReqLengthMtr = (dgProducts.Rows[i].Cells["ReqLengthMaxMtr"].Value == DBNull.Value) ? Convert.ToDecimal("00") : Convert.ToDecimal(dgProducts.Rows[i].Cells["ReqLengthMaxMtr"].Value);
+
                     SC.Uom = (dgProducts.Rows[i].Cells["uom"].Value == DBNull.Value) ? "" : dgProducts.Rows[i].Cells["uom"].Value.ToString();
 
                     double amt = Convert.ToDouble(dgProducts.Rows[i].Cells["Qty"].Value);
@@ -2323,17 +2327,15 @@ namespace ioneNet.OrderManagement.Transactions
                     cmbOrderExecuteFrom.SelectedValue = da[0].bu_id;
                 }
 
-
+                var isNumeric = 0;
+                int n = 0;
                 var dm1 = (from s in db.Sale_Order_Childs
                            join p in db.Products on Convert.ToInt32(s.Prod_Code) equals p.prod_ID
                            join u in db.UoM_Masters on p.Prod_Primary_UOM_Id equals u.UOM_ID
                            join m in db.QA_Mtrl_Grade_Masters on s.Prod_Grade_Id equals m.id into ps
                            from m in ps.DefaultIfEmpty()
                            where s.So_Master_ID == OrdId && s.Company_ID == logIn.company
-
-
                            select new
-
                            {
                                Item_Code = s.Prod_Code,
                                SO_Line_Item_No = s.enq_item_no,
@@ -2341,6 +2343,9 @@ namespace ioneNet.OrderManagement.Transactions
                                Item_Description = p.Prod_Name,
                                Item_Grade = m.Material_Grade,
                                Prod_Length = s.Prod_Length,
+                               isNumeric = int.TryParse(s.Prod_Length, out n),
+                               s.ReqLengthMinMtr,
+                               s.ReqLengthMaxMtr,
                                HSN_Code = p.Prod_HSN_Code,
                                UOM = u.Uom_Descr,
                                s.Qty,
@@ -2353,11 +2358,7 @@ namespace ioneNet.OrderManagement.Transactions
                                Quot_No = s.Quot_Master_ID,
                                Quote_Item_No = s.enq_Master_ID,
                                s.Remarks
-
                            });
-
-
-
 
                 SqlCommand cmd2 = (SqlCommand)db.GetCommand(dm1);
                 SqlDataAdapter da2 = new SqlDataAdapter(cmd2);

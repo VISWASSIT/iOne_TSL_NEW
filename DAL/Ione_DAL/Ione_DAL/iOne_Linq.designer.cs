@@ -498,9 +498,6 @@ namespace Ione_DAL
     partial void InsertForging_Sale_Order_Stock_Allotement(Forging_Sale_Order_Stock_Allotement instance);
     partial void UpdateForging_Sale_Order_Stock_Allotement(Forging_Sale_Order_Stock_Allotement instance);
     partial void DeleteForging_Sale_Order_Stock_Allotement(Forging_Sale_Order_Stock_Allotement instance);
-    partial void InsertSale_Order_Child(Sale_Order_Child instance);
-    partial void UpdateSale_Order_Child(Sale_Order_Child instance);
-    partial void DeleteSale_Order_Child(Sale_Order_Child instance);
     partial void InsertProduction_report_rolling_Child(Production_report_rolling_Child instance);
     partial void UpdateProduction_report_rolling_Child(Production_report_rolling_Child instance);
     partial void DeleteProduction_report_rolling_Child(Production_report_rolling_Child instance);
@@ -558,6 +555,9 @@ namespace Ione_DAL
     partial void InsertSale_Quotation_Master(Sale_Quotation_Master instance);
     partial void UpdateSale_Quotation_Master(Sale_Quotation_Master instance);
     partial void DeleteSale_Quotation_Master(Sale_Quotation_Master instance);
+    partial void InsertSale_Order_Child(Sale_Order_Child instance);
+    partial void UpdateSale_Order_Child(Sale_Order_Child instance);
+    partial void DeleteSale_Order_Child(Sale_Order_Child instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -2086,14 +2086,6 @@ namespace Ione_DAL
 			}
 		}
 		
-		public System.Data.Linq.Table<Sale_Order_Child> Sale_Order_Childs
-		{
-			get
-			{
-				return this.GetTable<Sale_Order_Child>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Production_report_rolling_Child> Production_report_rolling_Childs
 		{
 			get
@@ -2259,6 +2251,14 @@ namespace Ione_DAL
 			get
 			{
 				return this.GetTable<Sale_Quotation_Master>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Sale_Order_Child> Sale_Order_Childs
+		{
+			get
+			{
+				return this.GetTable<Sale_Order_Child>();
 			}
 		}
 		
@@ -5088,13 +5088,6 @@ namespace Ione_DAL
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.OrderRegister_TSL")]
-		public ISingleResult<OrderRegister_TSLResult> OrderRegister_TSL([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> frmDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> toDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> strT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> para, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, frmDate, toDate, strT, para, buid);
-			return ((ISingleResult<OrderRegister_TSLResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.getQuote_Master_data")]
 		public ISingleResult<getQuote_Master_dataResult> getQuote_Master_data([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(25)")] string quotno)
 		{
@@ -5128,6 +5121,13 @@ namespace Ione_DAL
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, frmDate, toDate, buid);
 			return ((ISingleResult<Production_MRPResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.OrderRegister_TSL")]
+		public ISingleResult<OrderRegister_TSLResult> OrderRegister_TSL([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> compname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> frmDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> toDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> strT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> para, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> buid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), compname, frmDate, toDate, strT, para, buid);
+			return ((ISingleResult<OrderRegister_TSLResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -67431,9 +67431,9 @@ namespace Ione_DAL
 		
 		private EntitySet<Product_InventoryLevel> _Product_InventoryLevels;
 		
-		private EntitySet<Sale_Order_Child> _Sale_Order_Childs;
-		
 		private EntitySet<Production_report_rolling_Child> _Production_report_rolling_Childs;
+		
+		private EntitySet<Sale_Order_Child> _Sale_Order_Childs;
 		
 		private EntityRef<Attributes_Prod_Type> _Attributes_Prod_Type;
 		
@@ -67533,8 +67533,8 @@ namespace Ione_DAL
 			this._Supplier_Quotation_Masters = new EntitySet<Supplier_Quotation_Master>(new Action<Supplier_Quotation_Master>(this.attach_Supplier_Quotation_Masters), new Action<Supplier_Quotation_Master>(this.detach_Supplier_Quotation_Masters));
 			this._Bloom_Roll_Wise_Receipts = new EntitySet<Bloom_Roll_Wise_Receipt>(new Action<Bloom_Roll_Wise_Receipt>(this.attach_Bloom_Roll_Wise_Receipts), new Action<Bloom_Roll_Wise_Receipt>(this.detach_Bloom_Roll_Wise_Receipts));
 			this._Product_InventoryLevels = new EntitySet<Product_InventoryLevel>(new Action<Product_InventoryLevel>(this.attach_Product_InventoryLevels), new Action<Product_InventoryLevel>(this.detach_Product_InventoryLevels));
-			this._Sale_Order_Childs = new EntitySet<Sale_Order_Child>(new Action<Sale_Order_Child>(this.attach_Sale_Order_Childs), new Action<Sale_Order_Child>(this.detach_Sale_Order_Childs));
 			this._Production_report_rolling_Childs = new EntitySet<Production_report_rolling_Child>(new Action<Production_report_rolling_Child>(this.attach_Production_report_rolling_Childs), new Action<Production_report_rolling_Child>(this.detach_Production_report_rolling_Childs));
+			this._Sale_Order_Childs = new EntitySet<Sale_Order_Child>(new Action<Sale_Order_Child>(this.attach_Sale_Order_Childs), new Action<Sale_Order_Child>(this.detach_Sale_Order_Childs));
 			this._Attributes_Prod_Type = default(EntityRef<Attributes_Prod_Type>);
 			this._Product_Group = default(EntityRef<Product_Group>);
 			this._UoM_Master = default(EntityRef<UoM_Master>);
@@ -68435,19 +68435,6 @@ namespace Ione_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_Sale_Order_Child", Storage="_Sale_Order_Childs", ThisKey="prod_ID", OtherKey="Prod_Code")]
-		public EntitySet<Sale_Order_Child> Sale_Order_Childs
-		{
-			get
-			{
-				return this._Sale_Order_Childs;
-			}
-			set
-			{
-				this._Sale_Order_Childs.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_Production_report_rolling_Child", Storage="_Production_report_rolling_Childs", ThisKey="prod_ID", OtherKey="Prod_ID")]
 		public EntitySet<Production_report_rolling_Child> Production_report_rolling_Childs
 		{
@@ -68458,6 +68445,19 @@ namespace Ione_DAL
 			set
 			{
 				this._Production_report_rolling_Childs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_Sale_Order_Child", Storage="_Sale_Order_Childs", ThisKey="prod_ID", OtherKey="Prod_Code")]
+		public EntitySet<Sale_Order_Child> Sale_Order_Childs
+		{
+			get
+			{
+				return this._Sale_Order_Childs;
+			}
+			set
+			{
+				this._Sale_Order_Childs.Assign(value);
 			}
 		}
 		
@@ -68751,18 +68751,6 @@ namespace Ione_DAL
 			entity.Product = null;
 		}
 		
-		private void attach_Sale_Order_Childs(Sale_Order_Child entity)
-		{
-			this.SendPropertyChanging();
-			entity.Product = this;
-		}
-		
-		private void detach_Sale_Order_Childs(Sale_Order_Child entity)
-		{
-			this.SendPropertyChanging();
-			entity.Product = null;
-		}
-		
 		private void attach_Production_report_rolling_Childs(Production_report_rolling_Child entity)
 		{
 			this.SendPropertyChanging();
@@ -68770,6 +68758,18 @@ namespace Ione_DAL
 		}
 		
 		private void detach_Production_report_rolling_Childs(Production_report_rolling_Child entity)
+		{
+			this.SendPropertyChanging();
+			entity.Product = null;
+		}
+		
+		private void attach_Sale_Order_Childs(Sale_Order_Child entity)
+		{
+			this.SendPropertyChanging();
+			entity.Product = this;
+		}
+		
+		private void detach_Sale_Order_Childs(Sale_Order_Child entity)
 		{
 			this.SendPropertyChanging();
 			entity.Product = null;
@@ -88585,894 +88585,6 @@ namespace Ione_DAL
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Sale_Order_Child")]
-	public partial class Sale_Order_Child : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private System.Nullable<int> _So_Master_ID;
-		
-		private string _SO_NO;
-		
-		private System.Nullable<int> _Prod_Code;
-		
-		private string _Product_Description;
-		
-		private string _Prod_Grade;
-		
-		private System.Nullable<int> _Prod_Grade_Id;
-		
-		private string _Uom;
-		
-		private System.Nullable<double> _Qty;
-		
-		private System.Nullable<decimal> _Price;
-		
-		private System.Nullable<decimal> _Amount;
-		
-		private System.Nullable<decimal> _Disc_Per;
-		
-		private System.Nullable<decimal> _Disc_Amount;
-		
-		private System.Nullable<decimal> _Taxable_Value;
-		
-		private System.Nullable<decimal> _CGST_Per;
-		
-		private System.Nullable<decimal> _CGST_Amnt;
-		
-		private System.Nullable<decimal> _SGST_Amnt;
-		
-		private System.Nullable<decimal> _SGST_Per;
-		
-		private System.Nullable<decimal> _IGST_Per;
-		
-		private System.Nullable<decimal> _IGST_Amnt;
-		
-		private System.Nullable<decimal> _Net_Amount;
-		
-		private string _Remarks;
-		
-		private System.Nullable<int> _Company_ID;
-		
-		private System.Nullable<decimal> _Tole_Qty;
-		
-		private string _Del_Date;
-		
-		private string _HSN_Code;
-		
-		private string _Int_Prod_Code;
-		
-		private System.Nullable<int> _Quot_Master_ID;
-		
-		private System.Nullable<int> _enq_Master_ID;
-		
-		private System.Nullable<int> _enq_item_no;
-		
-		private string _Prod_Length;
-		
-		private System.Nullable<int> _No_Of_Pieces;
-		
-		private EntityRef<Product> _Product;
-		
-		private EntityRef<QA_Mtrl_Grade_Master> _QA_Mtrl_Grade_Master;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnSo_Master_IDChanging(System.Nullable<int> value);
-    partial void OnSo_Master_IDChanged();
-    partial void OnSO_NOChanging(string value);
-    partial void OnSO_NOChanged();
-    partial void OnProd_CodeChanging(System.Nullable<int> value);
-    partial void OnProd_CodeChanged();
-    partial void OnProduct_DescriptionChanging(string value);
-    partial void OnProduct_DescriptionChanged();
-    partial void OnProd_GradeChanging(string value);
-    partial void OnProd_GradeChanged();
-    partial void OnProd_Grade_IdChanging(System.Nullable<int> value);
-    partial void OnProd_Grade_IdChanged();
-    partial void OnUomChanging(string value);
-    partial void OnUomChanged();
-    partial void OnQtyChanging(System.Nullable<double> value);
-    partial void OnQtyChanged();
-    partial void OnPriceChanging(System.Nullable<decimal> value);
-    partial void OnPriceChanged();
-    partial void OnAmountChanging(System.Nullable<decimal> value);
-    partial void OnAmountChanged();
-    partial void OnDisc_PerChanging(System.Nullable<decimal> value);
-    partial void OnDisc_PerChanged();
-    partial void OnDisc_AmountChanging(System.Nullable<decimal> value);
-    partial void OnDisc_AmountChanged();
-    partial void OnTaxable_ValueChanging(System.Nullable<decimal> value);
-    partial void OnTaxable_ValueChanged();
-    partial void OnCGST_PerChanging(System.Nullable<decimal> value);
-    partial void OnCGST_PerChanged();
-    partial void OnCGST_AmntChanging(System.Nullable<decimal> value);
-    partial void OnCGST_AmntChanged();
-    partial void OnSGST_AmntChanging(System.Nullable<decimal> value);
-    partial void OnSGST_AmntChanged();
-    partial void OnSGST_PerChanging(System.Nullable<decimal> value);
-    partial void OnSGST_PerChanged();
-    partial void OnIGST_PerChanging(System.Nullable<decimal> value);
-    partial void OnIGST_PerChanged();
-    partial void OnIGST_AmntChanging(System.Nullable<decimal> value);
-    partial void OnIGST_AmntChanged();
-    partial void OnNet_AmountChanging(System.Nullable<decimal> value);
-    partial void OnNet_AmountChanged();
-    partial void OnRemarksChanging(string value);
-    partial void OnRemarksChanged();
-    partial void OnCompany_IDChanging(System.Nullable<int> value);
-    partial void OnCompany_IDChanged();
-    partial void OnTole_QtyChanging(System.Nullable<decimal> value);
-    partial void OnTole_QtyChanged();
-    partial void OnDel_DateChanging(string value);
-    partial void OnDel_DateChanged();
-    partial void OnHSN_CodeChanging(string value);
-    partial void OnHSN_CodeChanged();
-    partial void OnInt_Prod_CodeChanging(string value);
-    partial void OnInt_Prod_CodeChanged();
-    partial void OnQuot_Master_IDChanging(System.Nullable<int> value);
-    partial void OnQuot_Master_IDChanged();
-    partial void Onenq_Master_IDChanging(System.Nullable<int> value);
-    partial void Onenq_Master_IDChanged();
-    partial void Onenq_item_noChanging(System.Nullable<int> value);
-    partial void Onenq_item_noChanged();
-    partial void OnProd_LengthChanging(string value);
-    partial void OnProd_LengthChanged();
-    partial void OnNo_Of_PiecesChanging(System.Nullable<int> value);
-    partial void OnNo_Of_PiecesChanged();
-    #endregion
-		
-		public Sale_Order_Child()
-		{
-			this._Product = default(EntityRef<Product>);
-			this._QA_Mtrl_Grade_Master = default(EntityRef<QA_Mtrl_Grade_Master>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Id
-		{
-			get
-			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_So_Master_ID", DbType="Int")]
-		public System.Nullable<int> So_Master_ID
-		{
-			get
-			{
-				return this._So_Master_ID;
-			}
-			set
-			{
-				if ((this._So_Master_ID != value))
-				{
-					this.OnSo_Master_IDChanging(value);
-					this.SendPropertyChanging();
-					this._So_Master_ID = value;
-					this.SendPropertyChanged("So_Master_ID");
-					this.OnSo_Master_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_NO", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string SO_NO
-		{
-			get
-			{
-				return this._SO_NO;
-			}
-			set
-			{
-				if ((this._SO_NO != value))
-				{
-					this.OnSO_NOChanging(value);
-					this.SendPropertyChanging();
-					this._SO_NO = value;
-					this.SendPropertyChanged("SO_NO");
-					this.OnSO_NOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Code", DbType="Int")]
-		public System.Nullable<int> Prod_Code
-		{
-			get
-			{
-				return this._Prod_Code;
-			}
-			set
-			{
-				if ((this._Prod_Code != value))
-				{
-					if (this._Product.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnProd_CodeChanging(value);
-					this.SendPropertyChanging();
-					this._Prod_Code = value;
-					this.SendPropertyChanged("Prod_Code");
-					this.OnProd_CodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Product_Description", DbType="VarChar(250)")]
-		public string Product_Description
-		{
-			get
-			{
-				return this._Product_Description;
-			}
-			set
-			{
-				if ((this._Product_Description != value))
-				{
-					this.OnProduct_DescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._Product_Description = value;
-					this.SendPropertyChanged("Product_Description");
-					this.OnProduct_DescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Grade", DbType="VarChar(100)")]
-		public string Prod_Grade
-		{
-			get
-			{
-				return this._Prod_Grade;
-			}
-			set
-			{
-				if ((this._Prod_Grade != value))
-				{
-					this.OnProd_GradeChanging(value);
-					this.SendPropertyChanging();
-					this._Prod_Grade = value;
-					this.SendPropertyChanged("Prod_Grade");
-					this.OnProd_GradeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Grade_Id", DbType="Int")]
-		public System.Nullable<int> Prod_Grade_Id
-		{
-			get
-			{
-				return this._Prod_Grade_Id;
-			}
-			set
-			{
-				if ((this._Prod_Grade_Id != value))
-				{
-					if (this._QA_Mtrl_Grade_Master.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnProd_Grade_IdChanging(value);
-					this.SendPropertyChanging();
-					this._Prod_Grade_Id = value;
-					this.SendPropertyChanged("Prod_Grade_Id");
-					this.OnProd_Grade_IdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Uom", DbType="VarChar(50)")]
-		public string Uom
-		{
-			get
-			{
-				return this._Uom;
-			}
-			set
-			{
-				if ((this._Uom != value))
-				{
-					this.OnUomChanging(value);
-					this.SendPropertyChanging();
-					this._Uom = value;
-					this.SendPropertyChanged("Uom");
-					this.OnUomChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty", DbType="Float")]
-		public System.Nullable<double> Qty
-		{
-			get
-			{
-				return this._Qty;
-			}
-			set
-			{
-				if ((this._Qty != value))
-				{
-					this.OnQtyChanging(value);
-					this.SendPropertyChanging();
-					this._Qty = value;
-					this.SendPropertyChanged("Qty");
-					this.OnQtyChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Price", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Price
-		{
-			get
-			{
-				return this._Price;
-			}
-			set
-			{
-				if ((this._Price != value))
-				{
-					this.OnPriceChanging(value);
-					this.SendPropertyChanging();
-					this._Price = value;
-					this.SendPropertyChanged("Price");
-					this.OnPriceChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amount", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Amount
-		{
-			get
-			{
-				return this._Amount;
-			}
-			set
-			{
-				if ((this._Amount != value))
-				{
-					this.OnAmountChanging(value);
-					this.SendPropertyChanging();
-					this._Amount = value;
-					this.SendPropertyChanged("Amount");
-					this.OnAmountChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Disc_Per", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Disc_Per
-		{
-			get
-			{
-				return this._Disc_Per;
-			}
-			set
-			{
-				if ((this._Disc_Per != value))
-				{
-					this.OnDisc_PerChanging(value);
-					this.SendPropertyChanging();
-					this._Disc_Per = value;
-					this.SendPropertyChanged("Disc_Per");
-					this.OnDisc_PerChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Disc_Amount", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Disc_Amount
-		{
-			get
-			{
-				return this._Disc_Amount;
-			}
-			set
-			{
-				if ((this._Disc_Amount != value))
-				{
-					this.OnDisc_AmountChanging(value);
-					this.SendPropertyChanging();
-					this._Disc_Amount = value;
-					this.SendPropertyChanged("Disc_Amount");
-					this.OnDisc_AmountChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Taxable_Value", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Taxable_Value
-		{
-			get
-			{
-				return this._Taxable_Value;
-			}
-			set
-			{
-				if ((this._Taxable_Value != value))
-				{
-					this.OnTaxable_ValueChanging(value);
-					this.SendPropertyChanging();
-					this._Taxable_Value = value;
-					this.SendPropertyChanged("Taxable_Value");
-					this.OnTaxable_ValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CGST_Per", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> CGST_Per
-		{
-			get
-			{
-				return this._CGST_Per;
-			}
-			set
-			{
-				if ((this._CGST_Per != value))
-				{
-					this.OnCGST_PerChanging(value);
-					this.SendPropertyChanging();
-					this._CGST_Per = value;
-					this.SendPropertyChanged("CGST_Per");
-					this.OnCGST_PerChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CGST_Amnt", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> CGST_Amnt
-		{
-			get
-			{
-				return this._CGST_Amnt;
-			}
-			set
-			{
-				if ((this._CGST_Amnt != value))
-				{
-					this.OnCGST_AmntChanging(value);
-					this.SendPropertyChanging();
-					this._CGST_Amnt = value;
-					this.SendPropertyChanged("CGST_Amnt");
-					this.OnCGST_AmntChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SGST_Amnt", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> SGST_Amnt
-		{
-			get
-			{
-				return this._SGST_Amnt;
-			}
-			set
-			{
-				if ((this._SGST_Amnt != value))
-				{
-					this.OnSGST_AmntChanging(value);
-					this.SendPropertyChanging();
-					this._SGST_Amnt = value;
-					this.SendPropertyChanged("SGST_Amnt");
-					this.OnSGST_AmntChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SGST_Per", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> SGST_Per
-		{
-			get
-			{
-				return this._SGST_Per;
-			}
-			set
-			{
-				if ((this._SGST_Per != value))
-				{
-					this.OnSGST_PerChanging(value);
-					this.SendPropertyChanging();
-					this._SGST_Per = value;
-					this.SendPropertyChanged("SGST_Per");
-					this.OnSGST_PerChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IGST_Per", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> IGST_Per
-		{
-			get
-			{
-				return this._IGST_Per;
-			}
-			set
-			{
-				if ((this._IGST_Per != value))
-				{
-					this.OnIGST_PerChanging(value);
-					this.SendPropertyChanging();
-					this._IGST_Per = value;
-					this.SendPropertyChanged("IGST_Per");
-					this.OnIGST_PerChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IGST_Amnt", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> IGST_Amnt
-		{
-			get
-			{
-				return this._IGST_Amnt;
-			}
-			set
-			{
-				if ((this._IGST_Amnt != value))
-				{
-					this.OnIGST_AmntChanging(value);
-					this.SendPropertyChanging();
-					this._IGST_Amnt = value;
-					this.SendPropertyChanged("IGST_Amnt");
-					this.OnIGST_AmntChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Net_Amount", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Net_Amount
-		{
-			get
-			{
-				return this._Net_Amount;
-			}
-			set
-			{
-				if ((this._Net_Amount != value))
-				{
-					this.OnNet_AmountChanging(value);
-					this.SendPropertyChanging();
-					this._Net_Amount = value;
-					this.SendPropertyChanged("Net_Amount");
-					this.OnNet_AmountChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(150)")]
-		public string Remarks
-		{
-			get
-			{
-				return this._Remarks;
-			}
-			set
-			{
-				if ((this._Remarks != value))
-				{
-					this.OnRemarksChanging(value);
-					this.SendPropertyChanging();
-					this._Remarks = value;
-					this.SendPropertyChanged("Remarks");
-					this.OnRemarksChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Company_ID", DbType="Int")]
-		public System.Nullable<int> Company_ID
-		{
-			get
-			{
-				return this._Company_ID;
-			}
-			set
-			{
-				if ((this._Company_ID != value))
-				{
-					this.OnCompany_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Company_ID = value;
-					this.SendPropertyChanged("Company_ID");
-					this.OnCompany_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tole_Qty", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Tole_Qty
-		{
-			get
-			{
-				return this._Tole_Qty;
-			}
-			set
-			{
-				if ((this._Tole_Qty != value))
-				{
-					this.OnTole_QtyChanging(value);
-					this.SendPropertyChanging();
-					this._Tole_Qty = value;
-					this.SendPropertyChanged("Tole_Qty");
-					this.OnTole_QtyChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Del_Date", DbType="VarChar(50)")]
-		public string Del_Date
-		{
-			get
-			{
-				return this._Del_Date;
-			}
-			set
-			{
-				if ((this._Del_Date != value))
-				{
-					this.OnDel_DateChanging(value);
-					this.SendPropertyChanging();
-					this._Del_Date = value;
-					this.SendPropertyChanged("Del_Date");
-					this.OnDel_DateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HSN_Code", DbType="VarChar(25)")]
-		public string HSN_Code
-		{
-			get
-			{
-				return this._HSN_Code;
-			}
-			set
-			{
-				if ((this._HSN_Code != value))
-				{
-					this.OnHSN_CodeChanging(value);
-					this.SendPropertyChanging();
-					this._HSN_Code = value;
-					this.SendPropertyChanged("HSN_Code");
-					this.OnHSN_CodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Int_Prod_Code", DbType="VarChar(25)")]
-		public string Int_Prod_Code
-		{
-			get
-			{
-				return this._Int_Prod_Code;
-			}
-			set
-			{
-				if ((this._Int_Prod_Code != value))
-				{
-					this.OnInt_Prod_CodeChanging(value);
-					this.SendPropertyChanging();
-					this._Int_Prod_Code = value;
-					this.SendPropertyChanged("Int_Prod_Code");
-					this.OnInt_Prod_CodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quot_Master_ID", DbType="Int")]
-		public System.Nullable<int> Quot_Master_ID
-		{
-			get
-			{
-				return this._Quot_Master_ID;
-			}
-			set
-			{
-				if ((this._Quot_Master_ID != value))
-				{
-					this.OnQuot_Master_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Quot_Master_ID = value;
-					this.SendPropertyChanged("Quot_Master_ID");
-					this.OnQuot_Master_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enq_Master_ID", DbType="Int")]
-		public System.Nullable<int> enq_Master_ID
-		{
-			get
-			{
-				return this._enq_Master_ID;
-			}
-			set
-			{
-				if ((this._enq_Master_ID != value))
-				{
-					this.Onenq_Master_IDChanging(value);
-					this.SendPropertyChanging();
-					this._enq_Master_ID = value;
-					this.SendPropertyChanged("enq_Master_ID");
-					this.Onenq_Master_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enq_item_no", DbType="Int")]
-		public System.Nullable<int> enq_item_no
-		{
-			get
-			{
-				return this._enq_item_no;
-			}
-			set
-			{
-				if ((this._enq_item_no != value))
-				{
-					this.Onenq_item_noChanging(value);
-					this.SendPropertyChanging();
-					this._enq_item_no = value;
-					this.SendPropertyChanged("enq_item_no");
-					this.Onenq_item_noChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Length", DbType="VarChar(50)")]
-		public string Prod_Length
-		{
-			get
-			{
-				return this._Prod_Length;
-			}
-			set
-			{
-				if ((this._Prod_Length != value))
-				{
-					this.OnProd_LengthChanging(value);
-					this.SendPropertyChanging();
-					this._Prod_Length = value;
-					this.SendPropertyChanged("Prod_Length");
-					this.OnProd_LengthChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_Of_Pieces", DbType="Int")]
-		public System.Nullable<int> No_Of_Pieces
-		{
-			get
-			{
-				return this._No_Of_Pieces;
-			}
-			set
-			{
-				if ((this._No_Of_Pieces != value))
-				{
-					this.OnNo_Of_PiecesChanging(value);
-					this.SendPropertyChanging();
-					this._No_Of_Pieces = value;
-					this.SendPropertyChanged("No_Of_Pieces");
-					this.OnNo_Of_PiecesChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_Sale_Order_Child", Storage="_Product", ThisKey="Prod_Code", OtherKey="prod_ID", IsForeignKey=true)]
-		public Product Product
-		{
-			get
-			{
-				return this._Product.Entity;
-			}
-			set
-			{
-				Product previousValue = this._Product.Entity;
-				if (((previousValue != value) 
-							|| (this._Product.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Product.Entity = null;
-						previousValue.Sale_Order_Childs.Remove(this);
-					}
-					this._Product.Entity = value;
-					if ((value != null))
-					{
-						value.Sale_Order_Childs.Add(this);
-						this._Prod_Code = value.prod_ID;
-					}
-					else
-					{
-						this._Prod_Code = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("Product");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QA_Mtrl_Grade_Master_Sale_Order_Child", Storage="_QA_Mtrl_Grade_Master", ThisKey="Prod_Grade_Id", OtherKey="id", IsForeignKey=true)]
-		public QA_Mtrl_Grade_Master QA_Mtrl_Grade_Master
-		{
-			get
-			{
-				return this._QA_Mtrl_Grade_Master.Entity;
-			}
-			set
-			{
-				QA_Mtrl_Grade_Master previousValue = this._QA_Mtrl_Grade_Master.Entity;
-				if (((previousValue != value) 
-							|| (this._QA_Mtrl_Grade_Master.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._QA_Mtrl_Grade_Master.Entity = null;
-						previousValue.Sale_Order_Childs.Remove(this);
-					}
-					this._QA_Mtrl_Grade_Master.Entity = value;
-					if ((value != null))
-					{
-						value.Sale_Order_Childs.Add(this);
-						this._Prod_Grade_Id = value.id;
-					}
-					else
-					{
-						this._Prod_Grade_Id = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("QA_Mtrl_Grade_Master");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Production_report_rolling_Child")]
 	public partial class Production_report_rolling_Child : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -99210,6 +98322,966 @@ namespace Ione_DAL
 		{
 			this.SendPropertyChanging();
 			entity.Sale_Quotation_Master = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Sale_Order_Child")]
+	public partial class Sale_Order_Child : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<int> _So_Master_ID;
+		
+		private string _SO_NO;
+		
+		private System.Nullable<int> _Prod_Code;
+		
+		private string _Product_Description;
+		
+		private string _Prod_Grade;
+		
+		private System.Nullable<int> _Prod_Grade_Id;
+		
+		private string _Uom;
+		
+		private System.Nullable<double> _Qty;
+		
+		private System.Nullable<decimal> _Price;
+		
+		private System.Nullable<decimal> _Amount;
+		
+		private System.Nullable<decimal> _Disc_Per;
+		
+		private System.Nullable<decimal> _Disc_Amount;
+		
+		private System.Nullable<decimal> _Taxable_Value;
+		
+		private System.Nullable<decimal> _CGST_Per;
+		
+		private System.Nullable<decimal> _CGST_Amnt;
+		
+		private System.Nullable<decimal> _SGST_Amnt;
+		
+		private System.Nullable<decimal> _SGST_Per;
+		
+		private System.Nullable<decimal> _IGST_Per;
+		
+		private System.Nullable<decimal> _IGST_Amnt;
+		
+		private System.Nullable<decimal> _Net_Amount;
+		
+		private string _Remarks;
+		
+		private System.Nullable<int> _Company_ID;
+		
+		private System.Nullable<decimal> _Tole_Qty;
+		
+		private string _Del_Date;
+		
+		private string _HSN_Code;
+		
+		private string _Int_Prod_Code;
+		
+		private System.Nullable<int> _Quot_Master_ID;
+		
+		private System.Nullable<int> _enq_Master_ID;
+		
+		private System.Nullable<int> _enq_item_no;
+		
+		private string _Prod_Length;
+		
+		private System.Nullable<int> _No_Of_Pieces;
+		
+		private System.Nullable<decimal> _ReqLengthMtr;
+		
+		private System.Nullable<decimal> _ReqLengthMinMtr;
+		
+		private System.Nullable<decimal> _ReqLengthMaxMtr;
+		
+		private EntityRef<Product> _Product;
+		
+		private EntityRef<QA_Mtrl_Grade_Master> _QA_Mtrl_Grade_Master;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnSo_Master_IDChanging(System.Nullable<int> value);
+    partial void OnSo_Master_IDChanged();
+    partial void OnSO_NOChanging(string value);
+    partial void OnSO_NOChanged();
+    partial void OnProd_CodeChanging(System.Nullable<int> value);
+    partial void OnProd_CodeChanged();
+    partial void OnProduct_DescriptionChanging(string value);
+    partial void OnProduct_DescriptionChanged();
+    partial void OnProd_GradeChanging(string value);
+    partial void OnProd_GradeChanged();
+    partial void OnProd_Grade_IdChanging(System.Nullable<int> value);
+    partial void OnProd_Grade_IdChanged();
+    partial void OnUomChanging(string value);
+    partial void OnUomChanged();
+    partial void OnQtyChanging(System.Nullable<double> value);
+    partial void OnQtyChanged();
+    partial void OnPriceChanging(System.Nullable<decimal> value);
+    partial void OnPriceChanged();
+    partial void OnAmountChanging(System.Nullable<decimal> value);
+    partial void OnAmountChanged();
+    partial void OnDisc_PerChanging(System.Nullable<decimal> value);
+    partial void OnDisc_PerChanged();
+    partial void OnDisc_AmountChanging(System.Nullable<decimal> value);
+    partial void OnDisc_AmountChanged();
+    partial void OnTaxable_ValueChanging(System.Nullable<decimal> value);
+    partial void OnTaxable_ValueChanged();
+    partial void OnCGST_PerChanging(System.Nullable<decimal> value);
+    partial void OnCGST_PerChanged();
+    partial void OnCGST_AmntChanging(System.Nullable<decimal> value);
+    partial void OnCGST_AmntChanged();
+    partial void OnSGST_AmntChanging(System.Nullable<decimal> value);
+    partial void OnSGST_AmntChanged();
+    partial void OnSGST_PerChanging(System.Nullable<decimal> value);
+    partial void OnSGST_PerChanged();
+    partial void OnIGST_PerChanging(System.Nullable<decimal> value);
+    partial void OnIGST_PerChanged();
+    partial void OnIGST_AmntChanging(System.Nullable<decimal> value);
+    partial void OnIGST_AmntChanged();
+    partial void OnNet_AmountChanging(System.Nullable<decimal> value);
+    partial void OnNet_AmountChanged();
+    partial void OnRemarksChanging(string value);
+    partial void OnRemarksChanged();
+    partial void OnCompany_IDChanging(System.Nullable<int> value);
+    partial void OnCompany_IDChanged();
+    partial void OnTole_QtyChanging(System.Nullable<decimal> value);
+    partial void OnTole_QtyChanged();
+    partial void OnDel_DateChanging(string value);
+    partial void OnDel_DateChanged();
+    partial void OnHSN_CodeChanging(string value);
+    partial void OnHSN_CodeChanged();
+    partial void OnInt_Prod_CodeChanging(string value);
+    partial void OnInt_Prod_CodeChanged();
+    partial void OnQuot_Master_IDChanging(System.Nullable<int> value);
+    partial void OnQuot_Master_IDChanged();
+    partial void Onenq_Master_IDChanging(System.Nullable<int> value);
+    partial void Onenq_Master_IDChanged();
+    partial void Onenq_item_noChanging(System.Nullable<int> value);
+    partial void Onenq_item_noChanged();
+    partial void OnProd_LengthChanging(string value);
+    partial void OnProd_LengthChanged();
+    partial void OnNo_Of_PiecesChanging(System.Nullable<int> value);
+    partial void OnNo_Of_PiecesChanged();
+    partial void OnReqLengthMtrChanging(System.Nullable<decimal> value);
+    partial void OnReqLengthMtrChanged();
+    partial void OnReqLengthMinMtrChanging(System.Nullable<decimal> value);
+    partial void OnReqLengthMinMtrChanged();
+    partial void OnReqLengthMaxMtrChanging(System.Nullable<decimal> value);
+    partial void OnReqLengthMaxMtrChanged();
+    #endregion
+		
+		public Sale_Order_Child()
+		{
+			this._Product = default(EntityRef<Product>);
+			this._QA_Mtrl_Grade_Master = default(EntityRef<QA_Mtrl_Grade_Master>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_So_Master_ID", DbType="Int")]
+		public System.Nullable<int> So_Master_ID
+		{
+			get
+			{
+				return this._So_Master_ID;
+			}
+			set
+			{
+				if ((this._So_Master_ID != value))
+				{
+					this.OnSo_Master_IDChanging(value);
+					this.SendPropertyChanging();
+					this._So_Master_ID = value;
+					this.SendPropertyChanged("So_Master_ID");
+					this.OnSo_Master_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_NO", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string SO_NO
+		{
+			get
+			{
+				return this._SO_NO;
+			}
+			set
+			{
+				if ((this._SO_NO != value))
+				{
+					this.OnSO_NOChanging(value);
+					this.SendPropertyChanging();
+					this._SO_NO = value;
+					this.SendPropertyChanged("SO_NO");
+					this.OnSO_NOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Code", DbType="Int")]
+		public System.Nullable<int> Prod_Code
+		{
+			get
+			{
+				return this._Prod_Code;
+			}
+			set
+			{
+				if ((this._Prod_Code != value))
+				{
+					if (this._Product.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnProd_CodeChanging(value);
+					this.SendPropertyChanging();
+					this._Prod_Code = value;
+					this.SendPropertyChanged("Prod_Code");
+					this.OnProd_CodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Product_Description", DbType="VarChar(250)")]
+		public string Product_Description
+		{
+			get
+			{
+				return this._Product_Description;
+			}
+			set
+			{
+				if ((this._Product_Description != value))
+				{
+					this.OnProduct_DescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Product_Description = value;
+					this.SendPropertyChanged("Product_Description");
+					this.OnProduct_DescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Grade", DbType="VarChar(100)")]
+		public string Prod_Grade
+		{
+			get
+			{
+				return this._Prod_Grade;
+			}
+			set
+			{
+				if ((this._Prod_Grade != value))
+				{
+					this.OnProd_GradeChanging(value);
+					this.SendPropertyChanging();
+					this._Prod_Grade = value;
+					this.SendPropertyChanged("Prod_Grade");
+					this.OnProd_GradeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Grade_Id", DbType="Int")]
+		public System.Nullable<int> Prod_Grade_Id
+		{
+			get
+			{
+				return this._Prod_Grade_Id;
+			}
+			set
+			{
+				if ((this._Prod_Grade_Id != value))
+				{
+					if (this._QA_Mtrl_Grade_Master.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnProd_Grade_IdChanging(value);
+					this.SendPropertyChanging();
+					this._Prod_Grade_Id = value;
+					this.SendPropertyChanged("Prod_Grade_Id");
+					this.OnProd_Grade_IdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Uom", DbType="VarChar(50)")]
+		public string Uom
+		{
+			get
+			{
+				return this._Uom;
+			}
+			set
+			{
+				if ((this._Uom != value))
+				{
+					this.OnUomChanging(value);
+					this.SendPropertyChanging();
+					this._Uom = value;
+					this.SendPropertyChanged("Uom");
+					this.OnUomChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty", DbType="Float")]
+		public System.Nullable<double> Qty
+		{
+			get
+			{
+				return this._Qty;
+			}
+			set
+			{
+				if ((this._Qty != value))
+				{
+					this.OnQtyChanging(value);
+					this.SendPropertyChanging();
+					this._Qty = value;
+					this.SendPropertyChanged("Qty");
+					this.OnQtyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Price", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Price
+		{
+			get
+			{
+				return this._Price;
+			}
+			set
+			{
+				if ((this._Price != value))
+				{
+					this.OnPriceChanging(value);
+					this.SendPropertyChanging();
+					this._Price = value;
+					this.SendPropertyChanged("Price");
+					this.OnPriceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amount", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Amount
+		{
+			get
+			{
+				return this._Amount;
+			}
+			set
+			{
+				if ((this._Amount != value))
+				{
+					this.OnAmountChanging(value);
+					this.SendPropertyChanging();
+					this._Amount = value;
+					this.SendPropertyChanged("Amount");
+					this.OnAmountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Disc_Per", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Disc_Per
+		{
+			get
+			{
+				return this._Disc_Per;
+			}
+			set
+			{
+				if ((this._Disc_Per != value))
+				{
+					this.OnDisc_PerChanging(value);
+					this.SendPropertyChanging();
+					this._Disc_Per = value;
+					this.SendPropertyChanged("Disc_Per");
+					this.OnDisc_PerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Disc_Amount", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Disc_Amount
+		{
+			get
+			{
+				return this._Disc_Amount;
+			}
+			set
+			{
+				if ((this._Disc_Amount != value))
+				{
+					this.OnDisc_AmountChanging(value);
+					this.SendPropertyChanging();
+					this._Disc_Amount = value;
+					this.SendPropertyChanged("Disc_Amount");
+					this.OnDisc_AmountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Taxable_Value", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Taxable_Value
+		{
+			get
+			{
+				return this._Taxable_Value;
+			}
+			set
+			{
+				if ((this._Taxable_Value != value))
+				{
+					this.OnTaxable_ValueChanging(value);
+					this.SendPropertyChanging();
+					this._Taxable_Value = value;
+					this.SendPropertyChanged("Taxable_Value");
+					this.OnTaxable_ValueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CGST_Per", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> CGST_Per
+		{
+			get
+			{
+				return this._CGST_Per;
+			}
+			set
+			{
+				if ((this._CGST_Per != value))
+				{
+					this.OnCGST_PerChanging(value);
+					this.SendPropertyChanging();
+					this._CGST_Per = value;
+					this.SendPropertyChanged("CGST_Per");
+					this.OnCGST_PerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CGST_Amnt", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> CGST_Amnt
+		{
+			get
+			{
+				return this._CGST_Amnt;
+			}
+			set
+			{
+				if ((this._CGST_Amnt != value))
+				{
+					this.OnCGST_AmntChanging(value);
+					this.SendPropertyChanging();
+					this._CGST_Amnt = value;
+					this.SendPropertyChanged("CGST_Amnt");
+					this.OnCGST_AmntChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SGST_Amnt", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SGST_Amnt
+		{
+			get
+			{
+				return this._SGST_Amnt;
+			}
+			set
+			{
+				if ((this._SGST_Amnt != value))
+				{
+					this.OnSGST_AmntChanging(value);
+					this.SendPropertyChanging();
+					this._SGST_Amnt = value;
+					this.SendPropertyChanged("SGST_Amnt");
+					this.OnSGST_AmntChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SGST_Per", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> SGST_Per
+		{
+			get
+			{
+				return this._SGST_Per;
+			}
+			set
+			{
+				if ((this._SGST_Per != value))
+				{
+					this.OnSGST_PerChanging(value);
+					this.SendPropertyChanging();
+					this._SGST_Per = value;
+					this.SendPropertyChanged("SGST_Per");
+					this.OnSGST_PerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IGST_Per", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> IGST_Per
+		{
+			get
+			{
+				return this._IGST_Per;
+			}
+			set
+			{
+				if ((this._IGST_Per != value))
+				{
+					this.OnIGST_PerChanging(value);
+					this.SendPropertyChanging();
+					this._IGST_Per = value;
+					this.SendPropertyChanged("IGST_Per");
+					this.OnIGST_PerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IGST_Amnt", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> IGST_Amnt
+		{
+			get
+			{
+				return this._IGST_Amnt;
+			}
+			set
+			{
+				if ((this._IGST_Amnt != value))
+				{
+					this.OnIGST_AmntChanging(value);
+					this.SendPropertyChanging();
+					this._IGST_Amnt = value;
+					this.SendPropertyChanged("IGST_Amnt");
+					this.OnIGST_AmntChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Net_Amount", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Net_Amount
+		{
+			get
+			{
+				return this._Net_Amount;
+			}
+			set
+			{
+				if ((this._Net_Amount != value))
+				{
+					this.OnNet_AmountChanging(value);
+					this.SendPropertyChanging();
+					this._Net_Amount = value;
+					this.SendPropertyChanged("Net_Amount");
+					this.OnNet_AmountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(150)")]
+		public string Remarks
+		{
+			get
+			{
+				return this._Remarks;
+			}
+			set
+			{
+				if ((this._Remarks != value))
+				{
+					this.OnRemarksChanging(value);
+					this.SendPropertyChanging();
+					this._Remarks = value;
+					this.SendPropertyChanged("Remarks");
+					this.OnRemarksChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Company_ID", DbType="Int")]
+		public System.Nullable<int> Company_ID
+		{
+			get
+			{
+				return this._Company_ID;
+			}
+			set
+			{
+				if ((this._Company_ID != value))
+				{
+					this.OnCompany_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Company_ID = value;
+					this.SendPropertyChanged("Company_ID");
+					this.OnCompany_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tole_Qty", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Tole_Qty
+		{
+			get
+			{
+				return this._Tole_Qty;
+			}
+			set
+			{
+				if ((this._Tole_Qty != value))
+				{
+					this.OnTole_QtyChanging(value);
+					this.SendPropertyChanging();
+					this._Tole_Qty = value;
+					this.SendPropertyChanged("Tole_Qty");
+					this.OnTole_QtyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Del_Date", DbType="VarChar(50)")]
+		public string Del_Date
+		{
+			get
+			{
+				return this._Del_Date;
+			}
+			set
+			{
+				if ((this._Del_Date != value))
+				{
+					this.OnDel_DateChanging(value);
+					this.SendPropertyChanging();
+					this._Del_Date = value;
+					this.SendPropertyChanged("Del_Date");
+					this.OnDel_DateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HSN_Code", DbType="VarChar(25)")]
+		public string HSN_Code
+		{
+			get
+			{
+				return this._HSN_Code;
+			}
+			set
+			{
+				if ((this._HSN_Code != value))
+				{
+					this.OnHSN_CodeChanging(value);
+					this.SendPropertyChanging();
+					this._HSN_Code = value;
+					this.SendPropertyChanged("HSN_Code");
+					this.OnHSN_CodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Int_Prod_Code", DbType="VarChar(25)")]
+		public string Int_Prod_Code
+		{
+			get
+			{
+				return this._Int_Prod_Code;
+			}
+			set
+			{
+				if ((this._Int_Prod_Code != value))
+				{
+					this.OnInt_Prod_CodeChanging(value);
+					this.SendPropertyChanging();
+					this._Int_Prod_Code = value;
+					this.SendPropertyChanged("Int_Prod_Code");
+					this.OnInt_Prod_CodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quot_Master_ID", DbType="Int")]
+		public System.Nullable<int> Quot_Master_ID
+		{
+			get
+			{
+				return this._Quot_Master_ID;
+			}
+			set
+			{
+				if ((this._Quot_Master_ID != value))
+				{
+					this.OnQuot_Master_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Quot_Master_ID = value;
+					this.SendPropertyChanged("Quot_Master_ID");
+					this.OnQuot_Master_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enq_Master_ID", DbType="Int")]
+		public System.Nullable<int> enq_Master_ID
+		{
+			get
+			{
+				return this._enq_Master_ID;
+			}
+			set
+			{
+				if ((this._enq_Master_ID != value))
+				{
+					this.Onenq_Master_IDChanging(value);
+					this.SendPropertyChanging();
+					this._enq_Master_ID = value;
+					this.SendPropertyChanged("enq_Master_ID");
+					this.Onenq_Master_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enq_item_no", DbType="Int")]
+		public System.Nullable<int> enq_item_no
+		{
+			get
+			{
+				return this._enq_item_no;
+			}
+			set
+			{
+				if ((this._enq_item_no != value))
+				{
+					this.Onenq_item_noChanging(value);
+					this.SendPropertyChanging();
+					this._enq_item_no = value;
+					this.SendPropertyChanged("enq_item_no");
+					this.Onenq_item_noChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Length", DbType="VarChar(50)")]
+		public string Prod_Length
+		{
+			get
+			{
+				return this._Prod_Length;
+			}
+			set
+			{
+				if ((this._Prod_Length != value))
+				{
+					this.OnProd_LengthChanging(value);
+					this.SendPropertyChanging();
+					this._Prod_Length = value;
+					this.SendPropertyChanged("Prod_Length");
+					this.OnProd_LengthChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_Of_Pieces", DbType="Int")]
+		public System.Nullable<int> No_Of_Pieces
+		{
+			get
+			{
+				return this._No_Of_Pieces;
+			}
+			set
+			{
+				if ((this._No_Of_Pieces != value))
+				{
+					this.OnNo_Of_PiecesChanging(value);
+					this.SendPropertyChanging();
+					this._No_Of_Pieces = value;
+					this.SendPropertyChanged("No_Of_Pieces");
+					this.OnNo_Of_PiecesChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMtr
+		{
+			get
+			{
+				return this._ReqLengthMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMtr != value))
+				{
+					this.OnReqLengthMtrChanging(value);
+					this.SendPropertyChanging();
+					this._ReqLengthMtr = value;
+					this.SendPropertyChanged("ReqLengthMtr");
+					this.OnReqLengthMtrChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMinMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMinMtr
+		{
+			get
+			{
+				return this._ReqLengthMinMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMinMtr != value))
+				{
+					this.OnReqLengthMinMtrChanging(value);
+					this.SendPropertyChanging();
+					this._ReqLengthMinMtr = value;
+					this.SendPropertyChanged("ReqLengthMinMtr");
+					this.OnReqLengthMinMtrChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMaxMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMaxMtr
+		{
+			get
+			{
+				return this._ReqLengthMaxMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMaxMtr != value))
+				{
+					this.OnReqLengthMaxMtrChanging(value);
+					this.SendPropertyChanging();
+					this._ReqLengthMaxMtr = value;
+					this.SendPropertyChanged("ReqLengthMaxMtr");
+					this.OnReqLengthMaxMtrChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_Sale_Order_Child", Storage="_Product", ThisKey="Prod_Code", OtherKey="prod_ID", IsForeignKey=true)]
+		public Product Product
+		{
+			get
+			{
+				return this._Product.Entity;
+			}
+			set
+			{
+				Product previousValue = this._Product.Entity;
+				if (((previousValue != value) 
+							|| (this._Product.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Product.Entity = null;
+						previousValue.Sale_Order_Childs.Remove(this);
+					}
+					this._Product.Entity = value;
+					if ((value != null))
+					{
+						value.Sale_Order_Childs.Add(this);
+						this._Prod_Code = value.prod_ID;
+					}
+					else
+					{
+						this._Prod_Code = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Product");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QA_Mtrl_Grade_Master_Sale_Order_Child", Storage="_QA_Mtrl_Grade_Master", ThisKey="Prod_Grade_Id", OtherKey="id", IsForeignKey=true)]
+		public QA_Mtrl_Grade_Master QA_Mtrl_Grade_Master
+		{
+			get
+			{
+				return this._QA_Mtrl_Grade_Master.Entity;
+			}
+			set
+			{
+				QA_Mtrl_Grade_Master previousValue = this._QA_Mtrl_Grade_Master.Entity;
+				if (((previousValue != value) 
+							|| (this._QA_Mtrl_Grade_Master.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._QA_Mtrl_Grade_Master.Entity = null;
+						previousValue.Sale_Order_Childs.Remove(this);
+					}
+					this._QA_Mtrl_Grade_Master.Entity = value;
+					if ((value != null))
+					{
+						value.Sale_Order_Childs.Add(this);
+						this._Prod_Grade_Id = value.id;
+					}
+					else
+					{
+						this._Prod_Grade_Id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("QA_Mtrl_Grade_Master");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	
@@ -138577,464 +138649,6 @@ namespace Ione_DAL
 		}
 	}
 	
-	public partial class OrderRegister_TSLResult
-	{
-		
-		private string _SO_NO;
-		
-		private System.Nullable<System.DateTime> _SODate;
-		
-		private string _Ord_Type;
-		
-		private string _Sale_Exe;
-		
-		private string _Payment_Terms;
-		
-		private string _LC_No;
-		
-		private string _LC_Last_Date;
-		
-		private string _Delivery_Date;
-		
-		private string _Customer_Name;
-		
-		private string _Consignee_Name;
-		
-		private string _CustomerPoNo;
-		
-		private string _Item_Code;
-		
-		private string _Item_Description;
-		
-		private string _Item_Grade;
-		
-		private string _Uom;
-		
-		private string _Prod_Length;
-		
-		private System.Nullable<int> _No_Of_Pieces;
-		
-		private System.Nullable<decimal> _Ord_qty;
-		
-		private System.Nullable<decimal> _Basic_Price;
-		
-		private System.Nullable<decimal> _Taxable_Value;
-		
-		private System.Nullable<decimal> _DespQty;
-		
-		private System.Nullable<decimal> _Bal_Qty;
-		
-		private System.Nullable<decimal> _No_pcs_Loaded;
-		
-		private System.Nullable<decimal> _Bal_Pcs;
-		
-		private string _Status;
-		
-		public OrderRegister_TSLResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_NO", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string SO_NO
-		{
-			get
-			{
-				return this._SO_NO;
-			}
-			set
-			{
-				if ((this._SO_NO != value))
-				{
-					this._SO_NO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SODate", DbType="Date")]
-		public System.Nullable<System.DateTime> SODate
-		{
-			get
-			{
-				return this._SODate;
-			}
-			set
-			{
-				if ((this._SODate != value))
-				{
-					this._SODate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ord_Type", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
-		public string Ord_Type
-		{
-			get
-			{
-				return this._Ord_Type;
-			}
-			set
-			{
-				if ((this._Ord_Type != value))
-				{
-					this._Ord_Type = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sale_Exe", DbType="VarChar(50)")]
-		public string Sale_Exe
-		{
-			get
-			{
-				return this._Sale_Exe;
-			}
-			set
-			{
-				if ((this._Sale_Exe != value))
-				{
-					this._Sale_Exe = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Terms", DbType="VarChar(200)")]
-		public string Payment_Terms
-		{
-			get
-			{
-				return this._Payment_Terms;
-			}
-			set
-			{
-				if ((this._Payment_Terms != value))
-				{
-					this._Payment_Terms = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LC_No", DbType="VarChar(20)")]
-		public string LC_No
-		{
-			get
-			{
-				return this._LC_No;
-			}
-			set
-			{
-				if ((this._LC_No != value))
-				{
-					this._LC_No = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LC_Last_Date", DbType="VarChar(20)")]
-		public string LC_Last_Date
-		{
-			get
-			{
-				return this._LC_Last_Date;
-			}
-			set
-			{
-				if ((this._LC_Last_Date != value))
-				{
-					this._LC_Last_Date = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Delivery_Date", DbType="VarChar(50)")]
-		public string Delivery_Date
-		{
-			get
-			{
-				return this._Delivery_Date;
-			}
-			set
-			{
-				if ((this._Delivery_Date != value))
-				{
-					this._Delivery_Date = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
-		public string Customer_Name
-		{
-			get
-			{
-				return this._Customer_Name;
-			}
-			set
-			{
-				if ((this._Customer_Name != value))
-				{
-					this._Customer_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Consignee_Name", DbType="VarChar(150)")]
-		public string Consignee_Name
-		{
-			get
-			{
-				return this._Consignee_Name;
-			}
-			set
-			{
-				if ((this._Consignee_Name != value))
-				{
-					this._Consignee_Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPoNo", DbType="VarChar(100)")]
-		public string CustomerPoNo
-		{
-			get
-			{
-				return this._CustomerPoNo;
-			}
-			set
-			{
-				if ((this._CustomerPoNo != value))
-				{
-					this._CustomerPoNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Code", DbType="VarChar(30)")]
-		public string Item_Code
-		{
-			get
-			{
-				return this._Item_Code;
-			}
-			set
-			{
-				if ((this._Item_Code != value))
-				{
-					this._Item_Code = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Description", DbType="VarChar(100)")]
-		public string Item_Description
-		{
-			get
-			{
-				return this._Item_Description;
-			}
-			set
-			{
-				if ((this._Item_Description != value))
-				{
-					this._Item_Description = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Grade", DbType="VarChar(50)")]
-		public string Item_Grade
-		{
-			get
-			{
-				return this._Item_Grade;
-			}
-			set
-			{
-				if ((this._Item_Grade != value))
-				{
-					this._Item_Grade = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Uom", DbType="VarChar(50)")]
-		public string Uom
-		{
-			get
-			{
-				return this._Uom;
-			}
-			set
-			{
-				if ((this._Uom != value))
-				{
-					this._Uom = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Length", DbType="VarChar(50)")]
-		public string Prod_Length
-		{
-			get
-			{
-				return this._Prod_Length;
-			}
-			set
-			{
-				if ((this._Prod_Length != value))
-				{
-					this._Prod_Length = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_Of_Pieces", DbType="Int")]
-		public System.Nullable<int> No_Of_Pieces
-		{
-			get
-			{
-				return this._No_Of_Pieces;
-			}
-			set
-			{
-				if ((this._No_Of_Pieces != value))
-				{
-					this._No_Of_Pieces = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ord_qty", DbType="Decimal(18,5)")]
-		public System.Nullable<decimal> Ord_qty
-		{
-			get
-			{
-				return this._Ord_qty;
-			}
-			set
-			{
-				if ((this._Ord_qty != value))
-				{
-					this._Ord_qty = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Basic_Price", DbType="Decimal(19,2)")]
-		public System.Nullable<decimal> Basic_Price
-		{
-			get
-			{
-				return this._Basic_Price;
-			}
-			set
-			{
-				if ((this._Basic_Price != value))
-				{
-					this._Basic_Price = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Taxable_Value", DbType="Decimal(38,7)")]
-		public System.Nullable<decimal> Taxable_Value
-		{
-			get
-			{
-				return this._Taxable_Value;
-			}
-			set
-			{
-				if ((this._Taxable_Value != value))
-				{
-					this._Taxable_Value = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DespQty", DbType="Decimal(38,5)")]
-		public System.Nullable<decimal> DespQty
-		{
-			get
-			{
-				return this._DespQty;
-			}
-			set
-			{
-				if ((this._DespQty != value))
-				{
-					this._DespQty = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bal_Qty", DbType="Decimal(38,5)")]
-		public System.Nullable<decimal> Bal_Qty
-		{
-			get
-			{
-				return this._Bal_Qty;
-			}
-			set
-			{
-				if ((this._Bal_Qty != value))
-				{
-					this._Bal_Qty = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_pcs_Loaded", DbType="Decimal(38,5)")]
-		public System.Nullable<decimal> No_pcs_Loaded
-		{
-			get
-			{
-				return this._No_pcs_Loaded;
-			}
-			set
-			{
-				if ((this._No_pcs_Loaded != value))
-				{
-					this._No_pcs_Loaded = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bal_Pcs", DbType="Decimal(38,5)")]
-		public System.Nullable<decimal> Bal_Pcs
-		{
-			get
-			{
-				return this._Bal_Pcs;
-			}
-			set
-			{
-				if ((this._Bal_Pcs != value))
-				{
-					this._Bal_Pcs = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(200)")]
-		public string Status
-		{
-			get
-			{
-				return this._Status;
-			}
-			set
-			{
-				if ((this._Status != value))
-				{
-					this._Status = value;
-				}
-			}
-		}
-	}
-	
 	public partial class getQuote_Master_dataResult
 	{
 		
@@ -140618,6 +140232,518 @@ namespace Ione_DAL
 				if ((this._Required_QTY != value))
 				{
 					this._Required_QTY = value;
+				}
+			}
+		}
+	}
+	
+	public partial class OrderRegister_TSLResult
+	{
+		
+		private string _SO_NO;
+		
+		private System.Nullable<System.DateTime> _SODate;
+		
+		private string _Ord_Type;
+		
+		private string _Sale_Exe;
+		
+		private string _Payment_Terms;
+		
+		private string _LC_No;
+		
+		private string _LC_Last_Date;
+		
+		private string _Delivery_Date;
+		
+		private string _Customer_Name;
+		
+		private string _Consignee_Name;
+		
+		private string _CustomerPoNo;
+		
+		private string _Item_Code;
+		
+		private string _Item_Description;
+		
+		private string _Item_Grade;
+		
+		private string _Uom;
+		
+		private string _Prod_Length;
+		
+		private System.Nullable<int> _No_Of_Pieces;
+		
+		private System.Nullable<decimal> _Ord_qty;
+		
+		private System.Nullable<decimal> _Basic_Price;
+		
+		private System.Nullable<decimal> _Taxable_Value;
+		
+		private System.Nullable<decimal> _DespQty;
+		
+		private System.Nullable<decimal> _Bal_Qty;
+		
+		private System.Nullable<decimal> _No_pcs_Loaded;
+		
+		private System.Nullable<decimal> _Bal_Pcs;
+		
+		private string _Status;
+		
+		private System.Nullable<decimal> _ReqLengthMinMtr;
+		
+		private System.Nullable<decimal> _ReqLengthMaxMtr;
+		
+		private System.Nullable<decimal> _ReqLengthMtr;
+		
+		public OrderRegister_TSLResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SO_NO", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string SO_NO
+		{
+			get
+			{
+				return this._SO_NO;
+			}
+			set
+			{
+				if ((this._SO_NO != value))
+				{
+					this._SO_NO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SODate", DbType="Date")]
+		public System.Nullable<System.DateTime> SODate
+		{
+			get
+			{
+				return this._SODate;
+			}
+			set
+			{
+				if ((this._SODate != value))
+				{
+					this._SODate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ord_Type", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
+		public string Ord_Type
+		{
+			get
+			{
+				return this._Ord_Type;
+			}
+			set
+			{
+				if ((this._Ord_Type != value))
+				{
+					this._Ord_Type = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sale_Exe", DbType="VarChar(50)")]
+		public string Sale_Exe
+		{
+			get
+			{
+				return this._Sale_Exe;
+			}
+			set
+			{
+				if ((this._Sale_Exe != value))
+				{
+					this._Sale_Exe = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Terms", DbType="VarChar(200)")]
+		public string Payment_Terms
+		{
+			get
+			{
+				return this._Payment_Terms;
+			}
+			set
+			{
+				if ((this._Payment_Terms != value))
+				{
+					this._Payment_Terms = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LC_No", DbType="VarChar(20)")]
+		public string LC_No
+		{
+			get
+			{
+				return this._LC_No;
+			}
+			set
+			{
+				if ((this._LC_No != value))
+				{
+					this._LC_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LC_Last_Date", DbType="VarChar(20)")]
+		public string LC_Last_Date
+		{
+			get
+			{
+				return this._LC_Last_Date;
+			}
+			set
+			{
+				if ((this._LC_Last_Date != value))
+				{
+					this._LC_Last_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Delivery_Date", DbType="VarChar(50)")]
+		public string Delivery_Date
+		{
+			get
+			{
+				return this._Delivery_Date;
+			}
+			set
+			{
+				if ((this._Delivery_Date != value))
+				{
+					this._Delivery_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Customer_Name", DbType="VarChar(150)")]
+		public string Customer_Name
+		{
+			get
+			{
+				return this._Customer_Name;
+			}
+			set
+			{
+				if ((this._Customer_Name != value))
+				{
+					this._Customer_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Consignee_Name", DbType="VarChar(150)")]
+		public string Consignee_Name
+		{
+			get
+			{
+				return this._Consignee_Name;
+			}
+			set
+			{
+				if ((this._Consignee_Name != value))
+				{
+					this._Consignee_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomerPoNo", DbType="VarChar(100)")]
+		public string CustomerPoNo
+		{
+			get
+			{
+				return this._CustomerPoNo;
+			}
+			set
+			{
+				if ((this._CustomerPoNo != value))
+				{
+					this._CustomerPoNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Code", DbType="VarChar(30)")]
+		public string Item_Code
+		{
+			get
+			{
+				return this._Item_Code;
+			}
+			set
+			{
+				if ((this._Item_Code != value))
+				{
+					this._Item_Code = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Description", DbType="VarChar(100)")]
+		public string Item_Description
+		{
+			get
+			{
+				return this._Item_Description;
+			}
+			set
+			{
+				if ((this._Item_Description != value))
+				{
+					this._Item_Description = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Item_Grade", DbType="VarChar(50)")]
+		public string Item_Grade
+		{
+			get
+			{
+				return this._Item_Grade;
+			}
+			set
+			{
+				if ((this._Item_Grade != value))
+				{
+					this._Item_Grade = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Uom", DbType="VarChar(50)")]
+		public string Uom
+		{
+			get
+			{
+				return this._Uom;
+			}
+			set
+			{
+				if ((this._Uom != value))
+				{
+					this._Uom = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prod_Length", DbType="VarChar(50)")]
+		public string Prod_Length
+		{
+			get
+			{
+				return this._Prod_Length;
+			}
+			set
+			{
+				if ((this._Prod_Length != value))
+				{
+					this._Prod_Length = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_Of_Pieces", DbType="Int")]
+		public System.Nullable<int> No_Of_Pieces
+		{
+			get
+			{
+				return this._No_Of_Pieces;
+			}
+			set
+			{
+				if ((this._No_Of_Pieces != value))
+				{
+					this._No_Of_Pieces = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ord_qty", DbType="Decimal(18,5)")]
+		public System.Nullable<decimal> Ord_qty
+		{
+			get
+			{
+				return this._Ord_qty;
+			}
+			set
+			{
+				if ((this._Ord_qty != value))
+				{
+					this._Ord_qty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Basic_Price", DbType="Decimal(19,2)")]
+		public System.Nullable<decimal> Basic_Price
+		{
+			get
+			{
+				return this._Basic_Price;
+			}
+			set
+			{
+				if ((this._Basic_Price != value))
+				{
+					this._Basic_Price = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Taxable_Value", DbType="Decimal(38,7)")]
+		public System.Nullable<decimal> Taxable_Value
+		{
+			get
+			{
+				return this._Taxable_Value;
+			}
+			set
+			{
+				if ((this._Taxable_Value != value))
+				{
+					this._Taxable_Value = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DespQty", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> DespQty
+		{
+			get
+			{
+				return this._DespQty;
+			}
+			set
+			{
+				if ((this._DespQty != value))
+				{
+					this._DespQty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bal_Qty", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> Bal_Qty
+		{
+			get
+			{
+				return this._Bal_Qty;
+			}
+			set
+			{
+				if ((this._Bal_Qty != value))
+				{
+					this._Bal_Qty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_No_pcs_Loaded", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> No_pcs_Loaded
+		{
+			get
+			{
+				return this._No_pcs_Loaded;
+			}
+			set
+			{
+				if ((this._No_pcs_Loaded != value))
+				{
+					this._No_pcs_Loaded = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bal_Pcs", DbType="Decimal(38,5)")]
+		public System.Nullable<decimal> Bal_Pcs
+		{
+			get
+			{
+				return this._Bal_Pcs;
+			}
+			set
+			{
+				if ((this._Bal_Pcs != value))
+				{
+					this._Bal_Pcs = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(200)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMinMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMinMtr
+		{
+			get
+			{
+				return this._ReqLengthMinMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMinMtr != value))
+				{
+					this._ReqLengthMinMtr = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMaxMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMaxMtr
+		{
+			get
+			{
+				return this._ReqLengthMaxMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMaxMtr != value))
+				{
+					this._ReqLengthMaxMtr = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReqLengthMtr", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ReqLengthMtr
+		{
+			get
+			{
+				return this._ReqLengthMtr;
+			}
+			set
+			{
+				if ((this._ReqLengthMtr != value))
+				{
+					this._ReqLengthMtr = value;
 				}
 			}
 		}

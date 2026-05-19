@@ -3066,8 +3066,8 @@
       <Association Name="Product_Supplier_Quotation_Master" Member="Supplier_Quotation_Masters" ThisKey="prod_ID" OtherKey="Product_Name" Type="Supplier_Quotation_Master" />
       <Association Name="Product_Bloom_Roll_Wise_Receipt" Member="Bloom_Roll_Wise_Receipts" ThisKey="prod_ID" OtherKey="Prod_ID" Type="Bloom_Roll_Wise_Receipt" />
       <Association Name="Product_Product_InventoryLevel" Member="Product_InventoryLevels" ThisKey="prod_ID" OtherKey="Prod_ID" Type="Product_InventoryLevel" />
-      <Association Name="Product_Sale_Order_Child" Member="Sale_Order_Childs" ThisKey="prod_ID" OtherKey="Prod_Code" Type="Sale_Order_Child" />
       <Association Name="Product_Production_report_rolling_Child" Member="Production_report_rolling_Childs" ThisKey="prod_ID" OtherKey="Prod_ID" Type="Production_report_rolling_Child" />
+      <Association Name="Product_Sale_Order_Child" Member="Sale_Order_Childs" ThisKey="prod_ID" OtherKey="Prod_Code" Type="Sale_Order_Child" />
       <Association Name="Attributes_Prod_Type_Product" Member="Attributes_Prod_Type" ThisKey="Prod_Type_Id" OtherKey="Prod_Type_Id" Type="Attributes_Prod_Type" IsForeignKey="true" />
       <Association Name="Product_Group_Product" Member="Product_Group" ThisKey="Prod_Group_Id" OtherKey="ID" Type="Product_Group" IsForeignKey="true" />
       <Association Name="UoM_Master_Product" Member="UoM_Master" ThisKey="Prod_Primary_UOM_Id" OtherKey="UOM_ID" Type="UoM_Master" IsForeignKey="true" />
@@ -3971,44 +3971,6 @@
       <Column Name="Company_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Sale_Order_Child" Member="Sale_Order_Childs">
-    <Type Name="Sale_Order_Child">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="So_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SO_NO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Prod_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Product_Description" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
-      <Column Name="Prod_Grade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Prod_Grade_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Uom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Qty" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Disc_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Disc_Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Taxable_Value" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="CGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="CGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="SGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="SGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="IGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="IGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Net_Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Remarks" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="Company_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Tole_Qty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
-      <Column Name="Del_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="HSN_Code" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
-      <Column Name="Int_Prod_Code" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
-      <Column Name="Quot_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="enq_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="enq_item_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="No_Of_Pieces" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Product_Sale_Order_Child" Member="Product" ThisKey="Prod_Code" OtherKey="prod_ID" Type="Product" IsForeignKey="true" />
-      <Association Name="QA_Mtrl_Grade_Master_Sale_Order_Child" Member="QA_Mtrl_Grade_Master" ThisKey="Prod_Grade_Id" OtherKey="id" Type="QA_Mtrl_Grade_Master" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Production_report_rolling_Child" Member="Production_report_rolling_Childs">
     <Type Name="Production_report_rolling_Child">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -4462,6 +4424,47 @@
       <Column Name="RM_Price_Considered" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
       <Association Name="Sale_Quotation_Master_Sale_Quotation_Child" Member="Sale_Quotation_Childs" ThisKey="Id" OtherKey="Quot_Master_ID" Type="Sale_Quotation_Child" />
       <Association Name="Supplier_information_Sale_Quotation_Master" Member="Supplier_information" ThisKey="BuyerName" OtherKey="ID" Type="Supplier_information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sale_Order_Child" Member="Sale_Order_Childs">
+    <Type Name="Sale_Order_Child">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="So_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SO_NO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Prod_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Product_Description" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Prod_Grade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Prod_Grade_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Uom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Disc_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Disc_Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Taxable_Value" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="IGST_Per" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="IGST_Amnt" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Net_Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Company_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tole_Qty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Del_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HSN_Code" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Int_Prod_Code" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Quot_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="enq_Master_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="enq_item_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="No_Of_Pieces" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReqLengthMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReqLengthMinMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReqLengthMaxMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Product_Sale_Order_Child" Member="Product" ThisKey="Prod_Code" OtherKey="prod_ID" Type="Product" IsForeignKey="true" />
+      <Association Name="QA_Mtrl_Grade_Master_Sale_Order_Child" Member="QA_Mtrl_Grade_Master" ThisKey="Prod_Grade_Id" OtherKey="id" Type="QA_Mtrl_Grade_Master" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.sp_prodmast_Delete" Method="sp_prodmast_Delete">
@@ -9301,41 +9304,6 @@
     <Parameter Name="company" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.OrderRegister_TSL" Method="OrderRegister_TSL">
-    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
-    <Parameter Name="frmDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="toDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="strT" Type="System.Int32" DbType="Int" />
-    <Parameter Name="para" Type="System.Int32" DbType="Int" />
-    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="OrderRegister_TSLResult">
-      <Column Name="SO_NO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="SODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Ord_Type" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Sale_Exe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Payment_Terms" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="LC_No" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="LC_Last_Date" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Delivery_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="Consignee_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="CustomerPoNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Item_Code" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="Item_Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Item_Grade" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Uom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="No_Of_Pieces" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Ord_qty" Type="System.Decimal" DbType="Decimal(18,5)" CanBeNull="true" />
-      <Column Name="Basic_Price" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="Taxable_Value" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
-      <Column Name="DespQty" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
-      <Column Name="Bal_Qty" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
-      <Column Name="No_pcs_Loaded" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
-      <Column Name="Bal_Pcs" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
-      <Column Name="Status" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.getQuote_Master_data" Method="getQuote_Master_data">
     <Parameter Name="compname" Type="System.Int32" DbType="Int" />
     <Parameter Name="buid" Type="System.Int32" DbType="Int" />
@@ -9458,6 +9426,44 @@
       <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="No_Of_Pieces" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
       <Column Name="Required_QTY" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.OrderRegister_TSL" Method="OrderRegister_TSL">
+    <Parameter Name="compname" Type="System.Int32" DbType="Int" />
+    <Parameter Name="frmDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="toDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="strT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="para" Type="System.Int32" DbType="Int" />
+    <Parameter Name="buid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="OrderRegister_TSLResult">
+      <Column Name="SO_NO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ord_Type" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Sale_Exe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Payment_Terms" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="LC_No" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LC_Last_Date" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Delivery_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Customer_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Consignee_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CustomerPoNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Item_Code" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Item_Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Item_Grade" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Uom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Prod_Length" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="No_Of_Pieces" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ord_qty" Type="System.Decimal" DbType="Decimal(18,5)" CanBeNull="true" />
+      <Column Name="Basic_Price" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="Taxable_Value" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="DespQty" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+      <Column Name="Bal_Qty" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+      <Column Name="No_pcs_Loaded" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+      <Column Name="Bal_Pcs" Type="System.Decimal" DbType="Decimal(38,5)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ReqLengthMinMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReqLengthMaxMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReqLengthMtr" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>
